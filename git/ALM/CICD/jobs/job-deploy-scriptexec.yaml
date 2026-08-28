@@ -1,0 +1,28 @@
+parameters:
+    job_name: execute_script_on_env
+    scriptFilePath: 'none'
+    environment: 'none'
+    pool:
+      vmImage: ubuntu-latest
+    depends_on: []
+  
+jobs:
+  
+- deployment: execute_script_on_${{ parameters.environment }}
+  displayName: Execute script on ${{ parameters.environment }}
+  dependsOn: ${{ parameters.depends_on }}
+  environment: 
+    name: ${{ parameters.environment }}
+  variables: 
+  - group: environment_variables_${{ parameters.environment }}
+  strategy:
+   runOnce:
+     deploy:
+        steps:
+        
+          - checkout: self
+
+          - template: ./../../steps/steps-deploy-scriptexec.yaml
+            parameters:
+              environment: ${{ parameters.environment }}
+              scriptFilePath: ${{ parameters.scriptFilePath }}

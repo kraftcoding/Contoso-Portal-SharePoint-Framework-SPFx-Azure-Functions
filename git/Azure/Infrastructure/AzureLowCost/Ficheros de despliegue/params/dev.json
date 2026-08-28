@@ -1,0 +1,6 @@
+{
+  "param_envtoken": { "value": "dev" },
+  "param_apptoken": { "value": "Contoso" },
+  "param_azcounter": { "value": "01" },
+  "param_storageAccountType": { "value": "Standard_LRS" }
+}

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:prodvisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/prodvisioningSchema">
+  <pnp:preferences Generator="PnP.Framework, Version=1.17.30.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-00855C2A02AF4688B39D11E0EB733B63">
+    <pnp:prodvisioningTemplate ID="TEMPLATE-00855C2A02AF4688B39D11E0EB733B63" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:SiteFields>
+	    <Field Type="Boolean" DisplayName="Activo" Group="service-account@contoso.local" EnforceUniqueValues="FALSE" Required="FALSE" Hidden="FALSE" ReadOnly="FALSE" CanToggleHidden="FALSE" ID="{b21cf675-9231-48c1-9917-198555f8833d}" Name="Activo" StaticName="Activo" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" CustomFormatter="" AllowDeletion="TRUE">
+          <Default>1</Default>
+        </Field>
+        <Field Type="Text" DisplayName="DatosInscripcion_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{70d1bc04-3a00-4664-b163-c169c5183d9a}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="DatosInscripcion_EMD" Name="DatosInscripcion_EMD"></Field>
+<Field Type="DateTime" DisplayName="RetestsentanteFechaNacimiento_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Registro Entidades MemDemo" FriendlyDisplayFormat="Disabled" ID="{0fc84613-e86a-4c65-a21c-77547e6b1fdb}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteFechaNacimiento_EMD" Name="RetestsentanteFechaNacimiento_EMD"></Field>
+<Field Type="Text" DisplayName="RetestsentanteSegundoApellido_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{11e22f1f-ab4d-4980-b69b-cff8a6725b91}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteSegundoApellido_EMD" Name="RetestsentanteSegundoApellido_EMD"></Field>
+<Field DisplayName="ContactoTelefono_EMD" Type="Text" Required="FALSE" ID="{94dc2c21-5f09-4ce6-8b28-ace06ee2f5f1}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="ContactoTelefono_EMD" Name="ContactoTelefono_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255"></Field>
+<Field DisplayName="ContactoEmail_EMD" Type="Text" Required="FALSE" ID="{b245a827-4408-487c-8a94-513804ef48a4}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="ContactoEmail_EMD" Name="ContactoEmail_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255"></Field>
+<Field Type="Text" DisplayName="RetestsentanteNombre_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{4269462e-6c15-4d3f-b2e7-7a761f6ead34}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteNombre_EMD" Name="RetestsentanteNombre_EMD"></Field>
+<Field DisplayName="SolicitantePrimerApellido_EMD" Type="Text" Required="FALSE" ID="{9ba72133-d606-4b10-9209-f5c338ec00fa}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="SolicitanteApellido_EMD" Name="SolicitanteApellido_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255" Indexed="FALSE"></Field>
+<Field Type="Choice" DisplayName="TipoDocument_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Registro Entidades MemDemo" ID="{0585ac40-ec52-4704-8152-a0b1d1429a26}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="TipoDocument_EMD" Name="TipoDocument_EMD" CustomFormatter="">
+          <Default>Certificado</Default>
+          <CHOICES>
+            <CHOICE>Certificado</CHOICE>
+            <CHOICE>Estatutos</CHOICE>
+            <CHOICE>Declaracion</CHOICE>
+            <CHOICE>CambioDepartments</CHOICE>
+            <CHOICE>ResolucionCancelacion</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" DisplayName="RetestsentanteTipoDocument_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Registro Entidades MemDemo" ID="{4c4e6941-4a7a-4fce-b9a7-779d2903c9ba}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteTipoDocument_EMD" Name="RetestsentanteTipoDocument_EMD">
+          <Default>DNI</Default>
+          <CHOICES>
+            <CHOICE>DNI</CHOICE>
+            <CHOICE>NIE</CHOICE>
+            <CHOICE>NIF</CHOICE>
+          </CHOICES>
+        </Field>
+<Field Type="Text" DisplayName="RetestsentanteCargo_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{c0c3c64e-2b9b-4e60-af87-87df2d1c0453}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteCargo_EMD" Name="RetestsentanteCargo_EMD"></Field>
+<Field Type="Text" DisplayName="RetestsentantePrimerApellido_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{1dfe9d55-de16-480b-bd72-2489f95964a9}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentantePrimerApellido_EMD" Name="RetestsentantePrimerApellido_EMD"></Field>
+<Field DisplayName="SolicitanteTipoDocument_EMD" Type="Choice" Required="FALSE" ID="{19ac855f-ec0c-4c84-8838-92b184984f3b}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="SolicitanteTipoDocument_EMD" Name="SolicitanteTipoDocument_EMD" Group="Registro Entidades MemDemo" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;DNI&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;NIE&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-field-fontSizeSmall sp-css-color-MintGreenFont sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Opción 3&quot;]},&quot;sp-css-backgroundColor-BgGold sp-field-fontSizeSmall sp-css-color-GoldFont sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;DNI&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;NIE&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Opción 3&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" EnforceUniqueValues="FALSE" FillInChoice="FALSE" Format="Dropdown" Indexed="FALSE">
+          <CHOICES>
+            <CHOICE>DNI</CHOICE>
+            <CHOICE>NIE</CHOICE>
+            <CHOICE>NIF</CHOICE>
+          </CHOICES>
+        </Field>
+<Field Type="Lookup" DisplayName="Section_EMD" Required="FALSE" EnforceUniqueValues="FALSE" List="{{listid:SectionsDemoEntities}}" WebId="{siteid}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="Registro Entidades MemDemo" ID="{dfdef861-7e41-4a08-b862-40cc43a314cc}" SourceID="{{siteid}}" StaticName="Section_EMD" Name="Section_EMD" />
+<Field Type="Lookup" DisplayName="Section_EMD:ID" List="{{listid:SectionsDemoEntities}}" WebId="{siteid}" ShowField="ID" FieldRef="dfdef861-7e41-4a08-b862-40cc43a314cc" ReadOnly="TRUE" UnlimitedLengthInDocumentLibrary="FALSE" Group="Registro Entidades MemDemo" ID="{a86a2f70-efe7-44d8-ba44-ece5799502ca}" SourceID="{{siteid}}" StaticName="Section_EMD_x003a_ID" Name="Section_EMD_x003A_ID" />
+<Field Type="Note" DisplayName="Domicilio_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Registro Entidades MemDemo" ID="{806b7566-e9bf-42eb-84f4-c5303e448fe0}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="Domicilio_EMD" Name="Domicilio_EMD"></Field>
+<Field Type="Text" DisplayName="NIF_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{b13dd66a-db41-4a14-80be-8eeffb316eed}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="NIF_EMD" Name="NIF_EMD"></Field>
+<Field DisplayName="NumExpedienteCancelacion_EMD" Type="Text" Required="FALSE" ID="{0030dc6a-d71a-44f3-b8af-657cacc3f0cf}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="NumExpedienteCancelacion_EMD" Name="NumExpedienteCancelacion_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default></Default>
+        </Field>
+<Field Type="Text" DisplayName="SolicitanteSegundoApellido_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{08b6307a-ea15-4313-820f-963bf1d6bbc6}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="SolicitanteSegundoApellido_EMD" Name="SolicitanteSegundoApellido_EMD"></Field>
+<Field Type="Choice" DisplayName="Estado_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Registro Entidades MemDemo" ID="{6f4e3988-6e95-490d-9297-8aa9ace6d5ad}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="Estado_EMD" Name="Estado_EMD">
+          <Default>Activa</Default>
+          <CHOICES>
+            <CHOICE>Activa</CHOICE>
+            <CHOICE>Cancelada</CHOICE>
+          </CHOICES>
+        </Field>
+<Field Type="Text" DisplayName="NumExpedienteACCEDA_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{3db07c88-d977-4016-88a4-218f9951657a}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="NumExpedienteACCEDA_EMD" Name="NumExpedienteACCEDA_EMD"></Field>
+<Field Type="Note" DisplayName="IdentidadTitulares_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Registro Entidades MemDemo" ID="{5bc47890-5b83-404c-b09e-5c90996d375f}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="IdentidadTitulares_EMD" Name="IdentidadTitulares_EMD"></Field>
+<Field Type="Text" DisplayName="RetestsentanteNacionalidad_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{45890295-1766-401e-8f03-5956aa4162cf}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteNacionalidad_EMD" Name="RetestsentanteNacionalidad_EMD"></Field>
+<Field Type="Text" DisplayName="DomicilioSocial_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{fb1e299a-ef02-40e1-b384-4dc13a239cfe}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="DomicilioSocial_EMD" Name="DomicilioSocial_EMD"></Field>
+<Field Type="Note" DisplayName="Descripcion" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" Sortable="FALSE" Group="Registro Entidades MemDemo" ID="{11581bae-a99c-4d7a-86a4-bc311d614d30}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="Descripcion" Name="Descripcion" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE"></Field>
+<Field Type="Lookup" DisplayName="ScopeTerritorial_EMD" Required="FALSE" EnforceUniqueValues="FALSE" List="{{listid:ScopesDemoEntities}}" WebId="{siteid}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="Registro Entidades MemDemo" ID="{10d529b3-56af-4e69-88b4-0b83b93d497a}" SourceID="{{siteid}}" StaticName="ScopeTerritorial_EMD" Name="ScopeTerritorial_EMD" />
+<Field Type="Lookup" DisplayName="ScopeTerritorial_EMD:ID" List="{{listid:ScopesDemoEntities}}" WebId="{siteid}" ShowField="ID" FieldRef="10d529b3-56af-4e69-88b4-0b83b93d497a" ReadOnly="TRUE" UnlimitedLengthInDocumentLibrary="FALSE" Group="Registro Entidades MemDemo" ID="{81343b8c-b1d3-42fb-8d33-2a790b20cb89}" SourceID="{{siteid}}" StaticName="ScopeTerritorial_EMD_x003a_ID" Name="ScopeTerritorial_EMD_x003A_ID" />
+<Field Type="Text" DisplayName="RetestsentanteNumidentificacion_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{099481b6-a30e-49fa-a0f4-83f82b2efd81}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="RetestsentanteID_EMD" Name="RetestsentanteID_EMD" CustomFormatter=""></Field>
+<Field DisplayName="SolicitanteNumIdentificacion_EMD" Type="Text" Required="FALSE" ID="{03e7e3b8-33f0-45b2-ada6-904c54f5c1b5}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="SolicitanteNumIdentificacion_EMD" Name="SolicitanteNumIdentificacion_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default></Default>
+        </Field>
+<Field Type="DateTime" DisplayName="FechaConstitucion_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Registro Entidades MemDemo" FriendlyDisplayFormat="Disabled" ID="{ac9dedba-0597-4bba-99b2-90e08dfc5b73}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="FechaConstitucion_EMD" Name="FechaConstitucion_EMD"></Field>
+<Field Type="Note" DisplayName="EntidadesIntegrantes_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Registro Entidades MemDemo" ID="{2b5982c7-d0bf-43be-91d0-aa13701b0645}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="EntidadesIntegrantes_EMD" Name="EntidadesIntegrantes_EMD"></Field>
+<Field DisplayName="SolicitanteNombre_EMD" Type="Text" Required="FALSE" ID="{c439efcf-7506-4e19-bc1f-4f986e6ad5b0}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="SolicitanteNombre_EMD" Name="SolicitanteNombre_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default></Default>
+        </Field>
+<Field Type="DateTime" DisplayName="FechaInscripcion_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Registro Entidades MemDemo" FriendlyDisplayFormat="Disabled" ID="{8da294d6-7cde-4c3c-a4cc-79da4e72328e}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="FechaInscripcion_EMD" Name="FechaInscripcion_EMD"></Field>
+<Field DisplayName="Folder_EMD" Type="Text" Required="FALSE" ID="{921e63e5-3b4a-43bb-9161-78ce6e19dfdb}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="Folder_EMD" Name="Folder_EMD" Group="Registro Entidades MemDemo" CustomFormatter="" EnforceUniqueValues="FALSE" MaxLength="255">
+          <Default></Default>
+        </Field>
+<Field Type="Note" DisplayName="Objeto_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Registro Entidades MemDemo" ID="{08933bf5-6e39-427e-aaf4-ad1bb8d2ca4f}" SourceID="{7fc86b6d-b5cc-40f5-869d-1dee15a239d2}" StaticName="Objeto_EMD" Name="Objeto_EMD"></Field>
+		<Field Type="Lookup" DisplayName="CancellationReason_EMD" Required="FALSE" EnforceUniqueValues="FALSE" List="{{listid:CancellationReasonsDemoEntities}}" WebId="{siteid}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="Registro Entidades MemDemo" ID="{7f4ec5d5-ad34-4b03-9876-de0c5a861861}" SourceID="{{siteid}}" StaticName="CancellationReason_EMD" Name="CancellationReason_EMD" />
+		<Field Type="Text" DisplayName="Asiento_EMD" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Registro Entidades MemDemo" ID="{417c5614-17c2-40c0-8ce2-2f49f7728916}" SourceID="{0c79b723-ae88-49dc-aa2b-52bde2a3fb83}" StaticName="Asiento_EMD" Name="Asiento_EMD"></Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+	    <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentproperties="" NewFormClientSideComponentproperties="" EditFormClientSideComponentId="" EditFormClientSideComponentproperties="" ID="0x01005431445F1E96B74A93468F1D81CF76D2" Name="Causa Cancelación Entidad MemoDemo" Description="" Group="Registro Entidades MemoDemo" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" UpdateChildren="true" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+		<pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentproperties="" NewFormClientSideComponentproperties="" EditFormClientSideComponentId="" EditFormClientSideComponentproperties="" ID="0x0100D0DD70D48E01C040B599E2A4D62BFADA" Name="Ámbito Entidad MemoDemo" Description="" Group="Registro Entidades MemoDemo" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" UpdateChildren="true" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" UpdateChildren="true" />
+          </pnp:FieldRefs>
+		</pnp:ContentType>
+
+		<pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentproperties="" NewFormClientSideComponentproperties="" EditFormClientSideComponentId="" EditFormClientSideComponentproperties="" ID="0x0100DA479A4296C25D41871B8F2AFDCD6736" Name="Sección Entidad MemoDemo" Description="" Group="Registro Entidades MemoDemo" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" UpdateChildren="true" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+
+		<pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentproperties="" NewFormClientSideComponentproperties="" EditFormClientSideComponentId="" EditFormClientSideComponentproperties="" ID="0x0101002E6D9650F2396148BB9B0DDF74F71A84" Name="Document Entidad MemoDemo" Description="" Group="Registro Entidades MemoDemo" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="0585ac40-ec52-4704-8152-a0b1d1429a26" Name="TipoDocument_EMD" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+
+
+		<pnp:ContentType ID="0x0120D5200047412C5763C0F44498C8B01E8FB1A6AE" Name="Entidad MemoDemo" Group="Registro Entidades MemDemo" NewFormUrl="_layouts/15/NewDocSet.aspx" ParentContentTypeId="0x0120D520">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="b824e17e-a1b3-426e-aecf-f0184d900485" Name="ItemChildCount" UpdateChildren="true" />
+            <pnp:FieldRef ID="960ff01f-2b6d-4f1b-9c3f-e19ad8927341" Name="FolderChildCount" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="cbb92da4-fd46-4c7d-af6c-3128c2a5576e" Name="Descripción" UpdateChildren="true" />
+            <pnp:FieldRef ID="ac9dedba-0597-4bba-99b2-90e08dfc5b73" Name="FechaConstitucion_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="2b5982c7-d0bf-43be-91d0-aa13701b0645" Name="EntidadesIntegrantes_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="3db07c88-d977-4016-88a4-218f9951657a" Name="NumExpedienteACCEDA_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="08933bf5-6e39-427e-aaf4-ad1bb8d2ca4f" Name="Objeto_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="c0c3c64e-2b9b-4e60-af87-87df2d1c0453" Name="RetestsentanteCargo_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="099481b6-a30e-49fa-a0f4-83f82b2efd81" Name="RetestsentanteID_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="4269462e-6c15-4d3f-b2e7-7a761f6ead34" Name="RetestsentanteNombre_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="c439efcf-7506-4e19-bc1f-4f986e6ad5b0" Name="SolicitanteNombre_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="9ba72133-d606-4b10-9209-f5c338ec00fa" Name="SolicitanteApellido_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="03e7e3b8-33f0-45b2-ada6-904c54f5c1b5" Name="SolicitanteNumIdentificacion_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="8da294d6-7cde-4c3c-a4cc-79da4e72328e" Name="FechaInscripcion_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="08b6307a-ea15-4313-820f-963bf1d6bbc6" Name="SolicitanteSegundoApellido_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="45890295-1766-401e-8f03-5956aa4162cf" Name="RetestsentanteNacionalidad_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="1dfe9d55-de16-480b-bd72-2489f95964a9" Name="RetestsentantePrimerApellido_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="11e22f1f-ab4d-4980-b69b-cff8a6725b91" Name="RetestsentanteSegundoApellido_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="94dc2c21-5f09-4ce6-8b28-ace06ee2f5f1" Name="ContactoTelefono_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="b245a827-4408-487c-8a94-513804ef48a4" Name="ContactoEmail_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="10d529b3-56af-4e69-88b4-0b83b93d497a" Name="ScopeTerritorial_EMD" UpdateChildren="true" />
+            <!--<pnp:FieldRef ID="81343b8c-b1d3-42fb-8d33-2a790b20cb89" Name="ScopeTerritorial_EMD_x003A_ID" UpdateChildren="true" />-->
+            <pnp:FieldRef ID="70d1bc04-3a00-4664-b163-c169c5183d9a" Name="DatosInscripcion_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb1e299a-ef02-40e1-b384-4dc13a239cfe" Name="DomicilioSocial_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="6f4e3988-6e95-490d-9297-8aa9ace6d5ad" Name="Estado_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="5bc47890-5b83-404c-b09e-5c90996d375f" Name="IdentidadTitulares_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="b13dd66a-db41-4a14-80be-8eeffb316eed" Name="NIF_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="0fc84613-e86a-4c65-a21c-77547e6b1fdb" Name="RetestsentanteFechaNacimiento_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="4c4e6941-4a7a-4fce-b9a7-779d2903c9ba" Name="RetestsentanteTipoDocument_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="dfdef861-7e41-4a08-b862-40cc43a314cc" Name="Section_EMD" UpdateChildren="true" />
+            <!--<pnp:FieldRef ID="a86a2f70-efe7-44d8-ba44-ece5799502ca" Name="Section_EMD_x003A_ID" UpdateChildren="true" />-->
+            <pnp:FieldRef ID="19ac855f-ec0c-4c84-8838-92b184984f3b" Name="SolicitanteTipoDocument_EMD" UpdateChildren="true" />
+            <pnp:FieldRef ID="921e63e5-3b4a-43bb-9161-78ce6e19dfdb" Name="Folder_EMD" UpdateChildren="true" />            
+            <pnp:FieldRef ID="0030dc6a-d71a-44f3-b8af-657cacc3f0cf" Name="NumExpedienteCancelacion_EMD" UpdateChildren="true" />
+			<pnp:FieldRef ID="7f4ec5d5-ad34-4b03-9876-de0c5a861861" Name="CancellationReason_EMD" UpdateChildren="true" />
+			<pnp:FieldRef ID="417c5614-17c2-40c0-8ce2-2f49f7728916" Name="Asiento_EMD" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentSetTemplate UpdateChildren="false">
+            <pnp:AllowedContentTypes>
+              <pnp:AllowedContentType ContentTypeID="0x0101" />
+            </pnp:AllowedContentTypes>
+          </pnp:DocumentSetTemplate>
+        </pnp:ContentType>
+	  
+      </pnp:ContentTypes>
+      <pnp:Lists>
+	    <pnp:ListInstance Title="CancellationReasonsDemoEntities" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/CancellationReasonsDemoEntities" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CancellationReasonsDemoEntities/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CancellationReasonsDemoEntities/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CancellationReasonsDemoEntities/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01005431445F1E96B74A93468F1D81CF76D2" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" Hidden="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{C6D63080-146A-4AC3-9C52-05F2AFEAD793}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/CancellationReasonsDemoEntities/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Activo" />
+                <FieldRef Name="Descripcion" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" DisplayName="Activo" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" DisplayName="Descripcion" />
+          </pnp:FieldRefs>
+		  <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+			  <pnp:RoleAssignment Principal="{parameter:DEMO_admins}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_gestores}" RoleDefinition="Leer" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_lectores}" RoleDefinition="Leer" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ScopesDemoEntities" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ScopesDemoEntities" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ScopesDemoEntities/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ScopesDemoEntities/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ScopesDemoEntities/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100D0DD70D48E01C040B599E2A4D62BFADA" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" Hidden="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{47AB2054-FCA6-4308-8F3C-AE6B35DEDB55}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/ScopesDemoEntities/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Activo" />
+                <FieldRef Name="Descripcion" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" DisplayName="Activo" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" DisplayName="Descripcion" />
+          </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+			  <pnp:RoleAssignment Principal="{parameter:DEMO_admins}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_gestores}" RoleDefinition="Leer" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_lectores}" RoleDefinition="Leer" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+		<pnp:ListInstance Title="SectionsDemoEntities" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/SectionsDemoEntities" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/SectionsDemoEntities/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SectionsDemoEntities/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SectionsDemoEntities/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100DA479A4296C25D41871B8F2AFDCD6736" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" Hidden="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{54B33B47-97B0-4D88-A07E-9F4F2331DD4E}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/SectionsDemoEntities/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Activo" />
+                <FieldRef Name="Descripcion" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+            <pnp:FieldRef ID="b21cf675-9231-48c1-9917-198555f8833d" Name="Activo" DisplayName="Activo" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" DisplayName="Descripcion" />
+          </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+			  <pnp:RoleAssignment Principal="{parameter:DEMO_admins}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_gestores}" RoleDefinition="Leer" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_lectores}" RoleDefinition="Leer" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://westeurope1-3.pushnp.svc.ms/notifications?token=00000000-0000-0000-0002-000000000002%2Fb!-ZJ4_aJ0AEefFwKtu8lXoW1ryH_MtfVAhp0d7hWiOdKQqNGvgwddSL7ogBdYstBk" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="DemoEntities" Description="" DocumentTemplate="{site}/DemoEntities/Forms/template.dotx" TemplateType="101" Url="DemoEntities" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" DefaultDisplayFormUrl="{site}/DemoEntities/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/DemoEntities/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/DemoEntities/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:propertyBagEntries>
+            <pnp:propertyBagEntry Key="LastModifiedSFs_0x0120D5200047412C5763C0F44498C8B01E8FB1A6AE00B475529F6C1C014091E390DCCF9AD385" Value="04/29/2026 07:54:49" Overwrite="false" />
+            <pnp:propertyBagEntry Key="NewDocsetEventReceiversUpdated" Value="True" Overwrite="false" />
+            <pnp:propertyBagEntry Key="LastModifiedACTs_0x0120D5200047412C5763C0F44498C8B01E8FB1A6AE00B475529F6C1C014091E390DCCF9AD385" Value="04/29/2026 07:48:33" Overwrite="false" />
+            <pnp:propertyBagEntry Key="NewDocsetEventReceiversprodvisioned" Value="True" Overwrite="false" />
+            <pnp:propertyBagEntry Key="EventReceiversprodvisioned" Value="True" Overwrite="false" />
+            <pnp:propertyBagEntry Key="IsAttachmentLibrary" Value="0" Overwrite="false" />
+          </pnp:propertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101002E6D9650F2396148BB9B0DDF74F71A84" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" Hidden="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120D5200047412C5763C0F44498C8B01E8FB1A6AE" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0BA66CAE-B7A9-4EC9-BDA3-3FF4A832D056}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los Documents" Url="{site}/DemoEntities/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="TipoDocument_EMD" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+            <pnp:FieldRef ID="cbb92da4-fd46-4c7d-af6c-3128c2a5576e" Name="DocumentSetDescription" DisplayName="Descripción" />
+            <pnp:FieldRef ID="ac9dedba-0597-4bba-99b2-90e08dfc5b73" Name="FechaConstitucion_EMD" DisplayName="FechaConstitucion" />
+            <pnp:FieldRef ID="806b7566-e9bf-42eb-84f4-c5303e448fe0" Name="Domicilio_EMD" DisplayName="Domicilio" />
+            <pnp:FieldRef ID="2b5982c7-d0bf-43be-91d0-aa13701b0645" Name="EntidadesIntegrantes_EMD" DisplayName="EntidadesIntegrantes" />
+            <pnp:FieldRef ID="3db07c88-d977-4016-88a4-218f9951657a" Name="NumExpedienteACCEDA_EMD" DisplayName="NumExpediente" />
+            <pnp:FieldRef ID="08933bf5-6e39-427e-aaf4-ad1bb8d2ca4f" Name="Objeto_EMD" DisplayName="Objeto" />
+            <pnp:FieldRef ID="c0c3c64e-2b9b-4e60-af87-87df2d1c0453" Name="RetestsentanteCargo_EMD" DisplayName="RetestsentanteCargo" />
+            <pnp:FieldRef ID="099481b6-a30e-49fa-a0f4-83f82b2efd81" Name="RetestsentanteID_EMD" DisplayName="RetestsentanteNumidentificacion" />
+            <pnp:FieldRef ID="4269462e-6c15-4d3f-b2e7-7a761f6ead34" Name="RetestsentanteNombre_EMD" DisplayName="RetestsentanteNombre" />
+            <pnp:FieldRef ID="c439efcf-7506-4e19-bc1f-4f986e6ad5b0" Name="SolicitanteNombre_EMD" DisplayName="SolicitanteNombre" />
+            <pnp:FieldRef ID="9ba72133-d606-4b10-9209-f5c338ec00fa" Name="SolicitanteApellido_EMD" DisplayName="SolicitantePrimerApellido" />
+            <pnp:FieldRef ID="03e7e3b8-33f0-45b2-ada6-904c54f5c1b5" Name="SolicitanteNumIdentificacion_EMD" DisplayName="SolicitanteNumIdentificacion" />
+            <pnp:FieldRef ID="8da294d6-7cde-4c3c-a4cc-79da4e72328e" Name="FechaInscripcion_EMD" DisplayName="FechaInscripcion" />
+            <pnp:FieldRef ID="08b6307a-ea15-4313-820f-963bf1d6bbc6" Name="SolicitanteSegundoApellido_EMD" DisplayName="SolicitanteSegundoApellido" />
+            <pnp:FieldRef ID="45890295-1766-401e-8f03-5956aa4162cf" Name="RetestsentanteNacionalidad_EMD" DisplayName="RetestsentanteNacionalidad" />
+            <pnp:FieldRef ID="1dfe9d55-de16-480b-bd72-2489f95964a9" Name="RetestsentantePrimerApellido_EMD" DisplayName="RetestsentantePrimerApellido" />
+            <pnp:FieldRef ID="11e22f1f-ab4d-4980-b69b-cff8a6725b91" Name="RetestsentanteSegundoApellido_EMD" DisplayName="RetestsentanteSegundoApellido" />
+            <pnp:FieldRef ID="94dc2c21-5f09-4ce6-8b28-ace06ee2f5f1" Name="ContactoTelefono_EMD" DisplayName="ContactoTelefono" />
+            <pnp:FieldRef ID="b245a827-4408-487c-8a94-513804ef48a4" Name="ContactoEmail_EMD" DisplayName="ContactoEmail" />
+            <pnp:FieldRef ID="10d529b3-56af-4e69-88b4-0b83b93d497a" Name="ScopeTerritorial_EMD" DisplayName="ScopeTerritorial" />
+            <pnp:FieldRef ID="81343b8c-b1d3-42fb-8d33-2a790b20cb89" Name="ScopeTerritorial_EMD_x003A_ID" DisplayName="ScopeTerritorial_EMD:ID" />
+            <pnp:FieldRef ID="70d1bc04-3a00-4664-b163-c169c5183d9a" Name="DatosInscripcion_EMD" DisplayName="DatosInscripcion" />
+            <pnp:FieldRef ID="11581bae-a99c-4d7a-86a4-bc311d614d30" Name="Descripcion" DisplayName="Descripcion" />
+            <pnp:FieldRef ID="fb1e299a-ef02-40e1-b384-4dc13a239cfe" Name="DomicilioSocial_EMD" DisplayName="DomicilioSocial" />
+            <pnp:FieldRef ID="6f4e3988-6e95-490d-9297-8aa9ace6d5ad" Name="Estado_EMD" DisplayName="Estado" />
+            <pnp:FieldRef ID="5bc47890-5b83-404c-b09e-5c90996d375f" Name="IdentidadTitulares_EMD" DisplayName="IdentidadTitulares" />
+            <pnp:FieldRef ID="b13dd66a-db41-4a14-80be-8eeffb316eed" Name="NIF_EMD" DisplayName="NIF" />
+            <pnp:FieldRef ID="0fc84613-e86a-4c65-a21c-77547e6b1fdb" Name="RetestsentanteFechaNacimiento_EMD" DisplayName="RetestsentanteFechaNacimiento" />
+            <pnp:FieldRef ID="4c4e6941-4a7a-4fce-b9a7-779d2903c9ba" Name="RetestsentanteTipoDocument_EMD" DisplayName="RetestsentanteTipoDocument" />
+            <pnp:FieldRef ID="dfdef861-7e41-4a08-b862-40cc43a314cc" Name="Section_EMD" DisplayName="Section" />
+            <pnp:FieldRef ID="a86a2f70-efe7-44d8-ba44-ece5799502ca" Name="Section_EMD_x003A_ID" DisplayName="Section_EMD:ID" />
+            <pnp:FieldRef ID="0585ac40-ec52-4704-8152-a0b1d1429a26" Name="TipoDocument_EMD" DisplayName="TipoDocument" />
+            <pnp:FieldRef ID="19ac855f-ec0c-4c84-8838-92b184984f3b" Name="SolicitanteTipoDocument_EMD" DisplayName="SolicitanteTipoDocument" />
+            <pnp:FieldRef ID="921e63e5-3b4a-43bb-9161-78ce6e19dfdb" Name="Folder_EMD" DisplayName="Folder" />            
+            <pnp:FieldRef ID="0030dc6a-d71a-44f3-b8af-657cacc3f0cf" Name="NumExpedienteCancelacion_EMD" DisplayName="NumExpedienteCancelacion" />
+			<pnp:FieldRef ID="7f4ec5d5-ad34-4b03-9876-de0c5a861861" Name="CancellationReason_EMD" DisplayName="CancellationReason_EMD" />
+			<pnp:FieldRef ID="f94f50cc-0758-4cb9-ba4c-7f3df7f0122c" Name="CancellationReason_EMD_x003A_ID" DisplayName="CancellationReason_EMD:ID" />			
+			<pnp:FieldRef ID="417c5614-17c2-40c0-8ce2-2f49f7728916" Name="Asiento_EMD" DisplayName="Número de registro" />
+          </pnp:FieldRefs>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="SolicitanteNombre_EMD" />
+            <pnp:FieldDefault FieldName="SolicitanteNumIdentificacion_EMD" />
+            <pnp:FieldDefault FieldName="ContactoTelefono_EMD" />
+            <pnp:FieldDefault FieldName="ContactoEmail_EMD" />
+            <pnp:FieldDefault FieldName="Folder_EMD" />
+            <pnp:FieldDefault FieldName="CancellationReason_EMD" />
+            <pnp:FieldDefault FieldName="NumExpedienteCancelacion_EMD" />
+          </pnp:FieldDefaults>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+			  <pnp:RoleAssignment Principal="{parameter:DEMO_admins}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_gestores}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_lectores}" RoleDefinition="Leer" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://westeurope1-3.pushnp.svc.ms/notifications?token=00000000-0000-0000-0002-000000000002%2Fb!-ZJ4_aJ0AEefFwKtu8lXoW1ryH_MtfVAhp0d7hWiOdKDpp7Yv77DRpK487UIHehW" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="DemoEntitiesTraza" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/DemoEntitiesTraza" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/DemoEntitiesTraza/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/DemoEntitiesTraza/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/DemoEntitiesTraza/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D5E7F143-CF46-4FD4-BF77-D000E1E3A4A1}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="Todos los elementos" Url="{site}/Lists/DemoEntitiesTraza/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=50">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="TipoCambio" />				
+                <FieldRef Name="Entidad" />
+				<FieldRef Name="Asiento" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="Author" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field AppendOnly="FALSE" DisplayName="Cambios" Format="Dropdown" IsModern="TRUE" IsolateStyles="FALSE" Name="Cambios" RichText="FALSE" RichTextMode="Compatible" Title="Cambios" Type="Note" ID="{d3043624-1095-46bf-b851-76e4e8cffc69}" SourceID="{{listid:DemoEntitiesTraza}}" StaticName="Cambios" ColName="ntext2" RowOrdinal="0" />
+            <Field Type="Choice" DisplayName="Tipo de cambio" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{c640011a-f454-44e8-8d56-c5c1dbf1f06c}" SourceID="{{listid:DemoEntitiesTraza}}" StaticName="TipoCambio" Name="TipoCambio" ColName="nvarchar7" RowOrdinal="0">
+              <Default>Alta</Default>
+              <CHOICES>
+                <CHOICE>Alta</CHOICE>
+                <CHOICE>Modificación</CHOICE>
+                <CHOICE>Cancelación</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field Type="Lookup" DisplayName="Entidad" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:DemoEntities}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{23ac881d-9c9c-47d4-83ba-da937083bcd4}" SourceID="{{listid:DemoEntitiesTraza}}" StaticName="Entidad" Name="Entidad" ColName="int1" RowOrdinal="0" Group="" Version="1" />
+			<Field Type="Text" DisplayName="Número de registro" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{18901159-047d-422e-89e1-023a75270196}" SourceID="{{listid:DemoEntitiesTraza}}" StaticName="Asiento" Name="Asiento" ColName="nvarchar8" RowOrdinal="0" CustomFormatter="" Version="1" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Título" />
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Etiqueta de color" />
+          </pnp:FieldRefs>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Control total" />
+			  <pnp:RoleAssignment Principal="{parameter:DEMO_admins}" RoleDefinition="Colaborar" />
+              <pnp:RoleAssignment Principal="{parameter:DEMO_gestores}" RoleDefinition="Colaborar" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://westeurope1-0.pushnp.svc.ms/notifications?token=00000000-0000-0000-0002-000000000002%2Fb!-ZJ4_aJ0AEefFwKtu8lXoW1ryH_MtfVAhp0d7hWiOdKnz3V0Hy-5TJ1WRDhZ0CEz" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>        
+      </pnp:Lists>
+    </pnp:prodvisioningTemplate>
+  </pnp:Templates>
+</pnp:prodvisioning>

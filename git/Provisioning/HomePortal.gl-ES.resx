@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.NetStandard.ResXResourceReader, PnP.Framework, Version=1.13.115.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.NetStandard.ResXResourceWriter, PnP.Framework, Version=1.13.115.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c</value>
+  </resheader>
+  <data name="List_Páginas_del_sitio_Title" xml:space="testserve">
+    <value>Páxinas do sitio</value>
+  </data>
+  <data name="NavigationNode_0_2026_Title" xml:space="testserve">
+    <value>Noticias CNTMD</value>
+  </data>
+  <data name="Field_NuevaVentana_DisplayName" xml:space="testserve">
+    <value>Nova vendana</value>
+  </data>
+  <data name="ContentType_NoticiaCNT_Title" xml:space="testserve">
+    <value>Noticia CNT</value>
+  </data>
+  <data name="ContentType_EnlaceUtil_Title" xml:space="testserve">
+    <value>Enlace útil</value>
+  </data>
+  <data name="List_Documents_Title" xml:space="testserve">
+    <value>Documents</value>
+  </data>
+  <data name="List_Enlaces_Title" xml:space="testserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="NavigationNode_0_2027_Title" xml:space="testserve">
+    <value>Noticias Órganos</value>
+  </data>
+  <data name="NavigationNode_0_2028_Title" xml:space="testserve">
+    <value>Documents</value>
+  </data>
+  <data name="NavigationNode_0_2029_Title" xml:space="testserve">
+    <value>Tarefas pendentes</value>
+  </data>
+  <data name="NavigationNode_0_2030_Title" xml:space="testserve">
+    <value>Espacios de colaboración</value>
+  </data>
+  <data name="ContentType_NotificationConfig_Title" xml:space="testserve">
+    <value>NotificationConfig</value>
+  </data>
+  <data name="ContentType_NotificationMessages_Title" xml:space="testserve">
+    <value>NotificationMessages</value>
+  </data>
+  <data name="ContentType_Notification_Title" xml:space="testserve">
+    <value>Notification</value>
+  </data>
+  <data name="Field_NotificationSource_DisplayName" xml:space="testserve">
+    <value>Origen notification</value>
+  </data>
+  <data name="Field_NotificationLocale_DisplayName" xml:space="testserve">
+    <value>Idioma notification</value>
+  </data>
+  <data name="Field_Activo_DisplayName" xml:space="testserve">
+    <value>Activo</value>
+  </data>
+  <data name="Field_Intersectoriales_DisplayName" xml:space="testserve">
+    <value>Intersectorial</value>
+  </data>
+  <data name="Field_Materia_DisplayName" xml:space="testserve">
+    <value>Materia</value>
+  </data>
+  <data name="Field_Abreviatura_DisplayName" xml:space="testserve">
+    <value>Abreviatura</value>
+  </data>
+  <data name="Field_FechaConstitucion_DisplayName" xml:space="testserve">
+    <value>Fecha Constitucion</value>
+  </data>
+  <data name="Field_FechaExtincion_DisplayName" xml:space="testserve">
+    <value>Fecha Extincion</value>
+  </data>
+  <data name="Field_Observaciones_DisplayName" xml:space="testserve">
+    <value>Observacións</value>
+  </data>
+  <data name="Field_Secretaria_DisplayName" xml:space="testserve">
+    <value>Secretaría</value>
+  </data>
+  <data name="Field_Division_DisplayName" xml:space="testserve">
+    <value>Division</value>
+  </data>
+  <data name="Field_dir_DisplayName" xml:space="testserve">
+    <value>DIR3</value>
+  </data>
+  <data name="Field_SIA_DisplayName" xml:space="testserve">
+    <value>SIA</value>
+  </data>
+  <data name="Field_Period_DisplayName" xml:space="testserve">
+    <value>Period</value>
+  </data>
+  <data name="Field_Department_DisplayName" xml:space="testserve">
+    <value>Órgano</value>
+  </data>
+  <data name="Field_Departmentsuperior_DisplayName" xml:space="testserve">
+    <value>Órgano Superior</value>
+  </data>
+  <data name="Field_TipoDepartment_DisplayName" xml:space="testserve">
+    <value>Tipo de órgano</value>
+  </data>
+  <data name="Field_IdEmailBodies_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Email Defecto</value>
+  </data>
+  <data name="Field_IdActBodies_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Minutes</value>
+  </data>
+  <data name="Field_IdCertificateBodies_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Certificados</value>
+  </data>
+  <data name="Field_IdAgendaBodies_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Orden del día</value>
+  </data>
+  <data name="Field_IdAttendanceBodies_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Attendance</value>
+  </data>
+  <data name="Field_DiasAprodbacionMinutes_DisplayName" xml:space="testserve">
+    <value>Días para aprodbar o Minutes</value>
+  </data>
+  <data name="List_HiddenNotification_Title" xml:space="testserve">
+    <value>Notifications archivadas</value>
+  </data>
+  <data name="List_NotificationToRead_Title" xml:space="testserve">
+    <value>Notifications</value>
+  </data>
+  <data name="List_NotificationConfig_Title" xml:space="testserve">
+    <value>Configuracion Notifications</value>
+  </data>
+  <data name="ContentType_ConfigDepartments_Title" xml:space="testserve">
+    <value>ConfiguracionDepartments</value>
+  </data>
+  <data name="List_BaseBodiesConfig_Title" xml:space="testserve">
+    <value>Configuracion Departments</value>
+  </data>
+  <data name="List_EXTERNALBodiesConfig_Title" xml:space="testserve">
+    <value>Departments EXTERNAL</value>
+  </data>
+  <data name="List_StagingDocuments_Title" xml:space="testserve">
+    <value>Documents prodvisionais</value>
+  </data>
+  <data name="Field_IdentificadorConferencia_DisplayName" xml:space="testserve">
+    <value>Identificador de conferencia</value>
+  </data>
+  <data name="Field_Membresia_DisplayName" xml:space="testserve">
+    <value>Membresía</value>
+  </data>
+  <data name="Field_BusinessArea_DisplayName" xml:space="testserve">
+    <value>Área sectorial</value>
+  </data>
+  <data name="Field_IdCertificationBody_DisplayName" xml:space="testserve">
+    <value>Identificador Fichero Certificado Órgano</value>
+  </data>
+</root>

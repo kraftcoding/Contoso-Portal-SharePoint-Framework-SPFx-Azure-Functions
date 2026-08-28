@@ -1,0 +1,160 @@
+@import "../Meetings.module.scss";
+
+.meetingsList {
+    @include column;
+    min-height: 0;
+    gap: 15px;
+
+    .tabNavLinks {
+        @include row;
+        gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: var(--colorNeutralForeground1);
+        }
+
+        .linkItem {
+            margin-bottom: 2px;
+        }
+
+        .active {
+            border-bottom: 3px solid;
+            border-color: var(--colorBrandBackground);
+            box-sizing: content-box;
+            font-weight: 600;
+        }
+    }
+
+    .searchContainer {
+        @include row;
+
+        div {
+            @include column;
+        }
+    }
+
+    .meetingsListContainer {
+        @include column;
+        gap: 10px;
+        min-height: 0;
+        overflow-y: scroll;
+
+        @media (min-width: 640px) {
+            padding: 0 3px 5px 5px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--colorNeutralBackground3Hover);
+            border-radius: 100px;
+        }
+
+
+        .dateGroup {
+            font-weight: normal;
+
+        }
+
+        .skeletonListItem>:first-child {
+            width: 70px;
+        }
+
+        .skeletonListItem>:last-child {
+            width: 140px;
+        }
+
+        .skeletonListItem>* {
+            width: 235px;
+        }
+
+        .meetingsListItem,
+        .skeletonListItem {
+            border-radius: 4px;
+            box-shadow: '[theme: cardShadow]';
+            background-color: var(--colorNeutralBackground1);
+            gap: 5px;
+            padding: 10px;
+            color: '[theme: primaryText]';
+            text-decoration: none;
+            @include column;
+            flex-grow: 0;
+
+            .datesAndStateRow {
+                @include row;
+                gap: 5;
+
+                .dates {
+                    @include column;
+                }
+
+                .state {
+                    @include column;
+                    align-items: flex-end;
+                }
+            }
+
+            .titleAndButtonRow {
+                display: flex;
+                column-gap: 10px;
+            }
+
+            .title {
+                @include row;
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .buttonJoinContainer {
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+
+                .buttonJoin {
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .locationState {
+                @include row;
+                gap: 5px;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+
+        .meetingsListItem:hover {
+            cursor: pointer;
+            background-color: var(--colorNeutralBackground3Hover);
+        }
+
+        .listItemSelected {
+            background-color: var(--colorBrandBackgroundInvertedHover);
+            border: 1px solid;
+            border-color: var(--colorBrandStroke2testssed);
+        }
+
+        .listItemSelected:hover {
+            background-color: var(--colorBrandBackgroundInvertedSelected);
+        }
+
+    }
+}

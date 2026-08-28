@@ -1,0 +1,77 @@
+.documents {
+
+  .titleRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .moreLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: "[theme: themePrimary]";
+    text-decoration: none;
+  }
+
+  .mainContainer {
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-shadow: '[theme: cardShadow]';
+    background-color: '[theme: neutralLighterAlt]';
+  }
+
+  .noDocumentsAvailable {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .file {
+    --file-background-color: "[theme: neutralLighterAlt]";
+  }
+
+  .breadcrumb {
+    margin: 0;
+    padding: 0px 3px 10px;
+    list-style: none;
+    background-color: var(--neutral-layer-1);
+    font-size: 12px;
+  }
+
+  .breadcrumb li {
+    display: inline;
+  }
+
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--foreground-on-accent-fill);
+    content: '/';
+  }
+
+  .breadcrumb li a {
+    color: var(--accent-fill-rest);
+    text-decoration: none;
+  }
+
+  .breadcrumb li a:hover {
+    color: var(--accent-fill-hover);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

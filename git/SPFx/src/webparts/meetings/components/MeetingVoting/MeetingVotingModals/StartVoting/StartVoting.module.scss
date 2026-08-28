@@ -1,0 +1,204 @@
+.startVoting {
+    height: 85%;
+    min-width: 50%;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .startVotingSpinner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .startVotingHeader {
+        width: -webkit-fill-available;
+        padding: 0 0 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .startVotingLogo {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            border-radius: 100%;
+            background-color: #0f6cbd;
+        }
+
+        .startVotingTitle {
+            width: -webkit-fill-available;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #194b8f;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .startVotingDismissIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .startVotingBody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+
+        .startVotingMessage {
+            padding: 5px 20px;
+            display: block;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .startVotingTitleVote {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        .startVotingUsersContainer {
+            margin-top: 5px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            gap: 10px;
+            flex: 1;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+                border-radius: 100px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: var(--colorNeutralBackground3Hover);
+                border-radius: 100px;
+            }
+
+            .userComunity {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+
+                .person {
+                    width: fit-content;
+                    align-items: center;
+                    --person-avatar-size: 20px;
+                }
+
+                .communityLabelContainer {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .communityLabel {
+                        width: fit-content;
+                        padding: 5px 10px 5px 10px;
+                        color: black;
+                        border: 1px solid #adadad;
+                        border-radius: 25px;
+                        background-color: #f5f5f5;
+
+                        .communityLabelContent {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .startVotingButtons {
+        width: 100%;
+        padding: 20px 0 0 20px;
+        justify-content: flex-end;
+    }
+}
+
+/* Vista móvil */
+@media (max-width: 640px) {
+
+    .startVoting {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+
+        .startVotingHeader {
+            padding-left: 10px;
+
+            .startVotingTitle {
+                padding: 0 5px;
+            }
+        }
+
+        .startVotingBody {
+            padding: 0 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .startVotingMessage {
+                padding: 5px 0;
+                font-size: 14px;
+            }
+
+            .startVotingUsersContainer {
+                padding-left: 0;
+
+                .userComunity {
+                    gap: 5px;
+
+                    .person {
+                        width: 100%;
+                        max-width: none;
+
+                    }
+                }
+            }
+        }
+
+        .startVotingButtons {
+            padding: 20px 0 0 0;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .startVotingSingleButton {
+                width: 100%;
+            }
+        }
+    }
+
+}

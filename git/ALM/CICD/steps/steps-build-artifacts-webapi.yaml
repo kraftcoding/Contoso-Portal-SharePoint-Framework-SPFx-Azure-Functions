@@ -1,0 +1,23 @@
+parameters:
+  working_directory: 'Azure/WebApi'
+  solution_name: 'WebApi.sln'
+  artifact_name: 'webapi-package'
+
+steps:
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'publish'
+      zipAfterPublish: true
+      publishWebprojects: false
+      projects: '$(Build.Repository.LocalPath)/${{ parameters.working_directory }}/${{ parameters.solution_name }}'
+      arguments: '--output $(Build.ArtifactStagingDirectory)/webapi -c Release --os win --arch x64'
+      modifyOutputPath: true
+      workingDirectory: '$(Build.Repository.LocalPath)/${{ parameters.working_directory }}'
+
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publish WebApi *.zip to artifacts location'
+    inputs:
+      targetPath: '$(Build.ArtifactStagingDirectory)/webapi'
+      artifact: ${{ parameters.artifact_name }}
+      publishLocation: 'pipeline'

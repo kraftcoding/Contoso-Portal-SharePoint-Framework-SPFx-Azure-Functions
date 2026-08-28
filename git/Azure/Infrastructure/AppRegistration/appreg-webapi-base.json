@@ -1,0 +1,199 @@
+{
+    "identifierUris": [
+        "api://57647fee-8c46-4b5c-8093-17edf87e22a8"
+    ],
+    "groupMembershipClaims": "ApplicationGroup",
+    "optionalClaims": {
+        "idToken": [
+            {
+                "name": "groups",
+                "additionalproperties": [
+                    "cloud_displayname"
+                ]
+            },
+            {
+                "name": "upn",
+                "additionalproperties": [
+                    "include_externally_authenticated_upn"
+                ]
+            }
+        ],
+        "accessToken": [
+            {
+                "name": "groups",
+                "additionalproperties": [
+                    "cloud_displayname"
+                ]
+            },
+            {
+                "name": "upn",
+                "additionalproperties": [
+                    "include_externally_authenticated_upn"
+                ]
+            }
+        ],
+        "saml2Token": [
+            {
+                "name": "groups",
+                "additionalproperties": [
+                    "cloud_displayname"
+                ]
+            }
+        ]
+    },
+    "api": {
+        "oauth2PermissionScopes": [
+            {
+                "adminConsentDescription": "Enables the app to access the API as the signed-in user.",
+                "adminConsentDisplayName": "User impersonation",
+                "id": "e2398fb6-1d7f-43e8-93b4-1b1532aaca8e",
+                "isEnabled": true,
+                "type": "User",
+                "userConsentDisplayName": "User impersonation",
+                "userConsentDescription": "Enables the app to access the API as the signed-in user.",
+                "value": "user_impersonation"
+            }
+        ]
+    },
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "863451e7-0667-486c-a5d6-d135439485f0",
+                    "type": "Scope"
+                },
+                {
+                    "id": "bc024368-1153-4739-b217-4326f2e966d0",
+                    "type": "Scope"
+                },
+                {
+                    "id": "37f7f235-527c-4136-accd-4a02d197296e",
+                    "type": "Scope"
+                },
+                {
+                    "id": "14dad69e-099b-42c9-810b-d002981feec1",
+                    "type": "Scope"
+                },
+                {
+                    "id": "5a54b8b3-347c-476d-8f8e-42d5c7424d29",
+                    "type": "Scope"
+                },
+                {
+                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                    "type": "Scope"
+                },
+                {
+                    "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+                    "type": "Scope"
+                },
+                {
+                    "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+                    "type": "Scope"
+                },
+                {
+                    "id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
+                    "type": "Role"
+                },
+                {
+                    "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                    "type": "Role"
+                },
+                {
+                    "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                    "type": "Role"
+                },
+                {
+                    "id": "75359482-378d-4052-8f01-80520e7db3cd",
+                    "type": "Role"
+                },
+                {
+                    "id": "62a82d76-70ea-41e2-9197-370581804d09",
+                    "type": "Role"
+                },
+                {
+                    "id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+                    "type": "Role"
+                },
+                {
+                    "id": "cbe6c7e4-09aa-4b8d-b3c3-2dbb59af4b54",
+                    "type": "Role"
+                },
+                {
+                    "id": "287bd98c-e865-4e8c-bade-1a85523195b9",
+                    "type": "Role"
+                },
+                {
+                    "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+                    "type": "Role"
+                },
+                {
+                    "id": "693c5e45-0940-467d-9b8a-1022fb9d42ef",
+                    "type": "Role"
+                },
+                {
+                    "id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+                    "type": "Role"
+                },
+                {
+                    "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+                    "type": "Role"
+                },
+                {
+                    "id": "b8bb2037-6e08-44ac-a4ea-4674e010e2a4",
+                    "type": "Role"
+                },
+                {
+                    "id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+                    "type": "Role"
+                },
+                {
+                    "id": "f12eb8d6-28e3-46e6-b2c0-b7e4dc69fc95",
+                    "type": "Role"
+                },
+                {
+                    "id": "3011c876-62b7-4ada-afa2-506cbbecc68c",
+                    "type": "Role"
+                },
+                {
+                    "id": "c529cfca-c91b-489c-af2b-d92990b66ce6",
+                    "type": "Role"
+                },
+                {
+                    "id": "df021288-bdef-4463-88db-98f22de89214",
+                    "type": "Role"
+                },
+                {
+                    "id": "97235f07-e226-4f63-ace3-39588e11d3a1",
+                    "type": "Role"
+                },
+                {
+                    "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                    "type": "Role"
+                }
+            ]
+        },
+        {
+            "resourceAppId": "00000012-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "7347eb49-7a1a-43c5-8eac-a5cd1d1c7cf0",
+                    "type": "Role"
+                }
+            ]
+        },
+        {
+            "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+                    "type": "Scope"
+                },
+                {
+                    "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+                    "type": "Role"
+                }
+            ]
+        }
+    ]
+}

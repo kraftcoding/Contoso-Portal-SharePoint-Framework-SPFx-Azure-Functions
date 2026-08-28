@@ -1,0 +1,176 @@
+.dialogSurface {
+    box-shadow: '[theme: cardShadow]';
+    background-color: '[theme: neutralLighterAlt]';
+    border-radius: 4px;
+    min-width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    .dialogTitle {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 10px;
+        }
+
+        .icon {
+            background-color: '[theme: themePrimary]';
+            color: '[theme: white]';
+            padding: 5px;
+            border-radius: '[theme: roundedCornerCircle]';
+        }
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+
+        .formRow {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+
+            @media (max-width: 640px) {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            gap: 10px;
+        }
+
+        .formItem {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .spaceLeft {
+            padding-left: 0px;
+        }
+
+        .icon {
+            margin-top: 7px;
+        }
+
+        @media (max-width: '480px') {
+
+            .icon {
+                display: none;
+            }
+
+        }
+
+        :global(div[class^="container_"]) {
+            flex-direction: row;
+            gap: 10px;
+
+            :global(div[class^="row_"]) {
+                margin-top: 0px !important;
+            }
+
+            :global(.ms-TextField-fieldGroup) {
+                border-color: #d1d1d1;
+            }
+
+            :global(.ms-Dropdown-title) {
+                border-color: #d1d1d1;
+            }
+        }
+
+        .richText {
+
+            :global(.ql-container) {
+                height: auto;
+            }
+
+            :global(.ql-editor) {
+                background-color: white;
+                border-color: #d1d1d1;
+            }
+
+            :global(.ql-editor):hover {
+                border-color: #d1d1d1dc;
+            }
+
+            :global(.ql-snow .ql-tooltip) {
+                left: 0 !important;
+            }
+        }
+
+        .caES {
+            :global(.ql-snow .ql-tooltip.ql-editing a.ql-action)::after {
+                content: "Desa";
+            }
+
+            :global(.ql-snow .ql-tooltip)::before {
+                content: "Anar a la Url:";
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-action)::after {
+                content: "Edita"
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-remove)::before {
+                content: "Eliminar"
+            }
+        }
+
+        .esES {
+            :global(.ql-snow .ql-tooltip.ql-editing a.ql-action)::after {
+                content: "Guardar";
+            }
+
+            :global(.ql-snow .ql-tooltip)::before {
+                content: "Ir a la URL:";
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-action)::after {
+                content: "Editar"
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-remove)::before {
+                content: "Eliminar"
+            }
+        }
+
+        .euES {
+            :global(.ql-snow .ql-tooltip.ql-editing a.ql-action)::after {
+                content: "Gorde";
+            }
+
+            :global(.ql-snow .ql-tooltip)::before {
+                content: "Joan URLra:";
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-action)::after {
+                content: "Editatu"
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-remove)::before {
+                content: "Ezabatu"
+            }
+        }
+
+        .glES {
+            :global(.ql-snow .ql-tooltip.ql-editing a.ql-action)::after {
+                content: "Gardar";
+            }
+
+            :global(.ql-snow .ql-tooltip)::before {
+                content: "Vaia a URL:";
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-action)::after {
+                content: "Editar"
+            }
+
+            :global(.ql-snow .ql-tooltip a.ql-remove)::before {
+                content: "Eliminar"
+            }
+        }
+    }
+}

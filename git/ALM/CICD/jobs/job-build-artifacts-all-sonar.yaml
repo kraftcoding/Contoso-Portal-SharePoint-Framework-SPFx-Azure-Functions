@@ -1,0 +1,57 @@
+
+parameters:
+  pool:
+    vmImage: ubuntu-latest
+  depends_on: []
+
+jobs:
+
+  - job: build_artifacts_spfx_sonar
+    displayName: (SPFx) Build and analyze
+    dependsOn: ${{ parameters.depends_on }}
+    steps:
+
+    - task: SonarQubeprepare@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        SonarQube: 'NTT Sonarqube - ce'
+        scannerMode: 'CLI'
+        configMode: 'manual'
+        cliprojectKey: 'ContosoPLCOLA-ContosoCOOP1'
+        cliSources: './SPFx'
+      
+    - template: ./../../steps/steps-build-artifacts-spfx.yaml 
+    
+    - task: SonarQubeAnalyze@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        jdkversion: 'JAVA_HOME'
+
+    - task: SonarQubePublish@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        pollingTimeoutSec: '300'
+
+  - job: build_artifacts_webapi_sonar
+    displayName: '(WebApi) Build and analyze'
+    dependsOn: ${{ parameters.depends_on }}
+    steps:
+
+    - task: SonarQubeprepare@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        SonarQube: 'NTT Sonarqube - ce'
+        scannerMode: 'MSBuild'
+        projectKey: 'ContosoPLCOLA-ContosoCOOP2'
+    
+    - template: ./../../steps/steps-build-artifacts-webapi.yaml 
+    
+    - task: SonarQubeAnalyze@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        jdkversion: 'JAVA_HOME'
+
+    - task: SonarQubePublish@5
+      retryCountOnTaskFailure: 2
+      inputs:
+        pollingTimeoutSec: '300'

@@ -1,0 +1,570 @@
+{
+    "Alert":
+    { 
+        "Urgent": {
+            "Type": "Alert",
+            "Priority": "High",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha generado una notificación Urgent: {UrgentNotificationBody}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "ErrorGenerico": {
+            "Type": "Alert",
+            "Priority": "High",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha prodducido un error. Por favor, inténtelo de nuevo más tarde",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "AceptarDelegation": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha aceptado su Request de delegación",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "InformacionDelegationAttendanceYVoto": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El usuario {DelegatedBy} le ha delegado su Attendance y su voto en esta Meeting.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "InformacionDelegationAttendance": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El usuario {DelegatedBy} le ha delegado su Attendance en esta Meeting.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "InformacionDelegationVoto": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El usuario {DelegatedBy} le ha delegado su voto en esta Meeting.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "RechazarDelegation": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El gestor de la Meeting ha rechazado su Request de delegación por el siguiente motivo: {RejectionReason}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "FinDelegation": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Su delegación en la Meeting {MeetingTitle}, otorgada por {DelegatedBy}, ha sido cancelada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "MinutesValidada": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El Minutes ha sido validada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "RechazarMinutes": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El Minutes ha sido rechazada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "PublicarMinutes": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El Minutes ha sido publicada y está lista para ser aprodbada",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "AceptarModificacionMinutes": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "La Request de modificación del Minutes ha sido aceptada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "RechazarModificacionMinutes": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "La Request de modificación del Minutes ha sido rechazada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "NuevoCertificado": {
+            "Type": "Alert",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El certificado ha sido adjunto al acuerdo.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        }
+    },
+    "Meeting": {
+        "Nueva": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha generado una nueva Meeting.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Guardar": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha guardado la Meeting.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Modificar": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Los datos de la Meeting {MeetingTitle} han sido modificados.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "ModificarOrdenDia": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se han realizado cambios en el órden del día ha sido modificado",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "ModificarCertificados": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se han realizado cambios en la pestaña de Acuerdos",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "ModificarMinutes": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se han realizado cambios en la pestaña de Minutes",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Publicar": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha publicado la reunión {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "EnCelebracion": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha activado la reunión.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Celebrada": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha finalizado la reunión.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Finalizada": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Se ha finalizado la reunión.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Archivada": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Ha sido archivada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Cancelada": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "La Meeting ha sido cancelada.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Reminder1H": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Recordadorio 1 H",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "Reminder24H": {
+            "Type": "Meetings",
+            "Priority": "Low",
+            "SendMail": true,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Recordadorio 24 H",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        }
+    },
+    "Request": {
+        "Attendance": {
+            "Type": "Request",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "Ha sido convocado a una nueva reunión {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "DelegarAttendance": {
+            "Type": "Request",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El miembro {PersonActionAuthor} ha solicitado una delegación de Attendance.",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "DelegateVote": {
+            "Type": "Request",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El miembro {PersonActionAuthor} ha solicitado una delegación de voto",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "GeneracionCertificado": {
+            "Type": "Request",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El miembro {PersonActionAuthor} ha solicitado un Certificado de acuerdos",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        },
+        "ModificacionMinutes": {
+            "Type": "Request",
+            "Priority": "Low",
+            "SendMail": false,
+            "title": {
+                "esES": "Meeting {MeetingTitle}",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            },
+            "body": {
+                "esES": "El miembro {PersonActionAuthor} ha solicitado una modificacion de Minutes",
+                "caES": "",
+                "euES": "",
+                "glES": ""
+            }
+        }
+    }
+}

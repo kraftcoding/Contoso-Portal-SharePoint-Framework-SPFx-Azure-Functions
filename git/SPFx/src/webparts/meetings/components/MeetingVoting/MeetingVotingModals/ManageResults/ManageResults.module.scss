@@ -1,0 +1,261 @@
+.manageResults {
+    height: 85%;
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 20px;
+
+    .manageResultsHeader {
+        width: -webkit-fill-available;
+        padding: 0 0 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .manageResultsLogo {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            border-radius: 100%;
+            background-color: #0f6cbd;
+        }
+
+        .manageResultsTitle {
+            width: -webkit-fill-available;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #194b8f;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .manageResultsDismissIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .manageResultsSubheader {
+        width: -webkit-fill-available;
+        padding: 0 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .manageResultsFirstText {
+            font-size: 18px;
+            line-height: normal;
+        }
+
+        .manageResultsSecondText {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: normal;
+        }
+    }
+
+    .manageResultsBody {
+        width: -webkit-fill-available;
+        padding: 0 10px 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .manageResultsBodyContent {
+            min-height: 100%;
+            width: -webkit-fill-available;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .manageResultsConvenersAndSummary {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                .manageResultsConvener {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+
+                    .manageResultsConvenerIcon {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    .manageResultsConvenerDropdown {
+                        min-width: 0;
+                        // min-width: auto;
+                        padding-right: 0;
+                    }
+
+                    .manageResultsConvenerLabel {
+                        padding: 5px 10px;
+                        border-radius: 25px;
+                        border: 1px solid;
+                        color: #000;
+
+                        .manageResultsConvenerLabelContent {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+
+                .manageResultsSpinner {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+
+            .manageResultsTablesContainer {
+                width: 90%;
+                display: flex;
+                gap: 20px;
+
+                .manageResultsSingleTableContainer {
+                    width: 100%;
+                    padding: 40px 0 20px 0;
+
+                    .manageResultsSingleTableBody {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .manageResultsTableContentSelectorDropdown{
+                            display: inline-table !important;
+                        }
+
+                        .manageResultsTableContent, .manageResultsTableContentSelector {
+                            width: 100%;
+                            display: flex;
+                            gap: 10px;
+                            justify-content: flex-start;
+
+                            .manageResultsConvenerDropdown {
+                                min-width: 0;
+                                padding-right: 0;
+                            }
+
+                            .manageResultsConvenerLabel {
+                                padding: 5px 10px;
+                                border-radius: 25px;
+                                border: 1px solid;
+                                color: #000;
+
+                                .manageResultsConvenerLabelContent {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .manageResultsDialogActions {
+            width: 100%;
+            justify-content: flex-end;
+
+            .manageResultsActionSingleButton {
+                min-width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .manageResults {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+
+        .manageResultsHeader {
+            .manageResultsTitle {
+                padding: 0 5px;
+            }
+        }
+
+        .manageResultsBody {
+            height: 100%;
+
+            .manageResultsBodyContent {
+                display: "flex";
+                align-items: center;
+                justify-content: space-around;
+
+                .manageResultsSingleTableContainer {
+                    max-height: 400px;
+                    width: 100%;
+                    // overflow-y: auto;
+
+                    .manageResultsSingleTableBody {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .manageResultsTableContent {
+                            .manageResultsConvenerLabel {
+                                padding: 5px 10px;
+                                border-radius: 25px;
+                                border: 1px solid;
+                                color: #000;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .manageResultsConvenerLabelContent {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 10px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            .manageResultsDialogActions {
+                flex-direction: column;
+                align-items: center;
+
+                .manageResultsActionSingleButton {
+                    margin-top: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

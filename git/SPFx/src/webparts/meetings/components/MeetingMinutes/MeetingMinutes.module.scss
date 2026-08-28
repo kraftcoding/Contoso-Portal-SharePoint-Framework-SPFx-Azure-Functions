@@ -1,0 +1,206 @@
+.meetingMinutes {
+    height: 100%;
+    padding: 5px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 7.5px;
+
+    .body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7.5px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--colorNeutralBackground3Hover);
+            border-radius: 100px;
+        }
+
+        .minuteSectionContainer {
+            padding: 5px;
+            padding-left: 10px;
+            border-radius: 4px;
+            background-color: var(--colorBrandBackground2);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .minuteSectionFirstRow {
+                min-height: 32px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+
+                .minuteSectionIcon {
+                    min-height: 24px;
+                    min-width: 24px;
+                    color: var(--colorBrandBackground);
+                }
+
+                .minuteSectionNameContainer {
+                    display: flex;
+                    flex: 1;
+
+                    .minuteSectionName {
+                        font-weight: 500;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                }
+
+                .minuteSectionEditVisualizeButtons {
+                    display: flex;
+                    gap: 5px;
+                }
+            }
+
+            .minuteSectionSecondRow {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .minuteSectionNoteContainer {
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    display: flex;
+                    flex: 1;
+
+                    .minuteSectionNote {
+                        white-space: test-line;
+                    }
+                }
+
+                .minuteSectionCancelSaveButtons {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 5px;
+                }
+            }
+
+            .secondLineMinutesSection {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 5px;
+                align-items: flex-end;
+
+                .startTheMinuteApprodvalprocessButton {
+                    display: flex;
+                    column-gap: 5px;
+                }
+            }
+
+            .approdvalStatus {
+                display: flex;
+                flex-direction: column;
+                //padding: 0 3px;
+                padding: 0 35px;
+                .footerMinutes {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-right: 5px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+
+        .buttonUploadMinutes {
+            border-radius: var(--borderRadiusMedium);
+            font-size: var(--fontSizeBase300);
+            font-weight: var(--fontWeightSemibold);
+            padding: 5px var(--spacingHorizontalM);
+            border: var(--strokeWidthThin) solid var(--colorNeutralStroke1);
+            color: var(--colorNeutralForeground1);
+            background-color: var(--colorNeutralBackground1);
+            height: 100%;
+
+            i {
+                color: var(--colorNeutralForeground1);
+            }
+        }
+
+        .buttonUploadMinutes:hover {
+            background-color: var(--colorNeutralBackground1Hover);
+            border-color: var(--colorNeutralStroke1Hover);
+            color: var(--colorNeutralForeground1Hover);
+            cursor: pointer;
+        }
+    }
+
+    .noMinuteSectionsAvailable {
+        font-size: medium;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+}
+
+.file {
+    --file-background-color-hover: transparent;
+    --file-type-icon-height: 25px;
+    --file-padding-inline-start: 12px;
+    --file-line2-color: black;
+}
+
+.dialogAttendancesSection {
+   padding: 10px 0;
+}
+
+.popOverLink {
+    margin: 0;
+    padding: 10px 35px;
+    list-style: none;
+    font-size: 12px;
+    color: var(--accent-fill-rest);
+    text-decoration: none;
+}
+
+.popOverLink:hover {
+    color: var(--accent-fill-hover);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popOverDetail{
+    .popOverTitle{
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .popOverLoader{
+        padding:40px;
+    }
+    .popOverRow{
+        padding: 7px 0;
+        .popOverList{
+            margin: 3px;
+        }
+        .popOverRowValue{
+            font-weight: 600;
+        }
+    }
+    .popOverButton{
+        padding-top: 3px;
+        text-align: center;
+    }
+}

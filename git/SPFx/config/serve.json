@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://contoso-dev.sharepoint.com/_layouts/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://test.sharepoint.com/sites/demomvp-cs-pruebaTeams-tm/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "e2f667a6-62ae-4041-8ada-9d7c5cd20192": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        },
+         "f713f11e-0926-4211-b87b-1470d87ffd70": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "sendDocToBody": {
+      "pageUrl": "https://test.sharepoint.com/sites/demomvp-cs-pruebaTeams-tm/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "e2f667a6-62ae-4041-8ada-9d7c5cd20192": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        },
+         "f713f11e-0926-4211-b87b-1470d87ffd70": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "launchDataprocess": {
+      "pageUrl": "https://contoso-test.sharepoint.com/sites/Contoso/processReports/Forms/AllItems.aspx",
+      "customActions": {
+        "f713f11e-0926-4211-b87b-1470d87ffd70": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

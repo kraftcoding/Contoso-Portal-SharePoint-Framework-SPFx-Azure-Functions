@@ -1,0 +1,160 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../WebApi.Tests"
+        },
+        {
+            "path": "../WebApi.Business"
+        },
+        {
+            "path": "../WebApi.Data"
+        },
+        {
+            "path": "../WebApi.Model"
+        },
+        {
+            "path": "../Infraestructure"
+        }
+    ],
+    "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.stickyScroll.enabled": true,
+        "azureFunctions.deploySubpath": "bin/Release/net8.0/publish",
+        "azureFunctions.projectLanguage": "C#",
+        "azureFunctions.projectRuntime": "~4",
+        "azureFunctions.preDeployTask": "publish (functions)",
+        "azureFunctions.pickProcessTimeout": 999,
+        "azureFunctions.requestTimeout": 999,
+        "debug.internalConsoleOptions": "neverOpen",
+        "dotnet.defaultSolution": "WebApi.sln",
+        "dotnet-test-explorer.enableTelemetry": false,
+        "dotnet-test-explorer.testProjectPath": "../WebApi.Tests/WebApi.Tests.csproj",
+        "powershell.cwd": "Infraestructure",
+        "csharp.suppressDotnetInstallWarning": true,
+        "git.openRepositoryInParentFolders": "always",
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "omnisharp.dotNetCliPaths": [
+            "/usr/share/dotnet"
+        ],
+        "dotnetAcquisitionExtension.sharedExistingDotnetPath": "/usr/share/dotnet/dotnet"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-azuretools.vscode-azurefunctions",
+            "ms-dotnettools.csharp",
+            "ms-dotnettools.csdevkit",
+            "azurite.azurite",
+            "eamodio.gitlens",
+            "ms-vsliveshare.vsliveshare",
+            "dotjoshjohnson.xml",
+            "ms-vscode.powershell",
+            "ms-azuretools.vscode-bicep",
+            "ms-azuretools.vscode-azureresourcegroups",
+            "ms-vscode.azure-account",
+            "yuenm18.ooxml-viewer",
+            "aliasadidev.nugetpackagemanagergui",
+            "tomoki1207.pdf",
+            "microsoft-isvexptools.powerplatform-vscode"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "PowerShell Launch Current File",
+                "type": "PowerShell",
+                "request": "launch",
+                "script": "${file}",
+                "cwd": "${fileDirname}"
+            }
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "clean (functions)",
+                "command": "dotnet",
+                "args": [
+                    "clean",
+                    "/property:GenerateFullPaths=true",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+                "type": "process",
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "cwd": "${workspaceFolder}"
+                }
+            },
+            {
+                "label": "build (functions)",
+                "command": "dotnet",
+                "args": [
+                    "build",
+                    "/property:GenerateFullPaths=true",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+                "type": "process",
+                "dependsOn": "clean (functions)",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "cwd": "${workspaceFolder}"
+                }
+            },
+            {
+                "label": "clean release (functions)",
+                "command": "dotnet",
+                "args": [
+                    "clean",
+                    "--configuration",
+                    "Release",
+                    "/property:GenerateFullPaths=true",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+                "type": "process",
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "cwd": "${workspaceFolder}"
+                }
+            },
+            {
+                "label": "publish (functions)",
+                "command": "dotnet",
+                "args": [
+                    "publish",
+                    "--configuration",
+                    "Release",
+                    "/property:GenerateFullPaths=true",
+                    "/consoleloggerparameters:NoSummary"
+                ],
+                "type": "process",
+                "dependsOn": "clean release (functions)",
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "cwd": "${workspaceFolder}"
+                }
+            },
+            {
+                "type": "func",
+                "dependsOn": "build (functions)",
+                "options": {
+                    "cwd": "${workspaceFolder}/bin/Debug/net8.0"
+                },
+                "command": "host start",
+                "isBackground": true,
+                "problemMatcher": "$func-dotnet-watch"
+            }
+        ]
+    }
+}

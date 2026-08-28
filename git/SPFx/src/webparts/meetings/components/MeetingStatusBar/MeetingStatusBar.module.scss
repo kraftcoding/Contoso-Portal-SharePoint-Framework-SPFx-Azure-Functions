@@ -1,0 +1,74 @@
+@import "../Meetings.module.scss";
+
+.statusBar {
+    @include row;
+    gap: 10px;
+
+    .statusBarInfoContainer {
+        @include column;
+        gap: 15px;
+
+        .editZone {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        .infoRow {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .infoRowItem {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                flex-shrink: 1;
+                gap: 5px;
+                align-items: center;
+
+
+            }
+        }
+    }
+
+    .icon{
+        flex-shrink: 0;
+    }
+
+    .titleAndActions {
+        @include column;
+        gap: 10px;
+
+        @media (min-width: 640px) {
+            @include row;
+        }
+
+        .meetingTitle {
+            @include column;
+            min-width: 0;
+
+            span {
+                font-size: 20px;
+                word-break: break-word;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 28px;
+            }
+
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            white-space: nowrap;
+            gap: 10px;
+        }
+    }
+}

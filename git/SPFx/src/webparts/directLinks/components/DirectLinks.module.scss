@@ -1,0 +1,146 @@
+.directLinks {
+
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 11px;
+  }
+
+  .loadingUsefulLinks {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .noUsefulLinksAvailable {
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .link {
+    text-decoration: none !important;
+  }
+
+  :global(.slick-list) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  :global(.slick-slide) {
+
+    div:first-of-type {
+      margin: 0 10px 10px 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      box-shadow: "[theme: cardShadow]";
+    }
+
+    &:nth-child(n) {
+
+      div {
+        background-color: "[theme: themePrimary, default: #114da6]";
+        transition: background-color 0.3s;
+      }
+
+      div:hover {
+        background-color: "[theme: themeSecondary, default: #255db0]"; //
+      }
+
+      p {
+        line-height: normal;
+        color: "[theme: white, default: #FFFFFF]";
+      }
+    }
+
+    &:nth-child(2n) {
+      div {
+        background-color: "[theme: themeLighter, default: #cedcf1]";
+        transition: background-color 0.3s;
+      }
+
+      div:hover {
+        background-color: "[theme: themeLight, default: #a7bfe4]"; //
+      }
+
+      p {
+        line-height: normal;
+        color: "[theme: black, default: #000000]";
+      }
+    }
+
+  }
+
+  .slickSlide {
+    padding: 14px 0px;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .slickSlide> :nth-child(1) {
+    height: 50px;
+    margin: 25px 8% 5px 8%;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .slickSlide> :nth-child(2) {
+    height: 18px;
+    margin: 2px 8% 2px 8%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  :global(.slick-arrow) {
+    z-index: 1;
+  }
+
+  :global(.slick-testv) {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  :global(.slick-next) {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .arrow {
+    &::before {
+      content: "" !important;
+    }
+
+    svg {
+      opacity: 0.85;
+      border-radius: 50%;
+      color: "[theme: themePrimary]";
+      background-color: "[theme: white, default: #FFFFFF]";
+      box-shadow: "[theme: cardShadow]";
+    }
+
+    svg:hover {
+      font-weight: 600;
+    }
+  }
+
+  .arrowRight24Regular {
+    height: 16px;
+    width: 16px;
+    padding: 1px 4px 1px 4px;
+    align-items: center;
+  }
+
+}

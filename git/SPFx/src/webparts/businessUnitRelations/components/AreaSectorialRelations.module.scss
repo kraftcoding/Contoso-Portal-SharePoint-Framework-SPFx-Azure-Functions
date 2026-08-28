@@ -1,0 +1,211 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+@media (max-width: 640px) {
+  .filterZone {
+    flex-direction: column;
+    .filterDropdown{
+      width: 100%;
+    }
+    .newElementButton{
+      display: none !important;
+    }
+  }
+  .footerContainer{
+    display: none !important;
+  }
+}
+
+.BusinessAreaRelations {
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .contentZone{
+    .filterZone{
+      display: flex;
+      gap: 10px;
+      flex-flow: wrap;
+      padding:10px;
+      // border-color: black;
+      box-shadow: "[theme: cardShadow]";
+      background-color: #faf9f8;
+      align-items: flex-start;
+      visibility: visible;
+      .filterDropdown{
+        visibility: visible;
+      }
+      .filterSwitch{
+        visibility: visible;
+      }
+      .newElementButton{
+        flex:1;
+        text-align: right;
+      }
+    }
+    .resultZone{
+      display: block;
+      padding: 10px;
+      box-shadow: "[theme: cardShadow]";
+      background-color: #faf9f8;
+      //max-height: 500px;
+      .headerZone{
+        font-weight: bold;
+        .areaLabel{
+          visibility: visible;
+        }
+        .ministryDropdown{
+          visibility: visible;
+        }
+        .dateSelector{
+          visibility: visible;
+        }
+      }
+      .itemsZone{
+          overflow-y: auto;
+          max-height: 500px;
+          &::-webkit-scrollbar {
+            width: 5px;
+          }
+      
+          &::-webkit-scrollbar-track {
+              background-color: transparent;
+              border-radius: 100px;
+          }
+      
+          &::-webkit-scrollbar-thumb {
+              background-color: var(--colorNeutralBackground3Hover);
+              border-radius: 100px;
+          }
+        .itemRow{
+          padding: 5px 0;
+          .areaLabel{
+            visibility: visible;
+          }
+          .ministryDropdown{
+            visibility: visible;
+          }
+          .dateSelector{
+            visibility: visible;
+          }
+        }
+        .dataGridContainer{
+          table-layout: auto;
+          //max-height: 500px;
+          //overflow-y: auto;
+          //display: inline-block;
+          .errorRow{
+            color: #bc2f32 !important;
+          }
+          .userOrgansList{
+            padding: 5px 0;
+            .organListRole{
+              font-weight: 500;
+            }
+          }
+          .dataGridBody{
+            //max-height: 600px;
+            overflow-y: auto;
+            .dataItemTitle{
+              padding-top: 7px;
+              padding-bottom: 7px;
+            }
+            .manageItem{
+              flex:none;
+            }
+          }
+          .dataGridHeadersContainer{
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            background-color: #faf9f8;
+            .dataGridHeaders{
+              font-weight: 600;
+            }
+          }
+          
+          .dataRowItems{
+            border-radius: 4px;
+            box-shadow: '[theme: cardShadow]';
+            background-color: var(--colorNeutralBackground1);
+            color: '[theme: primaryText]';
+            text-decoration: none;
+          }
+        }
+      }
+      .footerContainer{
+        justify-content: flex-end;
+        margin: 10px;
+        gap: 20px;
+        display: flex;
+      }
+    }
+  }
+}
+.relationsDialog{
+  max-width: 100vh !important;
+  width: fit-content;
+  .errorTxt{
+    color: #bc2f32 !important;
+  }
+
+  .listChangesContainer{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    .listHeaderContainer{
+      background-color: #faf9f8;
+      .listHeaderTitle{
+        font-weight: 600;
+      }
+    }
+    .listRowChange{
+      box-shadow: 0 0.6px 0px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+      .areaChange{
+        font-weight: 400;
+      }
+      .valueChange{
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .newItemForm{
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+    padding: 5px;
+    margin-bottom: 10px;
+    max-width: 500px;
+    .newItemFieldFull{
+      flex:1 100%;
+      .filterDropdown{
+        width: 100%;
+      }
+    }
+    .newItemHalfField{
+      flex: 1;
+      display: flex;
+      gap: 40px;
+      .newItemDate{
+        flex: 1;
+        .dateSelector{
+          width: 100%;
+        }
+      }
+    }
+    .newItemLabel{
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 500;
+    }
+    .newItemErrorRow{
+      flex:1 100%;
+      text-align: right;
+      font-weight: 500;
+      label{
+        color: #bc2f32 !important;
+      }
+    }
+  }
+}

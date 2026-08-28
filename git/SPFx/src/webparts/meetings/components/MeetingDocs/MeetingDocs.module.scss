@@ -1,0 +1,101 @@
+.meetingDocs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    overflow-y: auto;
+    height: 100%;
+    padding: 5px;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--colorNeutralBackground3Hover);
+        border-radius: 100px;
+    }
+
+    .breadcrumb {
+        margin: 0;
+        padding: 10px 16px;
+        list-style: none;
+        background-color: var(--neutral-layer-1);
+        font-size: 12px;
+    }
+
+    .breadcrumb li {
+        display: inline;
+    }
+
+    .breadcrumb li+li:before {
+        padding: 8px;
+        color: var(--foreground-on-accent-fill);
+        content: '/';
+    }
+
+    .breadcrumb li a {
+        color: var(--accent-fill-rest);
+        text-decoration: none;
+    }
+
+    .breadcrumb li a:hover {
+        color: var(--accent-fill-hover);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .meetingDocs_primaryContainer {
+        min-height: 200px;
+
+
+    }
+}
+
+.fileList {
+    ::shadow>.file-list-wrapper {
+        flex-direction: column-reverse !important;
+    }
+}
+
+ .renewButton{
+        width: auto;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-inline-end: 36px;
+        margin-top: 3px;
+    }
+.divFile{
+    .dropdownZoneFile{
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .dropDownTag{
+            min-width: 180px !important;
+        }
+    }
+    .tagSection{
+        width:"max-content";
+        display:"flex";
+        align-items:"center";
+    }
+    
+    .labeltag{
+        min-width: 168px !important;
+        margin-left: 15px;
+    }
+}
+@media (max-width: 640px) {
+    .tagSection{
+        display: none !important;
+    }
+    .dropdownZoneFile{
+        display: none !important;
+    }
+}

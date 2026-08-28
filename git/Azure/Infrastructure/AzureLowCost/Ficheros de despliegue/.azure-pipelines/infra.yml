@@ -1,0 +1,31 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  azureSubscription: 'SERVICE_CONNECTION_NAME'
+  resourceGroupName: 'rg-dev'
+  location: 'westeurope'
+  templateFile: 'infra/main.bicep'
+  parametersFile: 'infra/params/dev.json'
+
+stages:
+- stage: Deploy
+  jobs:
+  - job: DeployInfra
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: $(azureSubscription)
+        scriptType: bash
+        scriptLocation: inlineScript
+        inlineScript: |
+          az group create -n $(resourceGroupName) -l $(location)
+          az deployment group create \
+            --resource-group $(resourceGroupName) \
+            --template-file $(templateFile) \
+            --parameters @$(parametersFile)

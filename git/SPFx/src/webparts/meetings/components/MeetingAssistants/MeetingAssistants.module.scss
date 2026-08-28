@@ -1,0 +1,239 @@
+.meetingAssistants {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+
+    .meetingAssistantsPrimaryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 20px;
+        overflow-y: auto;
+        padding: 5px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--colorNeutralBackground3Hover);
+            border-radius: 100px;
+        }
+    }
+
+    .meetingAssistantsSecondaryContainer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 10px;
+
+        .meetingAssistantsList {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .meetingAssistantsDelegatedContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .meetingAssistants_alternativePrimaryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 10px;
+    }
+
+    .meetingAssistants_alternativeSecondaryContainer,
+    .meetingAssistants_alternativeSecondaryContainerAux {
+        flex-basis: 49%;
+        flex-grow: 1;
+        margin: auto;
+    }
+
+    .meetingAssistantsTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .meetingAssistantsPersonsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .meetingAssistants_peopleRow_firstRow {
+        height: min-content;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        //flex-wrap: wrap;
+        position: relative;
+
+        .meetingAssistants_persona {
+            border-radius: 20px;
+            background-color: "[theme: neutralLight, default: #edebe9]";
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .meetingAssistants_persona>:nth-child(2) {
+            width: auto;
+            line-height: 32px;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .delegatedPending {
+            font-style: italic;
+        }
+
+        .delegatedVote {
+            min-width: 26px;
+        }
+
+        @media (max-width: '430px') {
+            .delegatedVote {
+                margin: auto;
+            }
+        }
+    }
+
+    @media (max-width: '640px') {
+        .meetingAssistants_peopleRow_firstRow {
+            gap: 5px 0;
+        }
+    }
+
+    .meetingAssistants_peopleRow_secondRow,
+    .meetingAssistants_peopleRow_alternativeSecondRow {
+        height: min-content;
+    }
+
+    .meetingAssistants_rightArrow {
+        position: absolute;
+        right: 0;
+    }
+
+    .meetingAssistants_diagonalArrow {
+        min-width: 32px;
+    }
+
+    .meetingAssistantsButtons {
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 5px;
+
+        .infoText {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            :first-child {
+                flex-shrink: 0;
+            }
+        }
+
+        :last-child {
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    @media (max-width: '1200px') {
+
+        .meetingAssistants_secondaryContainer,
+        .meetingAssistants_alternativeSecondaryContainer,
+        .meetingAssistants_alternativeSecondaryContainerAux {
+            flex-basis: 100%;
+        }
+
+        .meetingAssistants_rightArrow {
+            display: none;
+            opacity: 0;
+        }
+
+        .meetingAssistants_diagonalArrow {
+            display: flex;
+        }
+
+    }
+
+    @media (max-width: '1200px') {
+        .meetingAssistants_alternativeSecondaryContainerAux {
+            display: none;
+        }
+    }
+
+    @media (min-width: '1201px') {
+        .meetingAssistants_alternativeSecondaryContainerAux {
+            display: block;
+            visibility: hidden;
+        }
+
+        .meetingAssistants_rightArrow {
+            visibility: visible;
+        }
+
+        .meetingAssistants_diagonalArrow {
+            display: none;
+        }
+    }
+}
+
+.dialogAssistantsSurface {
+    box-shadow: '[theme: cardShadow]';
+    border-radius: 4px;
+
+    .dialogAssistantsContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.persona {
+    --person-avatar-size: 0px;
+}
+
+.noElementsContainer {
+    margin: auto;
+    font-size: medium;
+    font-weight: 600;
+}
+
+:global(.ms-BasePicker-text) {
+    height: 30px;
+}
+
+.deleteButton {
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 3px;
+}
+
+@media (max-width: '430px') {
+    .deleteButton {
+        margin: auto;
+    }
+}
+
+.dialogCancelAttContent {
+    overflow: visible;
+}

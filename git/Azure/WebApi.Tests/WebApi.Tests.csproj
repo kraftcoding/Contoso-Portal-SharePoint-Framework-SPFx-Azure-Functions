@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Data.Tables" Version="12.11.0" />
+        <PackageReference Include="Azure.Identity" Version="1.19.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+        <PackageReference Include="xunit" Version="2.6.6" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6" />
+        <PackageReference Include="PnP.Framework" Version="1.14.0" />
+        <PackageReference Include="Microsoft.SharePointOnline.CSOM" Version="16.1.24524.12000" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WebApi.Business\WebApi.Business.csproj" />
+        <ProjectReference Include="..\WebApi.Data\WebApi.Data.csproj" />
+        <ProjectReference Include="..\WebApi\WebApi.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>testserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>

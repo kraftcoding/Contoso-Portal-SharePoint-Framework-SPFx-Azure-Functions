@@ -1,0 +1,112 @@
+
+
+.myCollaborationSpaces {
+  .titleRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .moreLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: "[theme: themePrimary]";
+    text-decoration: none;
+  }
+
+  .mainContainer {
+    box-shadow: '[theme: cardShadow]';
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 25px 25px 25px;
+
+    .descriptionContainer {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .logoContainer {
+      min-width: 48px;
+      max-width: 48px;
+      margin: 25px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .teamsLogo {
+      height: 40px;
+      width: 40px;
+    }
+
+    .mainText {
+      width: auto;
+      display: block;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .cardsContainer {
+      display: grid;
+
+      @media (max-width: 590px) {
+        grid-template-columns: 100%;
+      }
+
+      @media (min-width: 590px) and (max-width: 750px) {
+        grid-template-columns: 50% 50%;
+      }
+
+      grid-template-columns: 33% 33% 33%;
+
+      .skeletonCard {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 25% 65%;
+      }
+
+      .skeletonCard * {
+        margin: 0 5px;
+        margin-top: 10px;
+      }
+
+      .card {
+        
+        height: fit-content;
+
+        .cardImage {
+          width: 48px;
+          height: 48px;
+          box-shadow: '[theme: cardShadow]';
+          border-radius: 4px;
+          background-color: '[theme: neutralDark]';
+        }
+
+        .cardText {
+          word-break: break-word;
+          font-weight: bold;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          overflow-wrap: break-word;
+          display: -webkit-box;
+          -webkit-box-orient: vertical
+        }
+      }
+      .linkSee {
+        text-decoration: none;
+        color: initial;
+        cursor: pointer;
+      }
+    }
+  }
+}

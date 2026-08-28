@@ -1,0 +1,370 @@
+@media (max-width: 640px) {
+    .tabList{
+        flex-direction: column !important;
+    }
+    .DepartmentDetails {
+        .gridContainerDual{
+            grid-template-columns: 1fr !important;
+        }
+      .propertyRow{
+        flex-direction: column !important;
+        .dropDownValue{
+            width: 100%;
+            justify-content: center;
+        }
+        .textBoxValue{
+            width: 100%;
+            justify-content: center;
+        }
+      }
+    }
+    .gridListContainer{
+        .listRow{
+            flex-direction: column;
+            gap: 10px !important;
+            .listUserJob{
+                display: none;
+            }
+            .personIcon{
+                display: none !important;
+            }
+            .listItemTitle{
+                flex: 0 30%;
+            }
+            .peoplePicker{
+                width: 100%;
+            }
+            .peoplePickerOrgan{
+              margin-left: 0px !important;
+              width: 100%;
+            }
+            .listItemSelector{
+                width: 100%;
+            }
+            .removeButton{
+                width: 70%;
+                margin: 10px;
+            }
+        }
+    }
+    .gridListHeaderContainer{
+        display: none !important;
+    }
+    .addNewItemRow{
+        .divSpacing{
+          display: none;
+        }
+        .divButtonAddNew{
+            flex: 1 !important;
+            margin-right: 0px !important;
+        }
+        .divButtonAddNewOrgan{
+          flex: 1 !important;
+        }
+        .addNewItemButton{
+            width: 100%;
+        }
+    }
+}
+
+.DepartmentDetails {
+  //max-width: 75%;
+  //min-width:75vw;
+
+  .errorField{
+    border-color: #bc2f32 !important;
+  }
+  .errorMsgForm{
+    color: #bc2f32 !important;
+    font-size: 12px;
+    margin-top: -10px;
+    .errorIcon{
+        margin-right: 10px;
+    }
+  }
+
+  .tabList{
+      display: flex;
+      gap:10px;
+      .tab{
+          padding-left: 0;
+          padding-right: 0;
+      }
+  }
+  .gridContainerDual{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      flex-direction: column;
+      padding: 15px 0;
+      row-gap: 10px;
+      column-gap: 60px;
+      .propertyRow{
+          .labelproperty{
+              //flex-grow: 1;
+              flex: 0 30%;
+          }
+          .dropDownValue{
+              flex: 0 70%;
+          }
+      }
+  }
+  .gridContainerSingle{
+      display:grid;
+      //grid-template-columns: 1fr 1fr;
+      flex-direction: column;
+      padding: 15px 0;
+      row-gap: 10px;
+      column-gap: 80;
+      .labelproperty{
+          //flex-grow: 1;
+          flex: 0 14%;
+      }
+      .dropDownValue{
+          flex: none;
+          min-width: 50%;
+      }
+      .textBoxValue{
+        flex: 0 60%;
+      }
+  }
+  .activeStatusValue{
+      color:green;
+  }
+  .inActiveStatusValue{
+      color:#bc2f32;
+  }
+  .propertyRow{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  .propertyRowActive{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+  .gridListContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 ;
+    gap: 10px;
+
+    .breakFlex{
+        flex-basis: 100%;
+        height: 0;
+    }
+    .needLicenseMsg{
+        color: #bc2f32;
+        display: flex;
+        //align-items: center;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .errorItemDuplicate{
+        color: #bc2f32;
+        display: flex;
+        //align-items: center;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listRow:nth-child(even){
+        background-color: #faf9f8;
+    }
+    .listRow:nth-child(odd){
+        background-color: white;
+    }
+    .listRow{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        .listItemTitle{
+            flex: 0 25%;
+        }
+        .peoplePicker{
+            flex: 0 25%;
+        }
+        .peoplePickerOrgan{
+            flex: 0 25%;
+            margin-left:40px;
+        }
+        .peoplePickerOrganWarning{
+            flex: 0 25%;
+        }
+        .listItemSelector{
+            flex: 0 25%;
+            margin: 0 10px;
+        }
+    }
+    .listRowError{
+        background-color: #fdeded !important;
+        //background-color: inherit;
+    }
+  }
+    .gridListHeaderContainer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        gap: 10px;
+        .listRowHeader{
+            display: flex;
+            align-items: center;
+            //justify-content: space-between;
+            gap: 20px;
+            justify-content: center;
+            font-weight: 600;
+            .listItemTitle{
+                flex: 0 25%;
+            }
+            .listItemSelector{
+                flex: 0 25%;
+                margin-right: 40px;
+            }
+            .listItemSelectorOrgan{
+                flex: 0 25%;
+                margin: 0 10px;
+                //margin-right: 40px;
+            }
+        }
+        .dividerHorizontal{
+            align-self: center;
+            width: 90%;
+        }
+    }
+  .addNewItemRow{
+      display: flex;
+      padding-bottom: 5px;
+      //justify-content: flex-end;
+      gap: 10px;
+      justify-content: center;
+      .divSpacing{
+        flex: 0 25%;
+        justify-content: flex-end;
+        text-align: right;
+      }
+      .divButtonAddNew{
+        flex: 0 30%;
+        justify-content: flex-end;
+        text-align: right;
+        margin-right: 40px;
+      }
+      .divButtonAddNewOrgan{
+        flex: 0 30%;
+        justify-content: flex-end;
+        text-align: right;
+      }
+      .addNewItemButton{
+          visibility: visible;
+      }
+  }
+ 
+  .fullListContainer{
+    max-height: 60vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--colorNeutralBackground3Hover);
+        border-radius: 100px;
+    }
+  }
+} 
+.errorDuplicateMsg{
+    text-align: center;
+    color: #bc2f32 !important;
+    padding-top: 10px;
+}
+.footerActionButtons{
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.fileList {
+    ::shadow>.file-list-wrapper {
+        flex-direction: column-reverse !important;
+    }
+}
+
+.removeECNTyInputPicker :host fluent-text-field::part(control){
+    height: 10px !important;
+}
+
+:host(.removeECNTyInputPicker) :host(mgt-flyout) :host(fluent-text-field)::part(control){
+    height: 10px !important;
+}
+
+.popOverUser{
+    .popOverUserTitle{
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .popOverUserLoader{
+        padding:40px;
+    }
+    .popOverUserRow{
+        padding: 3px;
+        padding: 7px 0;
+        .popOverUserRowValue{
+            font-weight: 600;
+        }
+    }
+    .notPermission{
+        color: #bc2f32 !important;
+    }
+    .hasPermission{
+        color: darkgreen !important;
+    }
+    .popOverUserButton{
+        padding-top: 3px;
+        text-align: center;
+    }
+}
+
+.licenseContainer{
+    padding: 15px;
+    .licenseInformation{
+        .licenseHeader{
+            font-size: large;
+            text-align: center;
+        }
+        .licenseInfoContainer{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            //grid-template-columns: 1fr 1fr;
+            .licenseInfoRow{
+                .licenseName{
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .divider{
+            margin: 20px auto;
+        }
+        .licenseUser{
+            .licenseLabel{
+                font-weight: normal;
+                margin-right: 20px;
+            }
+            .licenseSelector{
+                visibility: visible;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "param_envtoken": { "value": "prd" },
+  "param_apptoken": { "value": "coop" },
+  "param_azcounter": { "value": "01" },
+  "param_storageAccountType": { "value": "Standard_GRS" }
+}

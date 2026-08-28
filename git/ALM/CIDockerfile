@@ -1,0 +1,29 @@
+ARG NODE_VERSION=18.19.0
+ARG ALPINE_VERSION=alpine3.18
+ARG NET_SDK_VERSION=8.0
+ARG SPFX_VERSION=1.18.0
+
+FROM node:${NODE_VERSION}-${ALPINE_VERSION} AS node
+FROM mcr.microsoft.com/dotnet/sdk:${NET_SDK_VERSION}-${ALPINE_VERSION}
+
+RUN apk add --no-cache zip 
+
+COPY --from=node /usr/lib /usr/lib
+COPY --from=node /usr/local/lib /usr/local/lib
+COPY --from=node /usr/local/include /usr/local/include
+COPY --from=node /usr/local/bin /usr/local/bin
+
+# spfx global dependencies
+RUN npm i -g gulp-cli@2.3.0 yo@4.3.1 @microsoft/generator-sharepoint@${SPFX_VERSION} --unsafe-perm true --force
+
+RUN mkdir /workspace
+
+# Azure DevOps specific
+RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
+  && apk add bash sudo shadow  \
+  && apk del .pipeline-deps
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+CMD [ "node" ]
+
+# docker build -f .\CIDockerfile --rm -t eduardpaul/m365-toolpack:ci-alpine-3.18-net-8-spfx-1.18.0 .
+# docker push eduardpaul/m365-toolpack:ci-alpine-3.18-net-8-spfx-1.18.0

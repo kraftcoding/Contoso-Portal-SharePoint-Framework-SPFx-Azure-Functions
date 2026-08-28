@@ -1,0 +1,32 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.delegateAdministrationBanner {
+  background-color: '[theme: neutralLighterAlt]';
+  border-color: '[theme: neutralLight]';
+
+  margin-top: 5px;
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+   //margin-bottom: 11px;
+  }
+  .content{
+    padding: 5px 20px;
+    .msg{
+      visibility: inherit;
+    }
+    .link{
+      visibility: inherit;
+    }
+  }
+}
+.noShow{
+  display: none;
+}

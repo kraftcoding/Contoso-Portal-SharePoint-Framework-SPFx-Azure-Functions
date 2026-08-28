@@ -1,0 +1,161 @@
+.votingStatus {
+    height: 50%;
+    min-width: 50%;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .votingStatusSpinner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .votingStatusHeader {
+        width: -webkit-fill-available;
+        padding: 0 0 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .votingStatusLogo {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            border-radius: 100%;
+            background-color: #0f6cbd;
+        }
+
+        .votingStatusTitle {
+            width: -webkit-fill-available;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #194b8f;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .votingStatusDismissIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .votingStatusBody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+
+        .votingStatusMessage {
+            padding: 5px 20px;
+            display: block;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .votingStatusTitleVote {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: normal;
+        }
+
+        .votingStatusOptionsContainer {
+            margin-top: 5px;
+            padding-left: 40px;
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+                border-radius: 100px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: var(--colorNeutralBackground3Hover);
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .votingStatusButtons {
+        width: 100%;
+        padding: 20px 0 0 20px;
+        justify-content: flex-end;
+    }
+}
+
+/* Vista móvil */
+@media (max-width: 640px) {
+
+    .votingStatus {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+
+        .votingStatusHeader {
+            padding-left: 10px;
+
+            .votingStatusTitle {
+                padding: 0 5px;
+            }
+        }
+
+        .votingStatusBody {
+            padding: 0 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .votingStatusMessage {
+                padding: 5px 0;
+                font-size: 14px;
+            }
+
+            .votingStatusUsersContainer {
+                padding-left: 0;
+
+                .userComunity {
+                    gap: 5px;
+
+                    .person {
+                        width: 100%;
+                        max-width: none;
+
+                    }
+                }
+            }
+        }
+
+        .votingStatusButtons {
+            padding: 20px 0 0 0;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .votingStatusSingleButton {
+                width: 100%;
+            }
+        }
+    }
+
+}

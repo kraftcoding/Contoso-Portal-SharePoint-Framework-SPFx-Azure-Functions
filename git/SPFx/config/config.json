@@ -1,0 +1,209 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-collaboration-spaces-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myCollaborationSpaces/MyCollaborationSpacesWebPart.js",
+          "manifest": "./src/webparts/myCollaborationSpaces/MyCollaborationSpacesWebPart.manifest.json"
+        }
+      ]
+    },
+    "welcome-message-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/welcomeMessage/WelcomeMessageWebPart.js",
+          "manifest": "./src/webparts/welcomeMessage/WelcomeMessageWebPart.manifest.json"
+        }
+      ]
+    },
+    "agenda-announcement-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/agendaAnnouncement/AgendaAnnouncementWebPart.js",
+          "manifest": "./src/webparts/agendaAnnouncement/AgendaAnnouncementWebPart.manifest.json"
+        }
+      ]
+    },
+    "direct-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/directLinks/DirectLinksWebPart.js",
+          "manifest": "./src/webparts/directLinks/DirectLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "next-events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nextEvents/NextEventsWebPart.js",
+          "manifest": "./src/webparts/nextEvents/NextEventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "pending-tasks-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pendingTasks/PendingTasksWebPart.js",
+          "manifest": "./src/webparts/pendingTasks/PendingTasksWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-organs-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myDepartments/myDepartmentsWebPart.js",
+          "manifest": "./src/webparts/myDepartments/myDepartmentsWebPart.manifest.json"
+        }
+      ]
+    },
+    "recent-documents-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/recentDocuments/RecentDocumentsWebPart.js",
+          "manifest": "./src/webparts/recentDocuments/RecentDocumentsWebPart.manifest.json"
+        }
+      ]
+    },
+    "meetings-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/meetings/MeetingsWebPart.js",
+          "manifest": "./src/webparts/meetings/MeetingsWebPart.manifest.json"
+        }
+      ]
+    },
+    "documents-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/documents/DocumentsWebPart.js",
+          "manifest": "./src/webparts/documents/DocumentsWebPart.manifest.json"
+        }
+      ]
+    },
+    "send-doc-to-body-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/sendDocToBody/SendDocToBodyCommandSet.js",
+          "manifest": "./src/extensions/sendDocToBody/SendDocToBodyCommandSet.manifest.json"
+        }
+      ]
+    },
+    "administration-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/administrationApp/AdministrationAppWebPart.js",
+          "manifest": "./src/webparts/administrationApp/AdministrationAppWebPart.manifest.json"
+        }
+      ]
+    },
+    "organ-management-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/departmentManagement/departmentManagementWebPart.js",
+          "manifest": "./src/webparts/departmentManagement/departmentManagementWebPart.manifest.json"
+        }
+      ]
+    },
+    "area-sectorial-relations-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/BusinessAreaRelations/BusinessAreaRelationsWebPart.js",
+          "manifest": "./src/webparts/BusinessAreaRelations/BusinessAreaRelationsWebPart.manifest.json"
+        }
+      ]
+    },
+    "certification-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/certificationApp/CertificationAppWebPart.js",
+          "manifest": "./src/webparts/certificationApp/CertificationAppWebPart.manifest.json"
+        }
+      ]
+    },
+    "delegate-administration-banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/delegateAdministrationBanner/DelegateAdministrationBannerWebPart.js",
+          "manifest": "./src/webparts/delegateAdministrationBanner/DelegateAdministrationBannerWebPart.manifest.json"
+        }
+      ]
+    },
+    "launch-data-process-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/launchDataprocess/LaunchDataprocessCommandSet.js",
+          "manifest": "./src/extensions/launchDataprocess/LaunchDataprocessCommandSet.manifest.json"
+        }
+      ]
+    },
+    "master-table-Period-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/masterTablePeriod/MasterTablePeriodWebPart.js",
+          "manifest": "./src/webparts/masterTablePeriod/MasterTablePeriodWebPart.manifest.json"
+        }
+      ]
+    },
+    "master-table-Division-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/masterTableDivision/MasterTableDivisionWebPart.js",
+          "manifest": "./src/webparts/masterTableDivision/MasterTableDivisionWebPart.manifest.json"
+        }
+      ]
+    },
+    "master-table-tipo-Document-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/masterTableTipoDocument/MasterTableTipoDocumentWebPart.js",
+          "manifest": "./src/webparts/masterTableTipoDocument/MasterTableTipoDocumentWebPart.manifest.json"
+        }
+      ]
+    },
+    "master-table-Status-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/masterTableStatus/MasterTableStatusWebPart.js",
+          "manifest": "./src/webparts/masterTableStatus/MasterTableStatusWebPart.manifest.json"
+        }
+      ]
+    },
+    "master-table-tipo-Department-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/masterTableTipoDepartment/MasterTableTipoDepartmentWebPart.js",
+          "manifest": "./src/webparts/masterTableTipoDepartment/MasterTableTipoDepartmentWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyCollaborationSpacesWebPartStrings": "lib/webparts/myCollaborationSpaces/loc/{locale}.js",
+    "WelcomeMessageWebPartStrings": "lib/webparts/welcomeMessage/loc/{locale}.js",
+    "AgendaAnnouncementWebPartStrings": "lib/webparts/agendaAnnouncement/loc/{locale}.js",
+    "DirectLinksWebPartStrings": "lib/webparts/directLinks/loc/{locale}.js",
+    "NextEventsWebPartStrings": "lib/webparts/nextEvents/loc/{locale}.js",
+    "PendingTasksWebPartStrings": "lib/webparts/pendingTasks/loc/{locale}.js",
+    "myDepartmentsWebPartStrings": "lib/webparts/myDepartments/loc/{locale}.js",
+    "RecentDocumentsWebPartStrings": "lib/webparts/recentDocuments/loc/{locale}.js",
+    "MeetingsWebPartStrings": "lib/webparts/meetings/loc/{locale}.js",
+    "DocumentsWebPartStrings": "lib/webparts/documents/loc/{locale}.js",
+    "SendDocToBodyCommandSetStrings": "lib/extensions/sendDocToBody/loc/{locale}.js",
+    "AdministrationAppWebPartStrings": "lib/webparts/administrationApp/loc/{locale}.js",
+    "departmentManagementWebPartStrings": "lib/webparts/departmentManagement/loc/{locale}.js",
+    "DepartmentDetailsStrings": "lib/components/DepartmentDetails/loc/{locale}.js",
+    "BusinessAreaRelationsWebPartStrings": "lib/webparts/BusinessAreaRelations/loc/{locale}.js",
+    "CertificationAppWebPartStrings": "lib/webparts/certificationApp/loc/{locale}.js",
+    "DelegateAdministrationBannerWebPartStrings": "lib/webparts/delegateAdministrationBanner/loc/{locale}.js",
+    "NewUserFormStrings": "lib/components/NewUserForm/loc/{locale}.js",
+    "LaunchDataprocessCommandSetStrings": "lib/extensions/launchDataprocess/loc/{locale}.js",
+    "MasterTablePeriodWebPartStrings": "lib/webparts/masterTablePeriod/loc/{locale}.js",
+    "MasterTableDivisionWebPartStrings": "lib/webparts/masterTableDivision/loc/{locale}.js",
+    "MasterTableTipoDocumentWebPartStrings": "lib/webparts/masterTableTipoDocument/loc/{locale}.js",
+    "MasterTableStatusWebPartStrings": "lib/webparts/masterTableStatus/loc/{locale}.js",
+    "MasterTableTipoDepartmentWebPartStrings": "lib/webparts/masterTableTipoDepartment/loc/{locale}.js"
+  }
+}

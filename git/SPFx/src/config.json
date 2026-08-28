@@ -1,0 +1,27 @@
+{
+  "contoso-test.sharepoint.com": {
+    "BackendHost": "https://funcdevcontoso-testContoso001.azurewebsites.net",
+    "BakendAppClientId": "5a523c15-8862-4b6d-9bb1-7d022b845471",
+    "SPTenantHostUrl": "https://contoso-test.sharepoint.com",
+    "ApprodotSiteUrl": "https://contoso-test.sharepoint.com/sites/Contoso",
+    "AppInsightsConnectionString": "InstrumentationKey=f0193347-4213-4dff-9452-8f641a2543e4;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/;ApplicationId=38dfad6d-909b-4112-a687-23f013854f02"
+  },
+  "test.sharepoint.com": {
+    "BackendHost": "https://functestContoso002.azurewebsites.net",
+    "BakendAppClientId": "6bbaaccb-8f7a-4a20-9c8f-f29e45dd3382",
+    "SPTenantHostUrl": "https://test.sharepoint.com",
+    "ApprodotSiteUrl": "https://test.sharepoint.com/sites/Contoso",
+    "AppInsightsConnectionString": "InstrumentationKey=29a06278-bbf6-48a7-8d26-2a2ad6c90397;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/"
+  },
+  "politicaterritorial.sharepoint.com": {
+    "BackendHost": "https://funcprodContoso001.azurewebsites.net",
+    "BakendAppClientId": "80c7bcdc-d6da-451d-98c8-7bb399735b18",
+    "SPTenantHostUrl": "https://politicaterritorial.sharepoint.com",
+    "ApprodotSiteUrl": "https://politicaterritorial.sharepoint.com/sites/Contoso",
+    "AppInsightsConnectionString": "InstrumentationKey=dd4aaacf-f6f0-4fec-b7e8-bd4e2e91eb76;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/"
+  },
+  "defaults": {
+    "AppDiagnosticsprefix": "Contoso",
+    "FrontendCacheMinutes": 10
+  }
+}

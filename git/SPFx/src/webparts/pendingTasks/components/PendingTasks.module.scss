@@ -1,0 +1,147 @@
+.pendingTasks {
+
+  .titleRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wpTitle {
+    height: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .moreLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: "[theme: themePrimary]";
+    text-decoration: none;
+  }
+
+  .mainContainer {
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-shadow: '[theme: cardShadow]';
+    background-color: '[theme: neutralLighterAlt]';
+
+    .cardButton {
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+
+      .card {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: '[theme: bodyText]';
+        display: flex;
+        align-items: center;
+
+        .cardIcon {
+          padding-right: 15px;
+
+          .icon {
+            padding: 5px;
+            color: '[theme: white]';
+            background-color: var(--colorBrandBackground);
+            border-radius: '[theme: roundedCornerCircle]';
+          }
+        }
+
+        .cardText {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .cardTitle {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+
+          .cardOrgan,
+          .cardDate {
+            display: block;
+            text-align: left;
+            font-size: '[theme: smallFontSize]';
+            font-weight: 400;
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+
+      .card:hover {
+        background-color: '[theme: neutralLight]';
+      }
+    }
+
+    .messageContainer {
+      min-height: 250px;
+      max-height: 250px;
+      display: flex;
+    }
+
+    .noPendingTasksAvailable {
+      font-size: medium;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+
+    .spacer {
+      border: 1px solid;
+      border-color: '[theme: neutralLighter]';
+    }
+  }
+
+}
+
+.messageDelegated {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
+
+  >mgt-person {
+    margin-right: 4px;
+    background-color: "[theme: neutralLight, default: #edebe9]" !important;
+    border-radius: 15px;
+  }
+
+  .messageDelegatedText {
+    display: flex;
+    align-items: center;
+    white-space: test-wrap;
+  }
+}
+
+.twoCols {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  >div {
+    flex-basis: 50%;
+  }
+}
+
+.spinnerLoadingModal{
+  padding:40px;
+} 

@@ -1,0 +1,53 @@
+Versión multi‑entorno real, totalmente refactorizada, modular, limpia y lista para desplegar en dev / test / prodd sin tocar el código.
+
+Para que sea manejable se divide en las siguientes partes:
+
+- La nueva estructura completa del prodyecto
+- El contenido de cada módulo Bicep
+- El nuevo main.bicep orquestador
+- Los parámetros por entorno
+- Notas importantes para despliegue
+
+Todo está diseñado para copiar/pegar directamente en la repo.
+
+infra/
+│
+├── main.bicep
+│
+├── modules/
+│   ├── certificates.bicep
+│   ├── functionapp-auth.bicep
+│   ├── functionapp-aux.bicep
+│   ├── naming.bicep
+│   ├── identity.bicep
+│   ├── keyvault.bicep
+│   ├── keyvault-access.bicep
+│   ├── storage.bicep
+│   ├── appplan.bicep
+│   ├── monitoring.bicep
+│   └── support-deployment-keyvaultcert.ps1   ← si usas opción A
+│
+└── params/
+    ├── dev.json
+    ├── test.json
+    └── prodd.json
+
+
+Para desplegar:
+
+az login
+
+Desde script:
+
+chmod +x deploy.sh
+./deploy.sh
+
+Con el CLI:
+
+(solo si ya exite)
+az group delete --name rg-dev-contoso --yes --no-wait
+
+az group create --name rg-dev-contoso --location westeurope
+az deployment group create --resource-group rg-dev-contoso --template-file main.bicep  --parameters @params/dev.json
+
+Secure string values (para todos):    rg-dev-contoso

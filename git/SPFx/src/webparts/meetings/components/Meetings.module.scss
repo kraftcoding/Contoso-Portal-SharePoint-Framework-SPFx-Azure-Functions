@@ -1,0 +1,205 @@
+@mixin row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@mixin double-column {
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  flex: 1;
+
+  @media (min-width: 640px) {
+    flex: 2;
+  }
+}
+
+@mixin divider-column {
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+}
+
+@mixin divider-row {
+  display: flex;
+  flex-direction: row;
+  flex: 0;
+}
+
+.eventStatus {
+  color: white;
+}
+
+.Canceled {
+  background-color: #cc3300;
+}
+
+.Celebrated {
+  background-color: #3DA059;
+  color: black;
+}
+
+.InCelebration {
+  background-color: #824CF5;
+}
+
+.InConstruction {
+  background-color: #FDE4A1;
+  color: black;
+}
+
+.testBooking {
+  background-color: #FBC645;
+  color: black;
+}
+
+.Published {
+  background-color: #298FF7;
+  color: black;
+}
+
+.Archived {
+  background-color: #605e5c;
+}
+
+.wpTitle {
+  height: 27px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+.itemRow {
+  @include row;
+  border-radius: 4px;
+  gap: 5px;
+}
+
+.itemColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemColumnGrow {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.meetings {
+  .mainContainer {
+    @include row;
+    border-radius: 4px;
+    box-shadow: '[theme: cardShadow]';
+    background-color: var(--colorNeutralBackground2);
+    padding: 16px;
+    gap: 15px;
+    box-sizing: border-box;
+
+    .list {
+      @include column;
+      height: 700px;
+    }
+
+    .dividerVertical {
+      @include divider-column;
+    }
+
+    .dividerHorizontal {
+      @include divider-row;
+
+    }
+
+    .noElementsContainer {
+      @include column;
+      flex: 1;
+
+      div,
+      span {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        align-self: center;
+        font-size: medium;
+        font-weight: 600;
+      }
+    }
+
+    .convoContainer {
+      @include double-column;
+      height: 700px;
+      gap: 10px;
+
+      .router {
+        @include column;
+        gap: 10px;
+        min-height: 0px;
+
+        .tabsWrapper {
+          box-shadow: '[theme: cardShadow]';
+          background-color: var(--colorNeutralBackground1);
+          border-radius: 4px;
+          min-height: 0;
+          @include column;
+        }
+
+        .tabNavLinks {
+          @include row;
+          gap: 15px;
+
+          a {
+            text-decoration: none;
+            color: var(--colorNeutralForeground1);
+          }
+
+          .linkItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+            column-gap: 5px;
+          }
+
+          .active {
+            border-bottom: 3px solid;
+            border-color: var(--colorBrandBackground);
+            box-sizing: content-box;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+
+    .mainContainer {
+      @include column;
+      padding: 8px;
+
+      .list {
+        height: 100%;
+      }
+
+      .dividerVertical {
+        display: none;
+      }
+
+      .convoContainer {
+        @include column;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.icon16 {
+  min-width: 16px;
+}

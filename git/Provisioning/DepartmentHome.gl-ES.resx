@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.NetStandard.ResXResourceReader, PnP.Framework, Version=1.13.115.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.NetStandard.ResXResourceWriter, PnP.Framework, Version=1.13.115.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c</value>
+  </resheader>
+  <data name="Field_Idioma_DisplayName" xml:space="testserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Field_OrigenCiudadanoAdministracionEni_DisplayName" xml:space="testserve">
+    <value>OrigenCiudadanoAdministracionEni</value>
+  </data>
+  <data name="ContentType_DocumentBasePTCAAPP_Title" xml:space="testserve">
+    <value>DocumentBasePTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentDepartmentPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentDepartmentPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentNormativaPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentNormativaPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentMeetingPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentMeetingPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentAplicacionPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentAplicacionPTCAAPP</value>
+  </data>
+  <data name="ContentType_AcuerdoPTCAAPP_Title" xml:space="testserve">
+    <value>AcuerdoPTCAAPP</value>
+  </data>
+  <data name="ContentType_AgendaItemPTCAAPP_Title" xml:space="testserve">
+    <value>AgendaItemPTCAAPP</value>
+  </data>
+  <data name="ContentType_MinutesPTCAAPP_Title" xml:space="testserve">
+    <value>MinutesPTCAAPP</value>
+  </data>
+  <data name="ContentType_MinutesInformacionPTCAAPP_Title" xml:space="testserve">
+    <value>MinutesInformacionPTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestPTCAAPP_Title" xml:space="testserve">
+    <value>RequestPTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestAttendancePTCAAPP_Title" xml:space="testserve">
+    <value>RequestAttendancePTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestAprodbacionMinutesPTCAAPP_Title" xml:space="testserve">
+    <value>RequestAprodbacionMinutesPTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestDelegationPTCAAPP_Title" xml:space="testserve">
+    <value>RequestDelegationPTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestCertificacionPTCAAPP_Title" xml:space="testserve">
+    <value>RequestCertificacionPTCAAPP</value>
+  </data>
+  <data name="ContentType_RequestModificacionPTCAAPP_Title" xml:space="testserve">
+    <value>RequestModificacionPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentEnConstruccionPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentEnConstruccionPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentMinutesPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentMinutesPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentInformeAttendancePTCAAPP_Title" xml:space="testserve">
+    <value>DocumentInformeAttendancePTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentCertificacionPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentCertificacionPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentDefinitivoPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentDefinitivoPTCAAPP</value>
+  </data>
+  <data name="ContentType_DocumentEniPTCAAPP_Title" xml:space="testserve">
+    <value>DocumentEniPTCAAPP</value>
+  </data>
+  <data name="ContentType_MeetingBasePTCAAPP_Title" xml:space="testserve">
+    <value>MeetingBasePTCAAPP</value>
+  </data>
+  <data name="ContentType_MeetingEnEdicionPTCAAPP_Title" xml:space="testserve">
+    <value>MeetingEnEdicionPTCAAPP</value>
+  </data>
+  <data name="ContentType_MeetingPublicadaPTCAAPP_Title" xml:space="testserve">
+    <value>MeetingPublicadaPTCAAPP</value>
+  </data>
+  <data name="ContentType_MeetingArchivoPTCAAPP_Title" xml:space="testserve">
+    <value>MeetingArchivoPTCAAPP</value>
+  </data>
+  <data name="ListView_MeetingsConstruccion_Todos_los_Documents_Title" xml:space="testserve">
+    <value>Todos los Documents</value>
+  </data>
+  <data name="ListView_MeetingsFinales_Todos_los_Documents_Title" xml:space="testserve">
+    <value>Todos los Documents</value>
+  </data>
+  <data name="List_Páginas_del_sitio_Title" xml:space="testserve">
+    <value>Páxinas do sitio</value>
+  </data>
+  <data name="Field_MeetingType_DisplayName" xml:space="testserve">
+    <value>Tipo de reunión</value>
+  </data>
+  <data name="Field_OnlineTool_DisplayName" xml:space="testserve">
+    <value>Tipo herramienta online</value>
+  </data>
+  <data name="Field_IdDocCertificacion_DisplayName" xml:space="testserve">
+    <value>Id doc certificación</value>
+  </data>
+  <data name="Field_AcuerdoAsociado_DisplayName" xml:space="testserve">
+    <value>Convenio asociado</value>
+  </data>
+  <data name="Field_Acuerdo_DisplayName" xml:space="testserve">
+    <value>Acordo</value>
+  </data>
+  <data name="Field_StartDateMinutes_DisplayName" xml:space="testserve">
+    <value>Data de inicio do rexistro</value>
+  </data>
+  <data name="Field_IdDocumentOriginal_DisplayName" xml:space="testserve">
+    <value>Id doc original</value>
+  </data>
+  <data name="Field_Asistente_DisplayName" xml:space="testserve">
+    <value>Asistente</value>
+  </data>
+  <data name="Field_TipoAgendaItem_DisplayName" xml:space="testserve">
+    <value>Tipo de orde do día</value>
+  </data>
+  <data name="Field_LocationDetails_DisplayName" xml:space="testserve">
+    <value>Detalle de ubicación</value>
+  </data>
+  <data name="Field_FormatoAttendance_DisplayName" xml:space="testserve">
+    <value>Formato de Attendance</value>
+  </data>
+  <data name="Field_Duracion_DisplayName" xml:space="testserve">
+    <value>Duración</value>
+  </data>
+  <data name="Field_VersionNTI_DisplayName" xml:space="testserve">
+    <value>Version NTI</value>
+  </data>
+  <data name="Field_Department_DisplayName" xml:space="testserve">
+    <value>Órgano</value>
+  </data>
+  <data name="Field_TipoDepartment_DisplayName" xml:space="testserve">
+    <value>Tipo de órgano</value>
+  </data>
+  <data name="Field_IdRequestCertificacion_DisplayName" xml:space="testserve">
+    <value>Id Requeste certificación</value>
+  </data>
+  <data name="Field_OutlookMeetingId_DisplayName" xml:space="testserve">
+    <value>Id reunión Outlook</value>
+  </data>
+  <data name="Field_IdReunionOnlineMSTeams_DisplayName" xml:space="testserve">
+    <value>Id reunión MS Teams</value>
+  </data>
+  <data name="Field_Recordatorios_DisplayName" xml:space="testserve">
+    <value>Recordatorios</value>
+  </data>
+  <data name="Field_NuevaVentana_DisplayName" xml:space="testserve">
+    <value>Nova vendana</value>
+  </data>
+  <data name="Field_LastPublishedDate_DisplayName" xml:space="testserve">
+    <value>Data última publicación</value>
+  </data>
+  <data name="Field_EstadoRequest_DisplayName" xml:space="testserve">
+    <value>Estado de Requeste</value>
+  </data>
+  <data name="Field_EstadoElaboracionEni_DisplayName" xml:space="testserve">
+    <value>Estado de elaboracion ENI</value>
+  </data>
+  <data name="Field_TipoNormativa_DisplayName" xml:space="testserve">
+    <value>Tipo normativa</value>
+  </data>
+  <data name="Field_TipoDocumentalEni_DisplayName" xml:space="testserve">
+    <value>Tipo documental ENI</value>
+  </data>
+  <data name="Field_Ordenacion_DisplayName" xml:space="testserve">
+    <value>Ordenación</value>
+  </data>
+  <data name="Field_IdMeeting_DisplayName" xml:space="testserve">
+    <value>Id Meeting</value>
+  </data>
+  <data name="Field_VersionPublicada_DisplayName" xml:space="testserve">
+    <value>Versión publicada</value>
+  </data>
+  <data name="Field_Asistentes_DisplayName" xml:space="testserve">
+    <value>Asistentes</value>
+  </data>
+  <data name="Field_GrupoAsistentesAsociado_DisplayName" xml:space="testserve">
+    <value>Grupo de asistentes asociado</value>
+  </data>
+  <data name="Field_AsignadoA_DisplayName" xml:space="testserve">
+    <value>Asignado a</value>
+  </data>
+  <data name="Field_Attendance_DisplayName" xml:space="testserve">
+    <value>Attendance</value>
+  </data>
+  <data name="Field_Votar_DisplayName" xml:space="testserve">
+    <value>Voto</value>
+  </data>
+  <data name="Field_RequestStartDate_DisplayName" xml:space="testserve">
+    <value>Data de inicio da Requeste</value>
+  </data>
+  <data name="Field_RequestEndDate_DisplayName" xml:space="testserve">
+    <value>Requeste de data de finalización</value>
+  </data>
+  <data name="Field_VotoDelegado_DisplayName" xml:space="testserve">
+    <value>Voto delegado</value>
+  </data>
+  <data name="Field_IdAcuerdo_DisplayName" xml:space="testserve">
+    <value>Id acordo</value>
+  </data>
+  <data name="Field_StartDate_DisplayName" xml:space="testserve">
+    <value>Data inicio</value>
+  </data>
+  <data name="Field_EndDate_DisplayName" xml:space="testserve">
+    <value>Data fin</value>
+  </data>
+  <data name="Field_FechaArchivado_DisplayName" xml:space="testserve">
+    <value>Data arquivado</value>
+  </data>
+  <data name="Field_EstadoAcuerdo_DisplayName" xml:space="testserve">
+    <value>Estado acordo</value>
+  </data>
+  <data name="Field_IdMinutes_DisplayName" xml:space="testserve">
+    <value>Id Minutes</value>
+  </data>
+  <data name="Field_IdRequestPadre_DisplayName" xml:space="testserve">
+    <value>Id Requeste pai</value>
+  </data>
+  <data name="Field_EstadoMeeting_DisplayName" xml:space="testserve">
+    <value>Estado Meeting</value>
+  </data>
+  <data name="Field_UrlOnlineTool_DisplayName" xml:space="testserve">
+    <value>Url herramienta online</value>
+  </data>
+  <data name="Field_Validado_DisplayName" xml:space="testserve">
+    <value>Validado</value>
+  </data>
+  <data name="Field_EstadoMinutes_DisplayName" xml:space="testserve">
+    <value>Estado Minutes</value>
+  </data>
+  <data name="Field_SolicitadoPor_DisplayName" xml:space="testserve">
+    <value>Solicitado por</value>
+  </data>
+  <data name="Field_Normativa_DisplayName" xml:space="testserve">
+    <value>Normativa</value>
+  </data>
+  <data name="Field_Delegado_DisplayName" xml:space="testserve">
+    <value>Delegado</value>
+  </data>
+  <data name="Field_DelegadoVoto_DisplayName" xml:space="testserve">
+    <value>Voto delegado do usuario</value>
+  </data>
+  <data name="ContentType_NoticiaDepartment_Title" xml:space="testserve">
+    <value>Noticia órgano</value>
+  </data>
+  <data name="ContentType_EnlaceUtil_Title" xml:space="testserve">
+    <value>Enlace útil</value>
+  </data>
+  <data name="List_MeetingsConstruccion_Title" xml:space="testserve">
+    <value>Meetings en construcción</value>
+  </data>
+  <data name="List_MeetingsFinales_Title" xml:space="testserve">
+    <value>Meetings publicadas</value>
+  </data>
+  <data name="NavigationNode_0_1031_Title" xml:space="testserve">
+    <value>Inicio</value>
+  </data>
+  <data name="NavigationNode_0_1033_Title" xml:space="testserve">
+    <value>Recentes</value>
+  </data>
+  <data name="NavigationNode_0_1033_Title" xml:space="testserve">
+    <value>Contido del sitio</value>
+  </data>
+  <data name="List_Enlaces_Title" xml:space="testserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="List_Documents_Title" xml:space="testserve">
+    <value>Documents</value>
+  </data>
+  <data name="Parent_Id" xml:space="testserve">
+    <value>Id pai</value>
+  </data>
+  <data name="Order_Type" xml:space="testserve">
+    <value>Tipo de ordenación</value>
+  </data>
+  <data name="Field_DescripcionAcuerdo_DisplayName" xml:space="testserve">
+    <value>Descrición do convenio</value>
+  </data>
+  <data name="Field_TituloAcuerdo_DisplayName" xml:space="testserve">
+    <value>Título do convenio</value>
+  </data>
+  <data name="Field_UniqueSharedID" xml:space="testserve">
+    <value>Id Único Compartido</value>
+  </data>
+  <data name="ContentType_DetalleVotePTCAAP_Title" xml:space="testserve">
+    <value>Detalle Votación</value>
+  </data>
+   <data name="Field_Administracion_DisplayName" xml:space="testserve">
+    <value>Administración asignada</value>
+  </data>
+</root>

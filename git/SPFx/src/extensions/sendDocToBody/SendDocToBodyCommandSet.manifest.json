@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
+
+  "id": "e2f667a6-62ae-4041-8ada-9d7c5cd20192",
+  "alias": "SendDocToBodyCommandSet",
+  "componentType": "Extension",
+  "extensionType": "ListViewCommandSet",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "items": {
+    "COMMAND_1": {
+      "title": { "default": "Añadir a Meeting", "en-us":"Add to Meeting","ca-es":"Afegir a Convocatòria","eu-es":"Gehitu Deian","ga-es":"Engadir á Meeting" },
+      "iconImageUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0xOC41IDIwQzE4LjUgMjAuMjc1IDE4LjI3NiAyMC41IDE4IDIwLjVIMTIuMjY3OEMxMS45ODA2IDIxLjA1MSAxMS42MTY4IDIxLjU1NTcgMTEuMTkwNCAyMkgxOEMxOS4xMDQgMjIgMjAgMjEuMTA0IDIwIDIwVjkuODI4QzIwIDkuMjk4IDE5Ljc4OSA4Ljc4OSAxOS40MTQgOC40MTRMMTMuNTg1IDIuNTg2QzEzLjU3IDIuNTcxMDUgMTMuNTUzMSAyLjU1ODA4IDEzLjUzNjMgMi41NDUyQzEzLjUyMzggMi41MzU2NyAxMy41MTE1IDIuNTI2MiAxMy41IDIuNTE2QzEzLjQyOSAyLjQ1MiAxMy4zNTkgMi4zODkgMTMuMjgxIDIuMzM2QzEzLjI1NTcgMi4zMTg5NCAxMy4yMjgxIDIuMzA1NDggMTMuMjAwNSAyLjI5MjA3QzEzLjE4NDUgMi4yODQyNiAxMy4xNjg1IDIuMjc2NDcgMTMuMTUzIDIuMjY4QzEzLjEzNjMgMi4yNTg1OSAxMy4xMTk3IDIuMjQ4OTcgMTMuMTAzIDIuMjM5MzNDMTMuMDQ4OCAyLjIwNzk3IDEyLjk5NDQgMi4xNzY0OCAxMi45MzcgMi4xNTJDMTIuNzQgMi4wNyAxMi41MjggMi4wMjkgMTIuMzEzIDIuMDE0QzEyLjI5MzMgMi4wMTI3NCAxMi4yNzM4IDIuMDEwMDggMTIuMjU0MiAyLjAwNzQxQzEyLjIyNzEgMi4wMDM3MSAxMi4xOTk5IDIgMTIuMTcyIDJINkM0Ljg5NiAyIDQgMi44OTYgNCA0VjExLjQ5ODJDNC40NzQxNyAxMS4zMDA0IDQuOTc2NzkgMTEuMTU3MiA1LjUgMTEuMDc2NFY0QzUuNSAzLjcyNSA1LjcyNCAzLjUgNiAzLjVIMTJWOEMxMiA5LjEwNCAxMi44OTYgMTAgMTQgMTBIMTguNVYyMFpNMTMuNSA0LjYyMUwxNy4zNzggOC41SDE0QzEzLjcyNCA4LjUgMTMuNSA4LjI3NSAxMy41IDhWNC42MjFaIiBmaWxsPSIjMjEyMTIxIi8+CjxwYXRoIGQ9Ik0xMiAxNy41QzEyIDIwLjUzNzYgOS41Mzc1NyAyMyA2LjUgMjNDMy40NjI0MyAyMyAxIDIwLjUzNzYgMSAxNy41QzEgMTQuNDYyNCAzLjQ2MjQzIDEyIDYuNSAxMkM5LjUzNzU3IDEyIDEyIDE0LjQ2MjQgMTIgMTcuNVpNMy41IDE3QzMuMjIzODYgMTcgMyAxNy4yMjM5IDMgMTcuNUMzIDE3Ljc3NjEgMy4yMjM4NiAxOCAzLjUgMThIOC4yOTI4OUw2LjY0NjQ1IDE5LjY0NjRDNi40NTExOCAxOS44NDE3IDYuNDUxMTggMjAuMTU4MyA2LjY0NjQ1IDIwLjM1MzZDNi44NDE3MSAyMC41NDg4IDcuMTU4MjkgMjAuNTQ4OCA3LjM1MzU1IDIwLjM1MzZMOS44NTM1NSAxNy44NTM2QzEwLjA0ODggMTcuNjU4MyAxMC4wNDg4IDE3LjM0MTcgOS44NTM1NSAxNy4xNDY0TDcuMzUzNTUgMTQuNjQ2NEM3LjE1ODI5IDE0LjQ1MTIgNi44NDE3MSAxNC40NTEyIDYuNjQ2NDUgMTQuNjQ2NEM2LjQ1MTE4IDE0Ljg0MTcgNi40NTExOSAxNS4xNTgzIDYuNjQ2NDUgMTUuMzUzNkw4LjI5Mjg5IDE3SDMuNVoiIGZpbGw9IiMyMTIxMjEiLz4KPC9zdmc+",
+      "type": "command"
+    }
+  }
+}

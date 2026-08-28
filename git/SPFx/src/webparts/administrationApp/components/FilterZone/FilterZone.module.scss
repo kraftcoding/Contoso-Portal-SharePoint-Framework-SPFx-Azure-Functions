@@ -1,0 +1,67 @@
+@media (max-width: 640px) {
+  .filterZone {
+    flex-direction: column;
+    .dropdownContainer{
+      width: 100%;
+      .comboBox, .peoplePicker{
+        width: 100%;
+      }
+      .tagsList{
+        gap: 10px !important;
+        .tagButton{
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.filterZone {
+  display: flex;
+  gap: 10px;
+  flex-flow: wrap;
+  padding: 10px 10px 20px 10px;
+  // border-color: black;
+  box-shadow: "[theme: cardShadow]";
+  background-color: #faf9f8;
+  align-items: flex-start;
+
+  .dropdownContainer{
+    gap: 5px;
+    display: grid;
+    justify-items: flex-start;
+    .label{
+      display:block;
+    }
+
+    .tagsList{
+      list-style: none;
+      margin-top: 0;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 5px;
+      max-width: 250px;
+      .tagButton{
+        max-width: 100%;
+        .tagButtonTxt{
+          width: 90%;
+          text-wrap: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+     
+    }
+  }
+  .removeFilterDiv{
+    align-self:flex-end;
+  }
+}
+
+.optionComboBoxSize{
+  span{
+    flex:none;
+  }
+}

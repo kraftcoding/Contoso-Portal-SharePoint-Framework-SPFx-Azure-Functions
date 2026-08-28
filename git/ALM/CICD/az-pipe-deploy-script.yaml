@@ -1,0 +1,28 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+parameters: 
+
+  - name: 'scriptFilePath'
+    type: string
+
+  - name: 'environment'
+    default: devContoso
+    values:   
+      - devContoso
+      
+variables:
+    environment: ${{ parameters.environment }}
+
+stages:
+
+  - stage: execute_script
+    
+    jobs:
+      
+    - template: ./jobs/job-deploy-scriptexec.yaml
+      parameters:
+        environment: ${{ parameters.environment }}
+        scriptFilePath: ${{ parameters.scriptFilePath }}

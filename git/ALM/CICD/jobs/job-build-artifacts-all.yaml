@@ -1,0 +1,16 @@
+parameters:
+    pool:
+      vmImage: ubuntu-latest
+    depends_on: []
+
+jobs:
+
+  - job: build_artifacts_all
+    displayName: '(SPFx-WebApi) Release build'
+    dependsOn: ${{ parameters.depends_on }}
+    pool: ${{ parameters.pool }}
+    
+    steps:
+
+    - template: ./../../steps/steps-build-artifacts-spfx.yaml 
+    - template: ./../../steps/steps-build-artifacts-webapi.yaml 

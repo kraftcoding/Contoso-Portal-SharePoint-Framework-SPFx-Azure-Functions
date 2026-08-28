@@ -1,0 +1,149 @@
+.showQRCode {
+    min-height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 20px;
+
+    .showQRCodeHeader {
+        width: -webkit-fill-available;
+        padding: 0 0 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .showQRCodeLogo {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            border-radius: 100%;
+            background-color: #0f6cbd;
+        }
+
+        .showQRCodeTitle {
+            width: -webkit-fill-available;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #194b8f;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: normal;
+        }
+
+        .showQRCodeDismissIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .showQRCodeSubheader {
+        width: -webkit-fill-available;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .showQRCodeFirstText {
+            font-size: 18px;
+            line-height: normal;
+        }
+
+        .showQRCodeSecondText {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: normal;
+        }
+    }
+
+    .showQRCodeBody {
+        width: -webkit-fill-available;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .showQRCodeBodyContent {
+            width: 100%;
+
+            .qrCodeImageContainer {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .qrCodeImage {
+                    width: 80%;
+                }
+            }
+
+            .generatingTheQRCode {
+                width: -webkit-fill-available;
+                padding: 20px 10px 20px 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 16px;
+                flex-grow: 1;
+                gap: 10px;
+            }
+        }
+
+        .showQRCodeActionButtons {
+            width: 100%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .showQRCodeActionSingleButton {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .showQRCode {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+
+        .showQRCodeHeader {
+            .showQRCodeTitle {
+                padding: 0 5px;
+            }
+        }
+
+        .showQRCodeBody {
+            .showQRCodeBodyContent {
+                .qrCodeImageContainer {
+                    .qrCodeImage {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .showQRCodeActionButtons {
+                .showQRCodeActionSingleButton {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

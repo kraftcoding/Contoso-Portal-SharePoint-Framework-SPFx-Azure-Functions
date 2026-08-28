@@ -1,0 +1,122 @@
+{
+    "identifierUris": [
+        "api://Contosodevops"
+    ],
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                    "type": "Role"
+                },
+                {
+                    "id": "bf7b1a76-6e77-406b-b258-bf5c7720e98f",
+                    "type": "Role"
+                },
+                {
+                    "id": "62a82d76-70ea-41e2-9197-370581804d09",
+                    "type": "Role"
+                },
+                {
+                    "id": "14f49b9f-4bf2-4d24-b80e-b27ec58409bd",
+                    "type": "Role"
+                },
+                {
+                    "id": "287bd98c-e865-4e8c-bade-1a85523195b9",
+                    "type": "Role"
+                },
+                {
+                    "id": "19da66cb-0fb0-4390-b071-ebc76a349482",
+                    "type": "Role"
+                },
+                {
+                    "id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+                    "type": "Role"
+                },
+                {
+                    "id": "23fc2474-f741-46ce-8465-674744c5c361",
+                    "type": "Role"
+                },
+                {
+                    "id": "2280dda6-0bfd-44ee-a2f4-cb867cfc4c1e",
+                    "type": "Role"
+                },
+                {
+                    "id": "0121dc95-1b9f-4aed-8bac-58c5ac466691",
+                    "type": "Role"
+                },
+                {
+                    "id": "4437522e-9a86-4a41-a7da-e380edd4a97d",
+                    "type": "Role"
+                },
+                {
+                    "id": "5dad17ba-f6cc-4954-a5a2-a0dcc95154f0",
+                    "type": "Role"
+                },
+                {
+                    "id": "bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f",
+                    "type": "Role"
+                },
+                {
+                    "id": "49981c42-fd7b-4530-be03-e77b21aed25e",
+                    "type": "Role"
+                },
+                {
+                    "id": "6163d4f4-fbf8-43da-a7b4-060fe85ed148",
+                    "type": "Role"
+                },
+                {
+                    "id": "f12eb8d6-28e3-46e6-b2c0-b7e4dc69fc95",
+                    "type": "Role"
+                },
+                {
+                    "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                    "type": "Role"
+                }
+            ]
+        },
+        {
+            "resourceAppId": "00000002-0000-0ff1-ce00-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "dc890d15-9560-4a4c-9b7f-a736ec74ec40",
+                    "type": "Role"
+                },
+                {
+                    "id": "f9156939-25cd-4ba8-abfe-7fabcf003749",
+                    "type": "Role"
+                },
+                {
+                    "id": "dc50a0fb-09a3-484d-be87-e023b12c6440",
+                    "type": "Role"
+                }
+            ]
+        },
+        {
+            "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                    "type": "Role"
+                },
+                {
+                    "id": "c8e3537c-ec53-43b9-bed3-b2bd3617ae97",
+                    "type": "Role"
+                },
+                {
+                    "id": "9bff6588-13f2-4c48-bbf2-ddab62256b36",
+                    "type": "Role"
+                },
+                {
+                    "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+                    "type": "Role"
+                },
+                {
+                    "id": "fbcd29d2-fcca-4405-aded-518d457caae4",
+                    "type": "Role"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "param_devopsAppObjectId": {
+            "value": "0715e550-71b8-4886-a486-49bb87c05470"
+        },
+        "param_devopsClientId": {
+            "value": "d633d411-033b-4f9e-b0fa-4806398abad0"
+        },
+        "param_aadTenantId": {
+            "value": "805543fa-f86a-4a60-9ace-f53521807088"
+        },
+        "param_aadTenantOrganization": {
+            "value": "test.onmicrosoft.com"
+        },
+        "param_aadClientId": {
+            "value": "6bbaaccb-8f7a-4a20-9c8f-f29e45dd3382"
+        },
+        "param_approdotSiteUrl": {
+            "value": "/sites/Contoso"
+        },
+        "param_spHost": {
+            "value": "https://test.sharepoint.com"
+        },
+        "param_apptoken": {
+            "value": "Contoso"
+        },
+        "param_envtoken": {
+            "value": "test"
+        },
+        "param_azcounter": {
+            "value": "002"
+        },
+        "param_downloadCertificates": {
+            "value": true
+        },
+        "param_mailboxUserId": {
+            "value": "de0b1f06-d7dd-4e2c-971e-cc554827a4e9"
+        },
+        "param_portalSimUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_portalSimPassword": {
+            "value": "xxxx"
+        },
+        "param_portalSimService": {
+            "value": "1762"
+        },
+        "param_portalSimEnabled": {
+            "value": true
+        },
+        "param_taxonomyRootSiteId": {
+            "value": "test-admin.sharepoint.com"
+        },
+        "param_taxonomyAppTermGroup": {
+            "value": "102a5d61-9d78-42e8-ab11-681331d4d37f"
+        },
+        "param_isprodductionEnvironment": {
+            "value": false
+        },
+        "param_insideUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_insidePassword": {
+            "value": "xxxx"
+        },
+        "param_vnetAddressprefixPrivateEndpoint": {
+            "value": "10.117.32.144/28"
+        },
+        "param_vnetAddressprefixFunction": {
+            "value": "10.117.32.192/26"
+        },
+        "param_functionSubnetAddressprefix": {
+            "value": "10.117.32.192/26"
+        },
+        "param_privateEndpointSubnetAddressprefix": {
+            "value": "10.117.32.144/28"
+        }
+    }
+}

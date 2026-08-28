@@ -1,0 +1,31 @@
+name: Deploy Infra
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AZURE_RESOURCE_GROUP: rg-dev
+      AZURE_LOCATION: westeurope
+      TEMPLATE_FILE: infra/main.bicep
+      PARAMETERS_FILE: infra/params/dev.json
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Deploy Bicep
+      run: |
+        az group create -n $AZURE_RESOURCE_GROUP -l $AZURE_LOCATION
+        az deployment group create \
+          --resource-group $AZURE_RESOURCE_GROUP \
+          --template-file $TEMPLATE_FILE \
+          --parameters @$PARAMETERS_FILE

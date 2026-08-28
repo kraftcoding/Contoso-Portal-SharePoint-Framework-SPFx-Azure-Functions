@@ -1,0 +1,109 @@
+@media (max-width: 640px) {
+  .newUserForm {
+    .gridContainerDual{
+      grid-template-columns: auto !important;
+    }
+    .propertyRow{
+      flex-direction: column !important;
+      .dropDownValue{
+          width: 100% !important;
+          justify-content: center;
+      }
+      .textBoxValue{
+          width: 100% !important;;
+          justify-content: center;
+      }
+    }
+  }
+}
+
+.newUserForm {
+  
+  .gridContainerDual{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      flex-direction: column;
+      padding: 12px 0;
+      row-gap: 10px;
+      column-gap: 80;
+      .propertyRow{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .labelproperty{
+            //flex-grow: 1;
+            flex: 0 40%;
+        }
+        .dropDownValue{
+            flex: 0 55%;
+        }
+        .textArea{
+          textarea{
+            min-height: 150px;
+          }
+        }
+        .errorField{
+          border-color: #bc2f32 !important;
+        }
+        .errorMsgForm{
+          color: #bc2f32 !important;
+          font-size: 12px;
+          margin-top: -10px;
+            .errorIcon{
+              margin-right: 10px;
+            }
+          }
+      }
+  }
+  .gridContainerSingle{
+    display:grid;
+    //grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    padding: 12px 0;
+    row-gap: 10px;
+    column-gap: 80;
+    .propertyRow{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .labelproperty{
+        flex: 0 20%;
+      }
+      .textBoxValue{
+        flex: 0 50%;
+      }
+      .dropDownValue{
+        flex: none;
+        width: 50%;
+      }
+      .textArea{
+        textarea{
+          min-height: 150px;
+        }
+      }
+      .errorField{
+        border-color: #bc2f32 !important;
+      }
+      .errorMsgForm{
+        color: #bc2f32 !important;
+        font-size: 12px;
+        margin-top: -10px;
+        .errorIcon{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.newUserConfirmation{
+  .gridContainerSingle{
+    display:grid;
+    //grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    padding: 12px 0;
+    row-gap: 10px;
+    column-gap: 80;
+  }
+}

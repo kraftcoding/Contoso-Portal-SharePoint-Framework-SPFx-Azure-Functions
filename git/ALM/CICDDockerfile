@@ -1,0 +1,28 @@
+ARG NODE_VERSION=18.19.0
+ARG ALPINE_VERSION=alpine3.18
+ARG NET_SDK_VERSION=8.0
+ARG SPFX_VERSION=1.18.0
+
+FROM node:${NODE_VERSION}-${ALPINE_VERSION} AS node
+FROM mcr.microsoft.com/dotnet/sdk:${NET_SDK_VERSION}-${ALPINE_VERSION}
+
+RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
+  && apk add bash sudo shadow zip \
+  && apk del .pipeline-deps
+
+COPY --from=node /usr/lib /usr/lib
+COPY --from=node /usr/local/lib /usr/local/lib
+COPY --from=node /usr/local/include /usr/local/include
+COPY --from=node /usr/local/bin /usr/local/bin
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+
+# spfx global dependencies
+RUN npm i -g gulp-cli yo@4.3.1 @microsoft/generator-sharepoint@${SPFX_VERSION} --unsafe-perm true --force
+
+# management tools
+# RUN npm i -g @pnp/cli-microsoft365 --unsafe-perm true --force
+RUN pwsh -c "Install-Module -Name PnP.PowerShell -Scope AllUsers -Force"
+
+RUN mkdir /workspace
+
+CMD [ "node" ]

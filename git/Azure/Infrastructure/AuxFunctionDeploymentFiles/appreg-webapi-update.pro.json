@@ -1,0 +1,13 @@
+{
+    "web": {
+        "redirectUris": [
+            "https://funcprodContoso001.azurewebsites.net/.auth/login/aad/callback"
+        ],
+        "homePageUrl": "https://funcprodContoso001.azurewebsites.net/api/swagger/ui",
+        "logoutUrl": "https://funcprodContoso001.azurewebsites.net/.auth/logout",
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": true,
+            "enableAccessTokenIssuance": true
+        }
+    }
+}

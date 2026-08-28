@@ -1,0 +1,1835 @@
+<pnp:prodvisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/prodvisioningSchema" Author="NTTData" Generator="Human being" Version="1.0" Description="prodvisioning template para tenant de service-account@contoso.local." DisplayName="service-account@contoso.local" ImagepreviewUrl="https://sharepointpnp.com/Imagepreview.png">
+
+	<pnp:preferences Author="NTTData" Version="1.0" Generator="Human being">
+		<pnp:Parameters>
+			<pnp:Parameter Key="O365TenantName">politicaterritorial</pnp:Parameter>
+			<pnp:Parameter Key="RootSiteUrl">/sites/Contoso</pnp:Parameter>
+			<pnp:Parameter Key="RootSiteOwner"/>
+			<pnp:Parameter Key="RootSiteTitle">service-account@contoso.local</pnp:Parameter>
+			<pnp:Parameter Key="RootSiteDescription">Sitio principal de la plataforma service-account@contoso.local.</pnp:Parameter>
+			<pnp:Parameter Key="TaxonomyOwner"/>
+			<pnp:Parameter Key="TaxonomyGroupName">service-account@contoso.local</pnp:Parameter>
+			<pnp:Parameter Key="CTAndFieldCategoryGroupName">service-account@contoso.local</pnp:Parameter>
+		</pnp:Parameters>
+	</pnp:preferences>
+
+	<pnp:Localizations DefaultLCID="3082">
+		<pnp:Localization LCID="3082" Name="CNThome" ResourceFile="HomeCNTtest.es-ES.resx"/>
+		<pnp:Localization LCID="1069" Name="CNThome" ResourceFile="HomeCNTtest.eu-ES.resx"/>
+		<pnp:Localization LCID="1110" Name="CNThome" ResourceFile="HomeCNTtest.gl-ES.resx"/>
+		<pnp:Localization LCID="1027" Name="CNThome" ResourceFile="HomeCNTtest.ca-ES.resx"/>
+		<pnp:Localization LCID="3082" Name="DepartmentHome" ResourceFile="DepartmentHometest.es-ES.resx"/>
+		<pnp:Localization LCID="1069" Name="DepartmentHome" ResourceFile="DepartmentHometest.eu-ES.resx"/>
+		<pnp:Localization LCID="1110" Name="DepartmentHome" ResourceFile="DepartmentHometest.gl-ES.resx"/>
+		<pnp:Localization LCID="1027" Name="DepartmentHome" ResourceFile="DepartmentHometest.ca-ES.resx"/>
+	</pnp:Localizations>
+
+	<pnp:Tenant>
+		<!--
+		<pnp:AppCatalog>
+			<pnp:Package Src="Solutions\GlobalDeployment\pnp-modern-search-parts-v4.sppkg" Action="UploadAndPublish" SkipFeatureDeployment="true" Overwrite="true"/>
+			<pnp:Package Src="Solutions\GlobalDeployment\mgt-spfx-vv3.sppkg" Action="UploadAndPublish" SkipFeatureDeployment="true" Overwrite="true"/>
+			<pnp:Package Src="Solutions\GlobalDeployment\Contoso.sppkg" Action="UploadAndPublish" SkipFeatureDeployment="true" Overwrite="true"/>
+		</pnp:AppCatalog>
+		-->
+		<pnp:Themes>
+			<pnp:Theme Name="service-account@contoso.local" IsInverted="false" Overwrite="true">
+				{
+				"themePrimary": "#114DA6",
+				"themeLighterAlt": "#f2f6fb",
+				"themeLighter": "#f2f6fb",
+				"themeLight": "#a7bfe4",
+				"themeTertiary": "#5d88c9",
+				"themeSecondary": "#255db0",
+				"themeDarkAlt": "#0f4595",
+				"themeDark": "#0d3a7e",
+				"themeDarker": "#092b5d",
+				"neutralLighterAlt": "#faf9f8",
+				"neutralLighter": "#f3f2f1",
+				"neutralLight": "#edebe9",
+				"neutralQuaternaryAlt": "#e1dfdd",
+				"neutralQuaternary": "#d0d0d0",
+				"neutralTertiaryAlt": "#c8c6c4",
+				"neutralTertiary": "#a19f9d",
+				"neutralSecondary": "#605e5c",
+				"neutralPrimaryAlt": "#3b3a39",
+				"neutralPrimary": "#323130",
+				"neutralDark": "#201f1e",
+				"black": "#000000",
+				"white": "#ffffff"
+				}
+			</pnp:Theme>
+		</pnp:Themes>
+
+	</pnp:Tenant>
+
+	<!--<pnp:Templates ID="prodvisioningTemplates">
+		<pnp:prodvisioningTemplateFile ID="CNTHome" File="templateHomeCNTtest.xml"/>
+	</pnp:Templates>-->
+
+	<pnp:Sequence ID="Taxonomyprodvisioning">
+		<!--
+		<pnp:SiteCollections>
+			<pnp:SiteCollection p4:type="pnp:CommunicationSite" Title="{parameter:RootSiteTitle}" Description="{parameter:RootSiteDescription}" IsHubSite="true" HubSiteTitle="{parameter:RootSiteTitle}" Url="{parameter:RootSiteUrl}" Owner="{parameter:RootSiteOwner}" AllowFileSharingForGuestUsers="false" Theme="service-account@contoso.local" Language="3082" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+				<pnp:Templates>
+					<pnp:prodvisioningTemplateReference ID="CNTHome"/>
+				</pnp:Templates>
+			</pnp:SiteCollection>
+		</pnp:SiteCollections>
+		-->
+		<pnp:TermStore xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/prodvisioningSchema">
+			<pnp:TermGroup Name="service-account@contoso.local" ID="102a5d61-9d78-42e8-ab11-681331d4d37f" UpdateBehavior="Overwrite">
+				<pnp:TermSets>
+					<pnp:TermSet Name="Administración" ID="172d84e2-ba88-40d6-a872-8fe00d066caa">
+						<pnp:Terms>
+							<pnp:Term Name="Administración del Estado" ID="0938d5fb-1bf3-4149-8936-ffafec0991e9" CustomSortOrder="0">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Administración Local" ID="3cf8e11c-4de3-4a9c-9427-f9500c078c19" CustomSortOrder="1">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Otros" ID="4d0b32c1-5fbe-4f86-840a-e7eb670f530b" CustomSortOrder="3">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Andalucía" ID="fd7b0532-ea0b-4551-b10e-000deae52682" CustomSortOrder="4"  >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Aragón" ID="68cb8e17-7fcc-46c0-b5db-77bf57b57f3c" CustomSortOrder="5" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Canarias" ID="d99af432-83b7-4a29-bd10-3e26fd027ef4" CustomSortOrder="6" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cantabria" ID="f04f0777-91fc-49f1-a1cf-222f53b6f404" CustomSortOrder="7" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla y León" ID="2d0c8e36-3c83-4028-aec0-9bb8dc18086e" CustomSortOrder="8" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla-La Mancha" ID="6a2ce904-59ea-4dcf-a3ae-7fddea8092a7" CustomSortOrder="9" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cataluña" ID="72c8a1e1-512c-4ff0-98ce-1490ef091b9c" CustomSortOrder="10" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Ceuta" ID="5728287c-bd1c-457f-968f-096b9f1f827b" CustomSortOrder="11" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad de Madrid" ID="22521366-f02f-44a3-8095-747d4d58862f" CustomSortOrder="12" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Foral de Navarra" ID="52f60665-94c5-4fd6-a218-1c5772e9842e" CustomSortOrder="13" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Valenciana" ID="f6bfcff5-b184-4716-a08c-eba4266c6da0" CustomSortOrder="14" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Extremadura" ID="c7fe9d70-b3c9-4b0b-97e7-e517bfbf6ec7" CustomSortOrder="15" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Galicia" ID="9565168c-0c8c-4f04-a3f2-a45ea2d6279e" CustomSortOrder="16" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Islas Baleares" ID="10a5ec1f-5eb8-4edd-bd85-9cd7c5359b67" CustomSortOrder="17" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="La Rioja" ID="e7296e41-a92e-40dc-90bf-9181a6663074" CustomSortOrder="18" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Melilla" ID="34d80667-e27c-44cf-9961-80e6a462fe17" CustomSortOrder="19" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="País Vasco" ID="275beac7-cbbd-473c-af8b-f8b546b8a82a" CustomSortOrder="20" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Principado de Asturias" ID="fac3272c-c12d-44f0-a32b-32ba4a2c966c" CustomSortOrder="21" >
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Región de Murcia" ID="128ed302-7696-4824-9d8e-1b9398af73d4" CustomSortOrder="22">
+								<pnp:Terms/>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Retestsentación de Votes" ID="12e84bb5-bd3b-4640-9992-3981eafd4af4">
+						<pnp:Terms>
+							<pnp:Term Name="Convocante" ID="921e8b4d-e67d-42d1-a2e8-c720737d6120" CustomSortOrder="0"  >
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Convocant"/>
+									<pnp:Label Language="1069" Value="Deitzaile"/>
+									<pnp:Label Language="1110" Value="Convocante"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="País Vasco" ID="5db8575a-b9ad-44ae-9e7f-7e95add703af" CustomSortOrder="1">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cataluña" ID="010a4b3d-b6ea-4f53-b881-b6cc1a57f2cf" CustomSortOrder="2">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Galicia" ID="13602056-2c0a-4623-a331-bf86e151d98f" CustomSortOrder="3">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Andalucía" ID="0985ba5f-1a77-4db6-b558-0ed36e2696ef" CustomSortOrder="4">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Principado de Asturias" ID="1d38c5f3-d7b9-459a-8648-8656ba56415a" CustomSortOrder="5">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cantabria" ID="39865cd7-5472-4a99-a631-8defd984f32d" CustomSortOrder="6">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="La Rioja" ID="2acec57a-ec42-4e3a-9810-9d40bdec0d4e" CustomSortOrder="7">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Región de Murcia" ID="756cafd5-f795-4533-9446-f93de140524e" CustomSortOrder="8">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Valenciana" ID="ec589c4a-d17c-4350-b816-cc619a50bff4" CustomSortOrder="9">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Aragón" ID="f56530cd-06f9-4278-b7db-06f6f13dddbf" CustomSortOrder="10">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla-La Mancha" ID="0ca55898-919f-4afe-8056-c74c067c9a98" CustomSortOrder="11">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Canarias" ID="0984732d-c0e4-452a-a11a-f1716f9a5417" CustomSortOrder="12">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Foral de Navarra" ID="58092b4e-4300-4241-ab86-50fdd759d31a" CustomSortOrder="13">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Extremadura" ID="f8388f80-030e-4e6f-8db5-45e80b27b394" CustomSortOrder="14">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Islas Baleares" ID="3cc53199-aee7-4ce4-933d-56ac5b9a0cde" CustomSortOrder="15">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad de Madrid" ID="7ef278f9-b615-41a9-9d0c-c0ccdb021930" CustomSortOrder="16">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla y León" ID="da53b010-613d-47d9-8a47-48608aef3438" CustomSortOrder="17">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Ceuta" ID="aa533f3f-1898-484a-9f45-334c71ef19d4" CustomSortOrder="18">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Melilla" ID="07a1050d-fb1f-4711-a170-ff3bcb98b1a3" CustomSortOrder="19">
+								<pnp:Terms/>
+							</pnp:Term>
+
+							<!-- TODO: Find a different approdach to integrate reused terms. PnP Bug: https://github.com/pnp/PnP-Sites-Core/issues/2330 -->
+							<!-- <pnp:Term Name="Andalucía"  SourceTermId="fd7b0532-ea0b-4551-b10e-000deae52682"  CustomSortOrder="2" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Aragón" SourceTermId="68cb8e17-7fcc-46c0-b5db-77bf57b57f3c"  CustomSortOrder="3" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Canarias" SourceTermId="d99af432-83b7-4a29-bd10-3e26fd027ef4" CustomSortOrder="4" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cantabria" SourceTermId="f04f0777-91fc-49f1-a1cf-222f53b6f404"  CustomSortOrder="5" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla y León" SourceTermId="2d0c8e36-3c83-4028-aec0-9bb8dc18086e"  CustomSortOrder="6" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Castilla-La Mancha" SourceTermId="6a2ce904-59ea-4dcf-a3ae-7fddea8092a7" CustomSortOrder="7" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Cataluña" SourceTermId="72c8a1e1-512c-4ff0-98ce-1490ef091b9c" CustomSortOrder="8" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Ceuta" SourceTermId="5728287c-bd1c-457f-968f-096b9f1f827b" CustomSortOrder="9" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad de Madrid" SourceTermId="22521366-f02f-44a3-8095-747d4d58862f" CustomSortOrder="10" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Foral de Navarra" SourceTermId="52f60665-94c5-4fd6-a218-1c5772e9842e" CustomSortOrder="11" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comunidad Valenciana" SourceTermId="f6bfcff5-b184-4716-a08c-eba4266c6da0" CustomSortOrder="12" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Extremadura" SourceTermId="c7fe9d70-b3c9-4b0b-97e7-e517bfbf6ec7" CustomSortOrder="13" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Galicia" SourceTermId="9565168c-0c8c-4f04-a3f2-a45ea2d6279e" CustomSortOrder="14" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Islas Baleares" SourceTermId="10a5ec1f-5eb8-4edd-bd85-9cd7c5359b67" CustomSortOrder="15" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="La Rioja" SourceTermId="e7296e41-a92e-40dc-90bf-9181a6663074" CustomSortOrder="16" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Melilla" SourceTermId="34d80667-e27c-44cf-9961-80e6a462fe17" CustomSortOrder="17" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="País Vasco" SourceTermId="275beac7-cbbd-473c-af8b-f8b546b8a82a" CustomSortOrder="18" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Principado de Asturias" SourceTermId="fac3272c-c12d-44f0-a32b-32ba4a2c966c" CustomSortOrder="19" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Región de Murcia" SourceTermId="128ed302-7696-4824-9d8e-1b9398af73d4" CustomSortOrder="20" IsSourceTerm="false" IsReused="true">
+								<pnp:Terms/> -->
+							<!-- </pnp:Term> -->
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Estado acuerdo" ID="1437ff14-d15f-4118-a2d6-bd34e9db3613">
+						<pnp:Terms>
+							<pnp:Term Name="En curso" ID="5996ee35-33ef-4fce-820d-06db4c5cfcad">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="En curs"/>
+									<pnp:Label Language="1069" Value="Bidean"/>
+									<pnp:Label Language="1110" Value="En curso"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Aprodbado" ID="04012a59-69bf-4f39-99b3-799d6d9e4f26">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Aprodvat"/>
+									<pnp:Label Language="1069" Value="Onartua"/>
+									<pnp:Label Language="1110" Value="Aprodbado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="No aprodbado" ID="76426a2a-907d-4717-9857-5c704e7b1c1b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="No aprodvat"/>
+									<pnp:Label Language="1069" Value="Ez onartua"/>
+									<pnp:Label Language="1110" Value="Non aprodbado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Sobre la mesa" ID="22abc0e5-25f1-4c07-80c5-b715dba4a1a6">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Sobre la taula"/>
+									<pnp:Label Language="1069" Value="Mahai gainean"/>
+									<pnp:Label Language="1110" Value="Sobre a mesa"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Aprodbado por unanimidad" ID="ddf339aa-3f6a-4a34-a24e-55b2b6efa7f5">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Aprodvat per unanimitat"/>
+									<pnp:Label Language="1069" Value="Baimen unanimez onartua"/>
+									<pnp:Label Language="1110" Value="Aprodbado por unanimidade"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Estado votación" ID="410cb88e-4e02-46fd-a44a-ff75b419dc13">
+						<pnp:Terms>
+							<pnp:Term Name="A favor" ID="bd558d1a-e24b-4882-865d-853c7a14289e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="A favor"/>
+									<pnp:Label Language="1069" Value="Alde"/>
+									<pnp:Label Language="1110" Value="A favor"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="En contra" ID="b0c9703c-16a2-4c65-966d-7f39b67c662e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="En contra"/>
+									<pnp:Label Language="1069" Value="Aurka"/>
+									<pnp:Label Language="1110" Value="En contra"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Abstención" ID="0ae772d2-0f28-4eaf-95a9-8c857d78d51c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Abstenció"/>
+									<pnp:Label Language="1069" Value="Abstentzioa"/>
+									<pnp:Label Language="1110" Value="Abstención"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Estado Meeting" ID="5e7c267a-4f4f-4d43-99c8-a94d1660ae85">
+						<pnp:Terms>
+							<pnp:Term Name="Cancelada" ID="47a651b0-921b-40ad-bf16-90d9687f4004">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Cancelada"/>
+									<pnp:Label Language="1069" Value="Ezeztatuta"/>
+									<pnp:Label Language="1110" Value="Cancelada"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Celebrada" ID="bd52a4c8-d276-4bb0-a1f8-12fb7adf8999">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Celebrada"/>
+									<pnp:Label Language="1069" Value="Ospatua"/>
+									<pnp:Label Language="1110" Value="Celebrada"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="En celebración" ID="7c80f44b-6586-4d98-82a8-a43acd09b99d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="En celebració"/>
+									<pnp:Label Language="1069" Value="Ospakizunean"/>
+									<pnp:Label Language="1110" Value="En celebración"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="En construcción" ID="1214ed8e-cfbd-4d7a-b5b7-867654823f74">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="En construcció"/>
+									<pnp:Label Language="1069" Value="Eraikuntzan"/>
+									<pnp:Label Language="1110" Value="En construción"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="test reserva" ID="96909cc0-ab33-48c0-9bfd-714add3bdb4d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="test reserva"/>
+									<pnp:Label Language="1069" Value="Erreserba aurretik"/>
+									<pnp:Label Language="1110" Value="test reserva"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Publicada" ID="8db5d28f-c8e4-463d-99bd-6e2bd4196216">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Publicada"/>
+									<pnp:Label Language="1069" Value="Argitaratuta"/>
+									<pnp:Label Language="1110" Value="Publicada"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Archivada" ID="2522ab31-a67d-4ebd-abc4-733610aad9a9">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Arxivat"/>
+									<pnp:Label Language="1069" Value="Artxibatuta"/>
+									<pnp:Label Language="1110" Value="Arquivado"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Estado Elaboración ENI" ID="ac49f014-dcf1-4f43-a870-9a91a6663c5d">
+						<pnp:Terms>
+							<pnp:Term Name="Original" ID="66c17bcb-008a-49da-8abd-22b5636d71b0">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Original"/>
+									<pnp:Label Language="1069" Value="Jatorrizkoa"/>
+									<pnp:Label Language="1110" Value="Orixinal"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Otros" ID="a14f4085-bf77-4632-b09b-9e2c3ccbf731">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Altres"/>
+									<pnp:Label Language="1069" Value="Beste batzuk"/>
+									<pnp:Label Language="1110" Value="Outros"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Division" ID="4581a675-bfd7-4297-a403-5a7cce1be8e6">
+						<pnp:Terms>
+							<pnp:Term Name="Agricultura, Pesca y Alimentación" ID="8659fb30-5f02-440a-a095-aa3d04d6f866">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Agricultura, Pesca i Alimentació"/>
+									<pnp:Label Language="1069" Value="Nekazaritza, Arrantza eta Elikadura"/>
+									<pnp:Label Language="1110" Value="Agricultura, Pesca e Alimentación"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Ciencia, Innovación y Universidades" ID="936e27fc-3813-4589-93d6-14ebd39be7ac">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Ciència, Innovació i Universitats"/>
+									<pnp:Label Language="1069" Value="Zientzia, Berrikuntza eta Unibertsitateak"/>
+									<pnp:Label Language="1110" Value="Ciencia, Innovación e Universidades"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Cultura" ID="79333525-0de0-425e-bf85-fa69dea4e904">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Cultura"/>
+									<pnp:Label Language="1069" Value="Kultura"/>
+									<pnp:Label Language="1110" Value="Cultura"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Asuntos Exteriores, Unión Europea y Contosoción" ID="f999fd7d-4ec1-4b8e-84e7-6e1cbe2561bc">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Exteriores, Unión Europea y Contosoción: Afers Exteriors, Unió Europea i Contosoció"/>
+									<pnp:Label Language="1069" Value="Unión Europea y Contosoción: Kanpo Arazoak, Europar Batasuna eta Lankidetza"/>
+									<pnp:Label Language="1110" Value="Asuntos Exteriores, Unión Europea y Contosoción: Asuntos Exteriores, Unión Europea e Contosoción"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Defensa" ID="b02204ae-ae96-45c3-8069-17043eb3a2e5">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Defensa"/>
+									<pnp:Label Language="1069" Value="Defentsa"/>
+									<pnp:Label Language="1110" Value="Defensa"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Derechos Sociales, Consumo y Agenda 2030" ID="fc223273-568d-49d5-a52c-6970e814ef24">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Drets Socials, Consum i Agenda 2030"/>
+									<pnp:Label Language="1069" Value="Gizarte Eskubideak, Kontsumoa eta 2030 Agenda"/>
+									<pnp:Label Language="1110" Value="Dereitos Sociais, Consumo e Axenda 2030"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Economía, Comercio y Emtestsa" ID="0a799f7d-6542-4868-90bc-3beb2997da45">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Economia, Comerç i Emtestsa"/>
+									<pnp:Label Language="1069" Value="Ekonomia, Merkataritza eta Entestsa"/>
+									<pnp:Label Language="1110" Value="Economía, Comercio e Emtestsa"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Educación, Formación prodfesional y Deportes" ID="b26675be-3502-4368-85d5-8a9fb4779f5c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Educació, Formació prodfessional i Esports"/>
+									<pnp:Label Language="1069" Value="Hezkuntza, Lanbide Heziketa eta Kirolak"/>
+									<pnp:Label Language="1110" Value="Educación, Formación prodfesional e Deportes"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Hacienda" ID="3121fe60-aede-444a-94e6-d3c2df80f6bd">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Hisenda"/>
+									<pnp:Label Language="1069" Value="Zerga-agintaritzak"/>
+									<pnp:Label Language="1110" Value="Hacienda"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Igualdad" ID="0e4ee5eb-e105-4235-ba8c-c5cd6f105cca">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Igualtat"/>
+									<pnp:Label Language="1069" Value="Berdintasuna"/>
+									<pnp:Label Language="1110" Value="Igualdade"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Inclusión, Seguridad Social y Migraciones" ID="31d33813-647d-425d-a524-ae2431627c18">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Inclusió, Seguretat Social i Migracions"/>
+									<pnp:Label Language="1069" Value="Inklusioa, Gizarte Segurantza eta Migrazioak"/>
+									<pnp:Label Language="1110" Value="Inclusión, Seguridade Social e Migracións"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Industria y Turismo" ID="6e758021-cc0e-4b17-ad20-cf7f4b12ff52">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Indústria i Turisme"/>
+									<pnp:Label Language="1069" Value="Industria eta Turismoa"/>
+									<pnp:Label Language="1110" Value="Industria e Turismo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Interior" ID="6378ffd9-4bf1-4527-a155-79dc85e2d7de">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Interior"/>
+									<pnp:Label Language="1069" Value="Barruan"/>
+									<pnp:Label Language="1110" Value="Interior"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Juventud e Infancia" ID="60d6e13f-160f-4423-8c4a-cb196545b1ee">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Joventut i Infància"/>
+									<pnp:Label Language="1069" Value="Gazteria eta Haurtzaroa"/>
+									<pnp:Label Language="1110" Value="Xuventude e Infancia"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Política Territorial y Memoria Democrática" ID="5a55841d-3363-40a9-af67-e64c0d231337">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Política Territorial i Memòria Democràtica"/>
+									<pnp:Label Language="1069" Value="Lurralde Politika eta Memoria Demokratikoa"/>
+									<pnp:Label Language="1110" Value="Política Territorial e Memoria Democrática"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="testsidencia del Gobierno" ID="f9474b12-4ff7-42fc-b954-8d5e9f58c8db">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="testsidència del Govern"/>
+									<pnp:Label Language="1069" Value="Jaurlaritzaren Lehendakaritza"/>
+									<pnp:Label Language="1110" Value="testsidencia do Goberno"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="testsidencia, Justicia y Relaciones con las Cortes" ID="cb5f9fb6-f1d8-4a23-98d3-6ce4e531f0ed">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="testsidència, Justícia i Relacions amb les Corts"/>
+									<pnp:Label Language="1069" Value="Lehendakaritza, Justizia eta Gorteekiko Harremanak"/>
+									<pnp:Label Language="1110" Value="testsidencia, Xustiza e Relacións cos Tribunais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Sanidad" ID="309a99c1-9d6f-49c4-a1a8-b0edb5ece0cf">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Sanitat"/>
+									<pnp:Label Language="1069" Value="Osasuna"/>
+									<pnp:Label Language="1110" Value="Saúde"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Trabajo y Economía Social" ID="ca743cbf-effc-4bb8-b843-a7a2d24e9d4a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Treball i Economia Social"/>
+									<pnp:Label Language="1069" Value="Lan eta Gizarte Ekonomia"/>
+									<pnp:Label Language="1110" Value="Traballo e Economía Social"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Transformación Digital y Función Pública" ID="5bb00f9e-e4f2-44ee-a5ec-e039e377d210">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Transformació Digital i Funció Pública"/>
+									<pnp:Label Language="1069" Value="Eraldaketa Digitala eta Zerbitzu Publikoa"/>
+									<pnp:Label Language="1110" Value="Transformación Dixital e Servizo Público"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Transición Ecológica y el Reto Demográfico" ID="2537d57b-23d1-4721-91bc-e6c2f2ad32fe">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Transició Ecològica i el Repte Demogràfic"/>
+									<pnp:Label Language="1069" Value="Trantsizio ekologikoa eta erronka demografikoa"/>
+									<pnp:Label Language="1110" Value="A transición ecolóxica e o reto demográfico"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Transportes y Movilidad Sostenible" ID="96db6545-d30f-42b8-9104-78a4cd959919">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Transports i Mobilitat Sostenible"/>
+									<pnp:Label Language="1069" Value="Garraioa eta Mugikortasun Iraunkorra"/>
+									<pnp:Label Language="1110" Value="Transporte e Mobilidade Sostible"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Vivienda y Agenda Urbana" ID="6d67fdbb-97a0-4fce-8a2a-afeff2fd56b1">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Habitatge i Agenda Urbana"/>
+									<pnp:Label Language="1069" Value="Etxebizitza eta Hiri Agenda"/>
+									<pnp:Label Language="1110" Value="Vivenda e Axenda Urbana"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Secretaría" ID="c5df120a-8954-43d7-9f71-fdd0e996ee30">
+					</pnp:TermSet>
+					<pnp:TermSet Name="Period" ID="7b4c61b9-c43e-4d38-84f6-f717b2bddcac">
+						<pnp:Terms>
+							<pnp:Term Name="Period I (27/03/1979 - 17/11/1982)" ID="088761b4-d46e-46d6-8ffe-e7b47b34ac62">
+                            	<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period I (27/03/1979 - 17/11/1982)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia I (27/03/1979 - 17/11/1982)"/>
+									<pnp:Label Language="1110" Value="Lexislatura I (27/03/1979 - 17/11/1982)"/>
+								</pnp:Labels>
+                        	</pnp:Term>
+							<pnp:Term Name="Period II (18/11/1982 - 14/07/1986)" ID="db08f940-d523-4e82-8813-da6faa714551">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period II (18/11/1982 - 14/07/1986)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia II (18/11/1982 - 14/07/1986)"/>
+									<pnp:Label Language="1110" Value="Lexislatura II (18/11/1982 - 14/07/1986)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period III (15/07/1986 - 20/11/1989)" ID="0798e254-6a7d-4666-ae37-9da680473de0">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period III (15/07/1986 - 20/11/1989)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia III (15/07/1986 - 20/11/1989)"/>
+									<pnp:Label Language="1110" Value="Lexislatura III (15/07/1986 - 20/11/1989)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period IV (21/11/1989 - 28/06/1993)" ID="d26a8447-06db-466a-967f-364499b6178c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period IV (21/11/1989 - 28/06/1993)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia IV (21/11/1989 - 28/06/1993)"/>
+									<pnp:Label Language="1110" Value="Lexislatura IV (21/11/1989 - 28/06/1993)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period V (29/06/1993 - 26/03/1996)" ID="23805198-3a2d-40ac-9470-21ac8fc5fa73">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period V (29/06/1993 - 26/03/1996)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia V (29/06/1993 - 26/03/1996)"/>
+									<pnp:Label Language="1110" Value="Lexislatura V (29/06/1993 - 26/03/1996)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period VI (26/03/1996 - 04/04/2000)" ID="5bfcf084-de1d-45d0-bfc7-e076b1e39255">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period VI (26/03/1996 - 04/04/2000)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia VI (26/03/1996 - 04/04/2000)"/>
+									<pnp:Label Language="1110" Value="Lexislatura VI (26/03/1996 - 04/04/2000)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period VII (05/04/2000 - 01/04/2004)" ID="c3484f90-8194-4e91-8aeb-de601ee8a321">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period VII (05/04/2000 - 01/04/2004)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia VII (05/04/2000 - 01/04/2004)"/>
+									<pnp:Label Language="1110" Value="Lexislatura VII (05/04/2000 - 01/04/2004)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period VIII (02/04/2004 - 31/03/2008)" ID="e92e4a5b-f372-4c65-90db-452301a46675">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period VIII (02/04/2004 - 31/03/2008)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia VIII (02/04/2004 - 31/03/2008)"/>
+									<pnp:Label Language="1110" Value="Lexislatura VIII (02/04/2004 - 31/03/2008)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period IX (01/04/2008 - 12/12/2011)" ID="5527a294-4037-4571-a4a2-beaa624493b8">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period IX (01/04/2008 - 12/12/2011)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia IX (01/04/2008 - 12/12/2011)"/>
+									<pnp:Label Language="1110" Value="Lexislatura IX (01/04/2008 - 12/12/2011)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period X (13/12/2011 - 20/12/2015)" ID="99a8ba47-83e1-4c1b-89b4-fb66c192fd77">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period X (13/12/2011 - 20/12/2015)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia X (13/12/2011 - 20/12/2015)"/>
+									<pnp:Label Language="1110" Value="Lexislatura X (13/12/2011 - 20/12/2015)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period XI (21/12/2015 - 18/07/2016)" ID="569e236e-ff9c-4245-89fa-fa3d51bda0d5">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period XI (21/12/2015 - 18/07/2016)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia XI (21/12/2015 - 18/07/2016)"/>
+									<pnp:Label Language="1110" Value="Lexislatura XI (21/12/2015 - 18/07/2016)"/>
+								</pnp:Labels>
+							</pnp:Term>    
+							<pnp:Term Name="Period XII (19/07/2016 - 20/05/2019)" ID="8582fb3c-afc5-47a5-be67-f047de04a352">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period XII (19/07/2016 - 20/05/2019)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia XII (19/07/2016 - 20/05/2019)"/>
+									<pnp:Label Language="1110" Value="Lexislatura XII (19/07/2016 - 20/05/2019)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period XIII (21/05/2019 - 02/12/2019)" ID="0f3867fe-6b6d-426f-bded-44a8b9409661">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period XIII (21/05/2019 - 02/12/2019)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia XIII (21/05/2019 - 02/12/2019)"/>
+									<pnp:Label Language="1110" Value="Lexislatura XIII (21/05/2019 - 02/12/2019)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period XIV (03/12/2019 - 16/08/2023)" ID="b00d4a5a-0b45-4636-af3b-ef28ab024bea">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period XIV (03/12/2019 - 16/08/2023)"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia XIV (03/12/2019 - 16/08/2023)"/>
+									<pnp:Label Language="1110" Value="Lexislatura XIV (03/12/2019 - 16/08/2023)"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Period XV (17/08/2023 - )" ID="718356c0-da6b-4855-9713-aa5514dd7bed">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Period XV (17/08/2023 - )"/>
+									<pnp:Label Language="1069" Value="Legegintzaldia XV (17/08/2023 - )"/>
+									<pnp:Label Language="1110" Value="Lexislatura XV (17/08/2023 - )"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Estado Request" ID="1145f74d-26c2-4db5-ba5b-108fe66ad81f">
+						<pnp:Terms>
+							<pnp:Term Name="Aceptado" ID="9628620a-c31b-4903-9bb2-b305d51821bd">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Acceptat"/>
+									<pnp:Label Language="1069" Value="Onartua"/>
+									<pnp:Label Language="1110" Value="Aceptado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Cancelado" ID="cb2d362d-bf4e-466b-b0b2-034cd0053291">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Cancelat"/>
+									<pnp:Label Language="1069" Value="Ezeztatuta"/>
+									<pnp:Label Language="1110" Value="Cancelado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Pendiente" ID="b6d26a81-48bb-4a65-a0d6-7d50b3feed1a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Pendent"/>
+									<pnp:Label Language="1069" Value="Belarritakoa"/>
+									<pnp:Label Language="1110" Value="Pendente"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Rechazado" ID="aac5817d-310f-4bfa-838a-1a1dda983bfb">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Rebutjat"/>
+									<pnp:Label Language="1069" Value="Ezezkoa"/>
+									<pnp:Label Language="1110" Value="Rexeitado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Delegado" ID="fccf999f-fd9a-4370-a4a3-11400a5d19ff">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Delegat"/>
+									<pnp:Label Language="1069" Value="Delegatua"/>
+									<pnp:Label Language="1110" Value="Delegado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Delegación pendiente" ID="b90d7bd3-2859-4974-a0e1-f9808701bebd">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Delegació pendent"/>
+									<pnp:Label Language="1069" Value="Ordezkaritza zain"/>
+									<pnp:Label Language="1110" Value="Delegación pendente"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Modificación Minutes pendiente" ID="46707f88-14ef-456b-91f0-ae0785c89c7b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Modificació Minutes pendent"/>
+									<pnp:Label Language="1069" Value="Akta Aldaketa zain"/>
+									<pnp:Label Language="1110" Value="Modificación Minutes pendente"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Aprodbado automático" ID="de904487-484a-4250-9962-9e4a19c4a49b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Aprodvat automàticament"/>
+									<pnp:Label Language="1069" Value="Automatikoa onartua"/>
+									<pnp:Label Language="1110" Value="Aprodbado automático"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Excedido" ID="8f52f3b1-90e6-429e-b796-6d6ad9f077b2">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Excedit"/>
+									<pnp:Label Language="1069" Value="Gainditua"/>
+									<pnp:Label Language="1110" Value="Excedido"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Formato Attendance" ID="0775b014-e8fc-4aac-ae49-6b0b901156c1">
+						<pnp:Terms>
+							<pnp:Term Name="Online" ID="8f4e0e22-2c3f-4454-8210-f4151dceeb89">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Online"/>
+									<pnp:Label Language="1069" Value="Online"/>
+									<pnp:Label Language="1110" Value="Online"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Online y InPerson" ID="e49c8fe8-87f5-4b62-b6ce-0df240b7ec7f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Online i InPerson"/>
+									<pnp:Label Language="1069" Value="Online eta testsentzian"/>
+									<pnp:Label Language="1110" Value="Online e InPerson"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="InPerson" ID="3a16b292-5616-4ef9-8a56-2b36c20bb992">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="InPerson"/>
+									<pnp:Label Language="1069" Value="testsentzian"/>
+									<pnp:Label Language="1110" Value="InPerson"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="prodcedimiento escrito" ID="474ce74e-26c2-4ada-9dbb-516be5deb394">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="prodcediment escrit"/>
+									<pnp:Label Language="1069" Value="Idatzizko prodzedura"/>
+									<pnp:Label Language="1110" Value="prodcedemento escrito"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Remisión de Documentación" ID="4ab0be08-fef2-4537-ab14-3b3ae0025df3">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Remissió de documentació"/>
+									<pnp:Label Language="1069" Value="Dokumentazioaren bidalketa"/>
+									<pnp:Label Language="1110" Value="Remisión de documentación"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Herramienta online" ID="55dfa3e7-f0df-4dc8-b53c-4018418041fe">
+						<pnp:Terms>
+							<pnp:Term Name="Microsoft Teams" ID="fc3ad891-8bb9-4ece-9638-26025201e131">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Otros" ID="8f9f34b6-307d-4361-8957-bfff9df1d1a9">
+								<pnp:Terms/>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Idioma" ID="8cef1f07-b1fd-4dcf-84a1-11f041d677b7">
+						<pnp:Terms>
+							<pnp:Term Name="Catalán" ID="f26551b8-2b2b-4797-bc57-b4b743c26e1e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Catalá"/>
+									<pnp:Label Language="1069" Value="Catalán"/>
+									<pnp:Label Language="1110" Value="Catalán"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Español" ID="58e02f26-3279-4764-9845-126c970acb0e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Espanyol"/>
+									<pnp:Label Language="1069" Value="Gaztelania"/>
+									<pnp:Label Language="1110" Value="Español"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Euskera" ID="4d22b097-2064-46f1-b403-495a05b50a2d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Euskera"/>
+									<pnp:Label Language="1069" Value="Euskara"/>
+									<pnp:Label Language="1110" Value="Euskera"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Gallego" ID="27352193-1e9e-47f0-a17f-1445c0dc6287">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Gallec"/>
+									<pnp:Label Language="1069" Value="Galegoa"/>
+									<pnp:Label Language="1110" Value="Galego"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Valenciano" ID="144ab6a5-ec94-488d-9829-570f516a960c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Valencià"/>
+									<pnp:Label Language="1069" Value="Valentziarra"/>
+									<pnp:Label Language="1110" Value="Valenciano"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Normativa" ID="0c81b0b4-d329-404d-bdac-bcb2216c436d">
+						<pnp:Terms>
+							<pnp:Term Name="Ley 40" ID="b483058d-c8da-4e69-9589-1e38c0879d46">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Llei 40"/>
+									<pnp:Label Language="1069" Value="40. legea"/>
+									<pnp:Label Language="1110" Value="Lei 40"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Órgano" ID="6f98455a-a1c9-45e7-8c5d-aaca87690eff">
+						<pnp:Terms>
+							<pnp:Term Name="Conferencia Sectorial de Agricultura y Desarrollo Rural" ID="ff0e1394-324a-4a85-ac22-6a82417a5b61">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Conferència Sectorial d´Agricultura i Desenvolupament Rural"/>
+									<pnp:Label Language="1069" Value="Nekazaritza eta Landa Garapenerako Konferentzia Sektoriala"/>
+									<pnp:Label Language="1110" Value="Conferencia Sectorial de Agricultura e Desenvolvemento Rural"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Conferencia Sectorial de Salud" ID="ca558bbc-a668-4abf-9fd9-863d712f50fa">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Conferència Sectorial de Salut"/>
+									<pnp:Label Language="1069" Value="Osasun Sektorearen Biltzarra"/>
+									<pnp:Label Language="1110" Value="Conferencia Sector Sanitaria"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo de órgano" ID="ba3ff2ef-09c8-4345-9bad-777014ddf636">
+						<pnp:Terms>
+							<pnp:Term Name="Comisión" ID="133ead80-7a57-47ef-90d4-3eadb8b87f5f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Comissió"/>
+									<pnp:Label Language="1069" Value="Batzordea"/>
+									<pnp:Label Language="1110" Value="Comisión"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Conferencia" ID="63ac1500-07b4-4e25-b4ff-6fbd946389ff">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Conferència"/>
+									<pnp:Label Language="1069" Value="Jardunaldia"/>
+									<pnp:Label Language="1110" Value="Conferencia"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Grupo de trabajo" ID="639fd297-c413-445a-b5ad-18264c021f68">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Grup de treball"/>
+									<pnp:Label Language="1069" Value="Lantaldea"/>
+									<pnp:Label Language="1110" Value="Grupo de traballo"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo Documental ENI" ID="96c2065a-9287-45f8-b638-41765a2cc57d">
+						<pnp:Terms>
+							<pnp:Term Name="Minutes" ID="9c66892e-1d73-4324-a9a2-5f3729c1e80e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Minutes"/>
+									<pnp:Label Language="1069" Value="Akta"/>
+									<pnp:Label Language="1110" Value="Minutes"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Acuerdo" ID="15eab6a0-8824-4871-82f9-55a84f8ffdee">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Acord"/>
+									<pnp:Label Language="1069" Value="Hitzarmena"/>
+									<pnp:Label Language="1110" Value="Acordo"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo Normativa" ID="58d16e28-ea8d-4751-9112-849e58dbc5c2">
+						<pnp:Terms>
+							<pnp:Term Name="Reglamento" ID="cb4e6cf7-c444-4cd9-afb2-7ee2f3cfe036">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Reglament"/>
+									<pnp:Label Language="1069" Value="Araudia"/>
+									<pnp:Label Language="1110" Value="Regulamento"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo orden del día" ID="133993de-eefc-4465-b6c0-b1391c04c7dc">
+						<pnp:Terms>
+							<pnp:Term Name="Decisorio" ID="c83ab3b1-00a1-4023-9a2f-1697b23c13d5">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Decisori"/>
+									<pnp:Label Language="1069" Value="Erabakigarria"/>
+									<pnp:Label Language="1110" Value="Decidente"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="de Coordinación" ID="264eb3ec-23d4-4cc9-8ace-8a643483db0c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="de Coordinació"/>
+									<pnp:Label Language="1069" Value="Koordinazio"/>
+									<pnp:Label Language="1110" Value="de Coordinación"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Informativo" ID="ca28d183-ce3e-4339-a516-f3aec1940622">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Informatiu"/>
+									<pnp:Label Language="1069" Value="Informagarria"/>
+									<pnp:Label Language="1110" Value="Informativo"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo ordenación orden del día" ID="18e98841-f04e-42cc-ae7e-3e77554ffb25">
+						<pnp:Terms>
+							<pnp:Term Name="Numérico" ID="2cc86787-b808-4ea4-b5f7-d92f9cc9b741">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Numèric"/>
+									<pnp:Label Language="1069" Value="Zenbakizkoak"/>
+									<pnp:Label Language="1110" Value="Numérico"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Alfabético" ID="c2c12ed4-1001-466f-977c-07249f45c3a0">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Alfabètic"/>
+									<pnp:Label Language="1069" Value="Alfabetikoa"/>
+									<pnp:Label Language="1110" Value="Alfabético"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Números romanos" ID="f980cb48-6220-45d0-a9f8-3266bc31c2ba">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Nombres romans"/>
+									<pnp:Label Language="1069" Value="Zenbaki erromatarrak"/>
+									<pnp:Label Language="1110" Value="Números romanos"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo Request" ID="1e656b38-7025-4068-805d-fc76e72e2faa">
+						<pnp:Terms>
+							<pnp:Term Name="Attendance" ID="049fcd42-556f-407c-8188-57a3a0ee8061">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Assistència"/>
+									<pnp:Label Language="1069" Value="Asistentzia"/>
+									<pnp:Label Language="1110" Value="Attendance"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Voto" ID="218f97c6-863c-4e98-a8db-b817ed63d61a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Vot"/>
+									<pnp:Label Language="1069" Value="Botoa"/>
+									<pnp:Label Language="1110" Value="Voto"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo membresia" ID="8116d88b-46e5-4189-a8ad-5f167caf910a">
+						<pnp:Terms>
+							<pnp:Term Name="Público" ID="bb2791d7-b272-4eb2-a0fe-5d284070b6ef">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Públic"/>
+									<pnp:Label Language="1069" Value="Publiko"/>
+									<pnp:Label Language="1110" Value="Público"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Privado" ID="7aef6515-6102-4cac-9b95-4bee40ae95e4">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Privat"/>
+									<pnp:Label Language="1069" Value="Pribatua"/>
+									<pnp:Label Language="1110" Value="Privado"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Roles" ID="c107d212-3417-472b-a979-b9da999e6adf">
+						<pnp:Terms>
+							<pnp:Term Name="Convocante" ID="fa9dd202-5d9e-48b8-a527-e06fa881b81b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Convocant"/>
+									<pnp:Label Language="1069" Value="Deitzailea"/>
+									<pnp:Label Language="1110" Value="Convocante"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Gestor del convocante" ID="ba768f09-298e-4f59-ac31-97eff41db565">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Gestor del convocant"/>
+									<pnp:Label Language="1069" Value="Deitzailearen kudeatzailea"/>
+									<pnp:Label Language="1110" Value="Xestor do convocante"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Miembro" ID="9ac2fda6-c5cd-4712-9913-5caaa8f21b66">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Membre"/>
+									<pnp:Label Language="1069" Value="Kide"/>
+									<pnp:Label Language="1110" Value="Membro"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Asistente del miembro" ID="d496453c-b274-4d52-b4b5-9b8156468f7f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Assistent del membre"/>
+									<pnp:Label Language="1069" Value="Kidearen laguntzailea"/>
+									<pnp:Label Language="1110" Value="Asistente do membro"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Invitado" ID="fd501b97-9dc5-4d15-9908-de34d26d5b98">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Convidat"/>
+									<pnp:Label Language="1069" Value="Gonbidatua"/>
+									<pnp:Label Language="1110" Value="Invitado"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Area sectorial" ID="bda21274-3507-4b59-89e4-64cb5bb1aa0c">
+						<pnp:Terms>
+							<pnp:Term Name="Agricultura y Ganadería" ID="fa9dd202-5d9e-48b8-a527-e06fa881b81c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Agricultura i Ramaderia"/>
+									<pnp:Label Language="1069" Value="Nekazaritza eta Abeltzaintza"/>
+									<pnp:Label Language="1110" Value="Agricultura e Gandaría"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Pesca" ID="fa9dd202-5d9e-48b8-a527-e06fa881b81d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Pesca"/>
+									<pnp:Label Language="1069" Value="Arrantza"/>
+									<pnp:Label Language="1110" Value="Pesca"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Alimentación" ID="fa9dd202-5d9e-48b8-a527-e06fa881b81e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Alimentació"/>
+									<pnp:Label Language="1069" Value="Elikadura"/>
+									<pnp:Label Language="1110" Value="Alimentación"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Contosoción Internacional" ID="fa9dd202-5d9e-48b8-a527-e06fa881b81f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Contosoció Internacional"/>
+									<pnp:Label Language="1069" Value="Nazioarteko Lankidetza"/>
+									<pnp:Label Language="1110" Value="Contosoción Internacional"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Unión Europea" ID="fa9dd202-5d9e-48b8-a527-e06fa881b820">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Unión Europea"/>
+									<pnp:Label Language="1069" Value="Europar Batasuna"/>
+									<pnp:Label Language="1110" Value="Unión Europea"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Acción Cultural" ID="fa9dd202-5d9e-48b8-a527-e06fa881b821">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Acció Cultural"/>
+									<pnp:Label Language="1069" Value="Kultura Ekintza"/>
+									<pnp:Label Language="1110" Value="Acción Cultural"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Archivos, Museos y Bibliotecas" ID="fa9dd202-5d9e-48b8-a527-e06fa881b822">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Arxius, Museus i Biblioteques"/>
+									<pnp:Label Language="1069" Value="Artxiboak, Museoak eta Liburutegiak"/>
+									<pnp:Label Language="1110" Value="Arquivos, Museos e Bibliotecas"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Artes Audiovisuales" ID="fa9dd202-5d9e-48b8-a527-e06fa881b823">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Arts Audiovisuals"/>
+									<pnp:Label Language="1069" Value="Ikus-entzunezko Arteak"/>
+									<pnp:Label Language="1110" Value="Artes Audiovisuais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Artes Escénicas y Musicales" ID="fa9dd202-5d9e-48b8-a527-e06fa881b824">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Arts Escèniques i Musicals"/>
+									<pnp:Label Language="1069" Value="Arte Eszenikoak eta Musikak"/>
+									<pnp:Label Language="1110" Value="Artes Escénicas e Musicais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Patrimonio Histórico-Artístico" ID="fa9dd202-5d9e-48b8-a527-e06fa881b825">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Patrimoni Històric-Artístic"/>
+									<pnp:Label Language="1069" Value="Ondare Historiko-Artistikoa"/>
+									<pnp:Label Language="1110" Value="Patrimonio Histórico-Artístico"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="prodpiedad Intelectual" ID="fa9dd202-5d9e-48b8-a527-e06fa881b826">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="prodpietat Intel·lectual"/>
+									<pnp:Label Language="1069" Value="Jabetza Intelektuala"/>
+									<pnp:Label Language="1110" Value="prodpiedad Intelectual"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Investigación" ID="fa9dd202-5d9e-48b8-a527-e06fa881b827">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Investigació"/>
+									<pnp:Label Language="1069" Value="Ikerketa"/>
+									<pnp:Label Language="1110" Value="Investigación"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Universidades" ID="fa9dd202-5d9e-48b8-a527-e06fa881b828">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Universitats"/>
+									<pnp:Label Language="1069" Value="Unibertsitateak"/>
+									<pnp:Label Language="1110" Value="Universidades"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Agenda 2030" ID="fa9dd202-5d9e-48b8-a527-e06fa881b829">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Agenda 2030"/>
+									<pnp:Label Language="1069" Value="2030 Agenda"/>
+									<pnp:Label Language="1110" Value="Axenda 2030"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Consumo" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Consum"/>
+									<pnp:Label Language="1069" Value="Kontsumoa"/>
+									<pnp:Label Language="1110" Value="Consumo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Juego" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Joc"/>
+									<pnp:Label Language="1069" Value="Jokoa"/>
+									<pnp:Label Language="1110" Value="Xogo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Servicios Sociales y Dependencia" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Serveis Socials i Dependència"/>
+									<pnp:Label Language="1069" Value="Gizarte Zerbitzuak eta Mendekotasuna"/>
+									<pnp:Label Language="1110" Value="Servizos Sociais e Dependencia"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Defensa" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Defensa"/>
+									<pnp:Label Language="1069" Value="Defentsa"/>
+									<pnp:Label Language="1110" Value="Defensa"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Comercio" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Comerç"/>
+									<pnp:Label Language="1069" Value="Merkataritza"/>
+									<pnp:Label Language="1110" Value="Comercio"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Economía" ID="fa9dd202-5d9e-48b8-a527-e06fa881b82f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Economía"/>
+									<pnp:Label Language="1069" Value="Ekonomia"/>
+									<pnp:Label Language="1110" Value="Economía"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Estadística" ID="fa9dd202-5d9e-48b8-a527-e06fa881b830">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Estadística"/>
+									<pnp:Label Language="1069" Value="Estatistika"/>
+									<pnp:Label Language="1110" Value="Estadística"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Instituciones Financieras" ID="fa9dd202-5d9e-48b8-a527-e06fa881b831">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Institucions Financeres"/>
+									<pnp:Label Language="1069" Value="Finantza Erakundeak"/>
+									<pnp:Label Language="1110" Value="Institucións Financeiras"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Deporte" ID="fa9dd202-5d9e-48b8-a527-e06fa881b832">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Esport"/>
+									<pnp:Label Language="1069" Value="Kirola"/>
+									<pnp:Label Language="1110" Value="Deporte"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Educación" ID="fa9dd202-5d9e-48b8-a527-e06fa881b833">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Educació"/>
+									<pnp:Label Language="1069" Value="Hezkuntza"/>
+									<pnp:Label Language="1110" Value="Educación"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Formación prodfesional" ID="fa9dd202-5d9e-48b8-a527-e06fa881b834">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Formació prodfessional"/>
+									<pnp:Label Language="1069" Value="Lanbide Heziketa"/>
+									<pnp:Label Language="1110" Value="Formación prodfesional"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Hacienda" ID="fa9dd202-5d9e-48b8-a527-e06fa881b835">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Hisenda"/>
+									<pnp:Label Language="1069" Value="Ogasuna"/>
+									<pnp:Label Language="1110" Value="Facenda"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Sistema de Financiación" ID="fa9dd202-5d9e-48b8-a527-e06fa881b836">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Sistema de Finançament"/>
+									<pnp:Label Language="1069" Value="Finantzaketa Sistema"/>
+									<pnp:Label Language="1110" Value="Sistema de Financiamento"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Política de Igualdad" ID="fa9dd202-5d9e-48b8-a527-e06fa881b837">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Política d’Igualtat"/>
+									<pnp:Label Language="1069" Value="Berdintasun Politika"/>
+									<pnp:Label Language="1110" Value="Política de Igualdade"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Espectáculos" ID="fa9dd202-5d9e-48b8-a527-e06fa881b838">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Espectacles"/>
+									<pnp:Label Language="1069" Value="Ikuskizunak"/>
+									<pnp:Label Language="1110" Value="Espectáculos"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Instituciones Penitenciarias" ID="fa9dd202-5d9e-48b8-a527-e06fa881b839">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Institucions Penitenciàries"/>
+									<pnp:Label Language="1069" Value="Zigor Erakundeak"/>
+									<pnp:Label Language="1110" Value="Institucións Penitenciarias"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="prodcesos Electorales" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="processos Electorals"/>
+									<pnp:Label Language="1069" Value="Hauteskunde prodzesuak"/>
+									<pnp:Label Language="1110" Value="prodcesos Electorais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="prodtección Civil" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="prodtecció Civil"/>
+									<pnp:Label Language="1069" Value="Babes Zibila"/>
+									<pnp:Label Language="1110" Value="prodtección Civil"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Seguridad" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Seguretat"/>
+									<pnp:Label Language="1069" Value="Segurtasuna"/>
+									<pnp:Label Language="1110" Value="Seguridade"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Tráfico" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Trànsit"/>
+									<pnp:Label Language="1069" Value="Trafikoa"/>
+									<pnp:Label Language="1110" Value="Tráfico"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Migraciones" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Migracions"/>
+									<pnp:Label Language="1069" Value="Migrazioak"/>
+									<pnp:Label Language="1110" Value="Migracións"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Seguridad Social" ID="fa9dd202-5d9e-48b8-a527-e06fa881b83f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Seguretat Social"/>
+									<pnp:Label Language="1069" Value="Gizarte Segurantza"/>
+									<pnp:Label Language="1110" Value="Seguridade Social"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Desarrollo Regional" ID="fa9dd202-5d9e-48b8-a527-e06fa881b840">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Desenvolupament Regional"/>
+									<pnp:Label Language="1069" Value="Eskualde Garapena"/>
+									<pnp:Label Language="1110" Value="Desenvolvemento Rexional"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Industria" ID="fa9dd202-5d9e-48b8-a527-e06fa881b841">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Indústria"/>
+									<pnp:Label Language="1069" Value="Industria"/>
+									<pnp:Label Language="1110" Value="Industria"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Pequeña y Mediana Emtestsa" ID="fa9dd202-5d9e-48b8-a527-e06fa881b842">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Petita i Mitjana Emtestsa"/>
+									<pnp:Label Language="1069" Value="Entestsa Txiki eta Ertainak"/>
+									<pnp:Label Language="1110" Value="Pequena e Mediana Emtestsa"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Turismo" ID="fa9dd202-5d9e-48b8-a527-e06fa881b843">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Turisme"/>
+									<pnp:Label Language="1069" Value="Turismoa"/>
+									<pnp:Label Language="1110" Value="Turismo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Patentes" ID="fa9dd202-5d9e-48b8-a527-e06fa881b844">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Patents"/>
+									<pnp:Label Language="1069" Value="Patenteak"/>
+									<pnp:Label Language="1110" Value="Patentes"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Juventud" ID="fa9dd202-5d9e-48b8-a527-e06fa881b845">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Joventut"/>
+									<pnp:Label Language="1069" Value="Gazteria"/>
+									<pnp:Label Language="1110" Value="Xuventude"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="prodtección del Menor" ID="fa9dd202-5d9e-48b8-a527-e06fa881b846">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="prodtecció del Menor"/>
+									<pnp:Label Language="1069" Value="Adingabeen Babesa"/>
+									<pnp:Label Language="1110" Value="prodtección do Menor"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Administración de Justicia" ID="fa9dd202-5d9e-48b8-a527-e06fa881b847">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Administració de Justícia"/>
+									<pnp:Label Language="1069" Value="Justizia Administrazioa"/>
+									<pnp:Label Language="1110" Value="Administración de Xustiza"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="testsidencia" ID="fa9dd202-5d9e-48b8-a527-e06fa881b848">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="testsidencia"/>
+									<pnp:Label Language="1069" Value="Lehendakaritza"/>
+									<pnp:Label Language="1110" Value="testsidencia"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Drogodependencias" ID="fa9dd202-5d9e-48b8-a527-e06fa881b849">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Drogodependències"/>
+									<pnp:Label Language="1069" Value="Droga-mendekotasunak"/>
+									<pnp:Label Language="1110" Value="Drogodependencias"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Farmacia" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Farmàcia"/>
+									<pnp:Label Language="1069" Value="Farmazia"/>
+									<pnp:Label Language="1110" Value="Farmacia"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Salud Pública y prodmoción de la Salud" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Salut Pública i prodmoció de la Salut"/>
+									<pnp:Label Language="1069" Value="Osasun Publikoa eta Osasun Sustapena"/>
+									<pnp:Label Language="1110" Value="Saúde Pública e prodmoción da Saúde"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Sanidad" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Sanitat"/>
+									<pnp:Label Language="1069" Value="Osasuna"/>
+									<pnp:Label Language="1110" Value="Sanidade"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Aguas y Obras Hidráulicas" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Aigües i Obres Hidràuliques"/>
+									<pnp:Label Language="1069" Value="Ura eta Lan Hidraulikoak"/>
+									<pnp:Label Language="1110" Value="Augas e Obras Hidráulicas"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Cambio Climático" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84e">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Canvi Climàtic"/>
+									<pnp:Label Language="1069" Value="Klima Aldaketa"/>
+									<pnp:Label Language="1110" Value="Cambio Climático"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Conservación de la Naturaleza" ID="fa9dd202-5d9e-48b8-a527-e06fa881b84f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Conservació de la Natura"/>
+									<pnp:Label Language="1069" Value="Naturan Kontserbazioa"/>
+									<pnp:Label Language="1110" Value="Conservación da Natureza"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Energía" ID="fa9dd202-5d9e-48b8-a527-e06fa881b850">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Energia"/>
+									<pnp:Label Language="1069" Value="Energia"/>
+									<pnp:Label Language="1110" Value="Enerxía"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Energía Nuclear" ID="fa9dd202-5d9e-48b8-a527-e06fa881b851">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Energia Nuclear"/>
+									<pnp:Label Language="1069" Value="Energia Nuklearra"/>
+									<pnp:Label Language="1110" Value="Enerxía Nuclear"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Medio Ambiente" ID="fa9dd202-5d9e-48b8-a527-e06fa881b852">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Medi Ambient"/>
+									<pnp:Label Language="1069" Value="Ingurumena"/>
+									<pnp:Label Language="1110" Value="Medio Ambiente"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Reto Demográfico" ID="fa9dd202-5d9e-48b8-a527-e06fa881b853">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Repte Demogràfic"/>
+									<pnp:Label Language="1069" Value="Erronka Demografikoa"/>
+									<pnp:Label Language="1110" Value="Reto Demográfico"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Economía Social" ID="fa9dd202-5d9e-48b8-a527-e06fa881b854">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Economia Social"/>
+									<pnp:Label Language="1069" Value="Ekonomia Soziala"/>
+									<pnp:Label Language="1110" Value="Economía Social"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Empleo" ID="fa9dd202-5d9e-48b8-a527-e06fa881b855">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Ocupació"/>
+									<pnp:Label Language="1069" Value="Enplegua"/>
+									<pnp:Label Language="1110" Value="Emtestgo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Relaciones Laborales" ID="fa9dd202-5d9e-48b8-a527-e06fa881b856">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Relacions Laborals"/>
+									<pnp:Label Language="1069" Value="Lan Harremanak"/>
+									<pnp:Label Language="1110" Value="Relacións Laborais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Administraciones Territoriales" ID="fa9dd202-5d9e-48b8-a527-e06fa881b857">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Administracions Territorials"/>
+									<pnp:Label Language="1069" Value="Lurralde Administrazioak"/>
+									<pnp:Label Language="1110" Value="Administracións Territoriais"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Memoria Democrática" ID="fa9dd202-5d9e-48b8-a527-e06fa881b858">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Memòria Democràtica"/>
+									<pnp:Label Language="1069" Value="Memoria Demokratikoa"/>
+									<pnp:Label Language="1110" Value="Memoria Democrática"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Unidad de Mercado" ID="fa9dd202-5d9e-48b8-a527-e06fa881b859">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Unitat de Mercat"/>
+									<pnp:Label Language="1069" Value="Merkatu Batasuna"/>
+									<pnp:Label Language="1110" Value="Unidade de Mercado"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Telecomunicaciones y Sociedad de la Información" ID="fa9dd202-5d9e-48b8-a527-e06fa881b85a">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Telecomunicacions i Societat de la Informació"/>
+									<pnp:Label Language="1069" Value="Telekomunikazioak eta Informazio Gizartea"/>
+									<pnp:Label Language="1110" Value="Telecomunicacións e Sociedade da Información"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Función Pública" ID="fa9dd202-5d9e-48b8-a527-e06fa881b85b">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Funció Pública"/>
+									<pnp:Label Language="1069" Value="Funtzio Publikoa"/>
+									<pnp:Label Language="1110" Value="Función Pública"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Organización, Informática y prodcedimientos" ID="fa9dd202-5d9e-48b8-a527-e06fa881b85c">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Organització, Informàtica i prodcediments"/>
+									<pnp:Label Language="1069" Value="Antolaketa, Informatika eta prodzedurak"/>
+									<pnp:Label Language="1110" Value="Organización, Informática e prodcedementos"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Cartografía y Attendance Técnica Obras Públicas" ID="fa9dd202-5d9e-48b8-a527-e06fa881b85d">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Cartografia i Assistència Tècnica Obres Públiques"/>
+									<pnp:Label Language="1069" Value="Kartografia eta Laguntza Teknikoa Obra Publikoak"/>
+									<pnp:Label Language="1110" Value="Cartografía e Attendance Técnica Obras Públicas"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Comunicaciones Postales y Telegráficas" ID="fa9dd202-5d9e-48b8-a527-e06fa881b85f">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Comunicacions Postals i Telegràfiques"/>
+									<pnp:Label Language="1069" Value="Posta eta Telegrafo Komunikazioak"/>
+									<pnp:Label Language="1110" Value="Comunicacións Postais e Telegráficas"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Infraestructuras y Acción Territorial" ID="fa9dd202-5d9e-48b8-a527-e06fa881b860">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Infraestructures i Acció Territorial"/>
+									<pnp:Label Language="1069" Value="Azpiegiturak eta Lurralde Ekintza"/>
+									<pnp:Label Language="1110" Value="Infraestruturas e Acción Territorial"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Puertos" ID="fa9dd202-5d9e-48b8-a527-e06fa881b861">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Ports"/>
+									<pnp:Label Language="1069" Value="Portuak"/>
+									<pnp:Label Language="1110" Value="Portos"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Transportes" ID="fa9dd202-5d9e-48b8-a527-e06fa881b862">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Transports"/>
+									<pnp:Label Language="1069" Value="Garraioak"/>
+									<pnp:Label Language="1110" Value="Transportes"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Vivienda y Urbanismo" ID="fa9dd202-5d9e-48b8-a527-e06fa881b863">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Habitatge i Urbanisme"/>
+									<pnp:Label Language="1069" Value="Etxebizitza eta Hirigintza"/>
+									<pnp:Label Language="1110" Value="Vivenda e Urbanismo"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Defensa - Seguridad Nacional" ID="fa9dd202-5d9e-48b8-a527-e06fa881b864">
+								<pnp:Terms/>
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Defensa - Seguretat Nacional"/>
+									<pnp:Label Language="1069" Value="Defentsa - Segurtasun Nazionala"/>
+									<pnp:Label Language="1110" Value="Defensa - Seguridade Naciona"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Desarrollo sostenible y Solidaridad Global" ID="d3f8a9c2-4e6b-4a1e-9c3b-8f2a7d1e5b6f">
+								<pnp:Labels>
+									<pnp:Label Language="1027" Value="Desenvolupament sostenible i Solidaritat Global"/>
+									<pnp:Label Language="1069" Value="Garapen jasangarria eta Elkartasun Globala"/>
+									<pnp:Label Language="1110" Value="Desenvolvemento sostible e Solidariedade Global"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Transporte, Turismo y Comunicaciones" ID="3f2a1c9e-7b84-4d2f-a6c3-9e1b5a7d2c8f">
+								<pnp:Labels>
+									<!-- Catalán (LCID 1027) -->
+									<pnp:Label Language="1027" Value="Transports, Turisme i Comunicacions"/>
+									<!-- Euskera (LCID 1069) -->
+									<pnp:Label Language="1069" Value="Garraioa, Turismoa eta Komunikazioak"/>
+									<!-- Gallego (LCID 1110) -->
+									<pnp:Label Language="1110" Value="Transporte, Turismo e Comunicacións"/>
+								</pnp:Labels>
+							</pnp:Term>
+							<pnp:Term Name="Contosoción Autonómica" ID="9a0d5c3b-2e17-4f8a-8b1c-7d6e5a4c3b2f">
+								<pnp:Labels>
+									<!-- Catalán (LCID 1027) -->
+									<pnp:Label Language="1027" Value="Contosoció autonòmica"/>
+									<!-- Euskera (LCID 1069) -->
+									<pnp:Label Language="1069" Value="Autonomia-erkidegoen arteko lankidetza"/>
+									<!-- Gallego (LCID 1110) -->
+									<pnp:Label Language="1110" Value="Contosoción autonómica"/>
+								</pnp:Labels>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Tipo de Órgano EXTERNAL" ID="42843e95-a65d-4db4-98f1-cf7571aaeb42">
+						<pnp:Terms>
+							<pnp:Term Name="Conferencia Sectorial" ID="cd1e190b-9bba-4583-b93d-3c390f4e61fe">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Otro Órgano de Contosoción Sectorial" ID="2c63f19e-3c12-4e48-abc7-a7e1969ee341">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comisión Sectorial" ID="fe34c696-6a87-46cb-b41c-1f69507c1277">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Grupo de Trabajo Sectorial" ID="d436b8e7-a792-40bb-9583-2e3545273ce1">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comité Consultivo" ID="3b0e793e-2a42-4955-92ac-cd497db20f3e">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comisión Bilateral de Contosoción con CC.AA." ID="e29aa354-a2d3-4f72-bdf0-4ee67a04096b">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="N1 - Órgano colegiado AGE con Participación CC.AA." ID="953e26ad-9eeb-4798-90c2-dacdca6ee5bd">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Subcomisión de Contosoción Bilateral" ID="a10ccf82-6f6f-4505-b583-ef4c84db4f57">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="N2 - Órgano Colegiado AGE con Participación CC.AA." ID="09addcc7-237e-4e9f-a36a-51050fa07b20">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Grupo de Trabajo Bilateral" ID="7fdc171c-0860-4d2f-a5c3-8fee6240e0ef">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Nivel 2 - Órgano Colegiado AGE sin Participación CC.AA." ID="864f830c-ef49-4d8b-b052-df123fe367e0">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Subgrupo de Trabajo Sectorial" ID="e71029f0-c544-4153-90d3-91982f4d6bbe">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Comisión Territorial de Coordinación" ID="11e55e42-87e7-4227-88aa-4f9d5844fd97">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Otro Órgano de Contosoción Bilateral" ID="6efba402-5bc1-41a3-96d3-9ae45ff4cd84">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="N1 - Órgano de Contosoción con Entidades Locales" ID="383418ce-daf1-45c2-94f5-7bbbb6663c8a">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="N2 - Órgano de Contosoción con Entidades Locales" ID="26a8aa36-2b78-4663-9aeb-e8a1202a044b">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Nivel 1 - Órgano Colegiado AGE sin Participación CC.AA." ID="d6d6ae31-f0bf-4c74-8d3f-0a28e9924216">
+								<pnp:Terms/>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+					<pnp:TermSet Name="Situación Órgano EXTERNAL" ID="f0b6cf80-5014-42d7-8b35-73c132ca246c">
+						<pnp:Terms>
+							<pnp:Term Name="Constituido" ID="28e10213-4e4a-46fe-8342-3dae6269b4f7">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Sin constituir" ID="b0373209-66e6-4adf-9999-ab03290549fd">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Sin datos" ID="68718a9d-8781-4bdd-8aa3-db7598c2e00d">
+								<pnp:Terms/>
+							</pnp:Term>
+							<pnp:Term Name="Suprimido" ID="f319a973-4aae-43af-9676-c54c7b0a7638">
+								<pnp:Terms/>
+							</pnp:Term>
+						</pnp:Terms>
+					</pnp:TermSet>
+				</pnp:TermSets>
+			</pnp:TermGroup>
+		</pnp:TermStore>
+	</pnp:Sequence>
+</pnp:prodvisioning>

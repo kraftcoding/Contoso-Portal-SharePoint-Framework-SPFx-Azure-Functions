@@ -1,0 +1,242 @@
+//estilos globales
+:global(.rbc-calendar) {
+  box-shadow: '[theme: cardShadow]';
+  border-radius: 4px;
+  padding: 10px;
+  height: 100% !important;
+  min-height: 350px;
+}
+
+:global(.rbc-month-view) {
+  border: 0px solid #ddd !important;
+}
+
+:global(.rbc-toolbar button) {
+  border: 0px solid #ccc !important;
+}
+
+:global(.rbc-header .rbc-header) {
+  border-top: 0px solid #ddd !important;
+}
+
+:global(.rbc-header) {
+  border-left: 0px solid #ddd !important;
+  margin-bottom: 15px !important;
+  border-bottom: 0px solid #ddd !important;
+}
+
+:global(.rbc-day-bg) {
+  border-left: 0px solid #ddd !important;
+}
+
+:global(.rbc-date-cell) {
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+:global(.rbc-row-bg) {
+  display: none !important;
+}
+
+:global(.rbc-button-link) {
+  font-weight: bold;
+}
+
+:global(.rbc-off-range-bg) {
+  background: '[theme: white]' !important;
+}
+
+:global(.rbc-off-range) {
+  color: inherit !important;
+}
+
+:global(.rbc-toolbar) {
+  flex-direction: row-reverse;
+}
+
+:global(.rbc-toolbar .rbc-toolbar-label) {
+  text-align: left !important;
+}
+
+:global(.rbc-month-row) {
+  overflow: inherit !important;
+  min-height: 42px;
+}
+
+:global(.rbc-month-row + .rbc-month-row) {
+  border-top: 0px solid #ddd !important;
+}
+
+:global(.rbc-row-content .rbc-row-content-scroll-container) {
+  display: none !important;
+}
+
+:global(.rbc-now) {
+  background: '[theme: white]' !important;
+}
+
+//estilos prodpios
+
+.wpTitle {
+  height: 27px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+.agendaAnnouncement {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.monthDateheaderContainer {
+  height: auto;
+}
+
+.iconsContainer {
+  text-align: center;
+}
+
+.contentHeader {
+  margin-top: 0;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 15px;
+}
+
+.contentConference {
+  margin: 5px 0 10px 0;
+  padding: 5px 10px;
+  border-radius: 1em;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.popoverLink {
+  cursor: pointer;
+}
+
+.popoverSurface {
+  @media (max-width: 600px) {
+    max-width: 80%;
+  }
+
+  @media (min-width: 600px) and (max-width: 800px) {
+    max-width: 60%;
+  }
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    max-width: 40%;
+  }
+
+  @media (min-width: 1000px) and (max-width: 1600px) {
+    max-width: 30%;
+  }
+
+  padding: 15px;
+  box-shadow: '[theme: cardShadow]';
+  border-radius: 4px;
+  border: 0px;
+  background-color: '[theme: neutralLighterAlt]';
+  max-width: 25%;
+  max-height: 23em;
+  overflow-y: auto;
+
+  ::before {
+    border: 0;
+  }
+}
+
+.popOver {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1em;
+  width: 100%;
+}
+
+.content {
+  padding-bottom: 15px;
+}
+
+.eventContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  i {
+    margin-right: 10px;
+  }
+
+  span {
+    margin-left: 5px;
+  }
+}
+
+.eventFooter {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  i {
+    margin-right: 10px;
+  }
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.txtContent {
+  margin-left: 5px;
+}
+
+.containerIcons {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+}
+
+:global(.conferencia_sectorial) {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #39579D;
+}
+
+:global(.comision_sectorial) {
+  background-color: #B58526;
+}
+
+:global(.grupo_trabajo) {
+  background-color: #858099;
+  border-radius: 50%;
+}
+
+.spacer {
+  margin: 10px 0;
+  border: 1px solid;
+  border-color: '[theme: neutralLighter]';
+}
+
+.linkSee {
+  text-decoration: none;
+  color: initial;
+}
+
+.loadingOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}

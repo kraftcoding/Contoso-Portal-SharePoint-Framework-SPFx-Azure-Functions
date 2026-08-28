@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+  .modalContent {
+    width: auto !important;
+  }
+}
+
+.modalContent {
+    display: "flex";
+    flex-direction: "column";
+    gap: 12px;
+    width: 500px;
+    margin-top: 10px;
+    .propertyRow{
+        display: "flex";
+        flex-direction: "column";
+        gap: 5px;
+      .propertyLabel{
+        font-weight: normal;
+      }
+    }
+    .errorTxt{
+        color:red;
+    }
+}
+.bottomStatus{
+    font-size: 15px;
+    font-weight: 600;
+}

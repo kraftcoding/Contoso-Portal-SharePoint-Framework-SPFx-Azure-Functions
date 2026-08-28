@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
+
+  "id": "f713f11e-0926-4211-b87b-1470d87ffd70",
+  "alias": "LaunchDataprocessCommandSet",
+  "componentType": "Extension",
+  "extensionType": "ListViewCommandSet",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "items": {
+    "INCREMENTAL": {
+      "title": { "default": "Lanzar prodceso Incremental" },
+      "iconImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE+ElEQVR4nO1aTWhcVRR+oQlRrHn3TKILqVZB6u/C2pWtEP/QSeacGQVDrNKlUWkX/kAtaLdWRdSAm7gwmuScF6cWSopBtJpq6869tiBJXKjFELDd9AcdPffd9zIzsZl5k/kTcuDCzHv3nnu+e8/vfdfzElJqMLgDSHYb4oOA/LFBOQUkZwzyL0CyDMSXwybL7tkZIDlp++oYkt29yLd7zaZrH/+kF4hfMMSHDfLvQFKoR1NeBiUPKM/rHA0DABgMAMoRQL5YIgTKWUA5akjeBuIRn+QhXWEzOLXVzzB4I2Nd2vS3PtN32kf72jEoRy2PEp58MZwrGKgjAL7PqUsk+F8G5StduVR28s76zFLoUF6600B8XOdY2Sk5pTLUzHrLUP5qg/whEP/tACwZlNchF9zoNZh0jtDmZCkEpDLwqNc/15mIUSo92bOyC3wBkN+AobzvNZn83LgBkkOROhuSL1S2KocXOgzJ57H+09Qur8UEyPfHdoRyTGWsPCjLTzndPNc3EGzz2oT6BoJtBvm8ypbKyJMVBwDJCQdkr9dmZFD2Olf9ZRWdQ9S9WbnBazPyMwzOmy1X7By5PTU0r82o59F8KpKvYuci/91+qkW8rwYgfL5djR2SAHHtDz8TPNAUSdeSKRfsLM/rKg+KO/PxOO8hOdQKm/Fz48agvBkHRE2NkgLRdABQ3i/KsZbCtCF/U6MB6BylKYrogr5nZUoMJP4/tcsgf1+cNALy186n31VVlK1IhQ7ITN9teaJ8syppzAU7ryRf1UDi5xgMGJLPbO5VZkdAMmOQ3wkzYn5EM1k/F9xcnsbrMwWvfbSvHUMy43gU8eQLdi5cncavG0iJL0d+ziB/aoh/q19hJb8a4mmtU3SOWuVL3tFRb3byNs3PDPJrQPIREH9nSH4EkgVb6qJcss2WvbJg36F8q33tGAyGk7h5SApkI7I3kMxGZKeNyF4X8jciu7cR2WeaGNlPaqz630f2qqndI3vV1E6RfWv/+FUGgz16DmxP8u2ZsNYmvKiqp++0T1vX7IDB0+4zRAW15EXViPar2W3xxB8ULehPQLLfH5y655onJq7X5mdluz5z7yJAo95QftMqIK6IOqvHlc3EEYNAueSTvLjmwXX/XGcK5SVngyGYdqjZVZ0iEJDhx6oeR5KOwWAw3NKaPTTs0CbsTiT0qID8snu/YB1Aa2p2PaoN9kQ2cSV1grVCQ/9cpyE+bXlk+JnG1Ozp2W410h6auNXP8A4fg4d9mrillL8ccfz21xrjgPhVC4T4cNMiu0byMiEWrVplZXutQPwM73B2Pe8Zkj+TBMSqInu4i7pzPwPJD0A8p5/xVrgUOqJDuM3IfeWCQ4UW9d+czl8X5Wq6MnPND4iNAILBcCsCotvB+qmWZ1dHjjU7IIaOZJ3GjnzAaVPePtAvp2He37yAuG73OzLWVeJ+S7+zy1jJd/YGB8TIc2lwSwoESF6J1So9213VzYdGBMTiL8ou3Ugnul4SXtwppLI8VLHzeg+x9S6K3ibys1MPQkaeNchv2VqD+GA8D/Go8zyX7c6slTSOjHWFOxGCMMTvVr1qDSp1F+IJhvKbVsCICndaI7aP0/fGabx6J+QDkU3EIIrT+KRUS6kbXpSR8ajUTaUnt5TzdWFgoeIiIM9XdYGgpZSe7VYPpLlTCErV2t6NmVcXa73Tfxn2v2P/AT5k/7EOxAzlAAAAAElFTkSuQmCC",
+      "type": "command"
+    },
+    "COMPLETE": {
+      "title": { "default": "Lanzar prodceso Completo" },
+      "iconImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFCklEQVR4nO1aXWhcRRS+oYYotr1zNtEHqVZB6++DWnywFeq/m9xzdhUMtUofjUoLikJa0D5qVUQt+BIfjGZzzo2rhZJiEK1GbcUXEd+0BUnsg1oMkVrB/qirZ+5PdvO3eze7NyvkwEBy98yZ883M+ZsZx0lImR7/WiDZZoj3APLbBuUIkBwzyMeBZBqIzwVNpsNvx4DksOXVPiTbOpGvcdKmNfe/0wnETxji9wzyL0BSakRTWQalCCiP6xhNAwDodwPKfkA+U6EEyglAOWBIXgbiPpfkTp1h0zO83vUYnL6Bdm36t37T35RHeW0flANWRoVMPhOM5Xc3EADfGm6XSPG/DcrHOnOZXOG6xoxSalNZutJAfEjHmFkpOaI61C16XW/xAoP8JhD/EwKYMijPQd6/1Gky6RiBzclUAEh14H3OlvHzEgnKZAtrZ1aBTwPyC9BbdJ2Uyc0PGiDZG21nQ/Kh6lZj91KbIfkg3v80vNlZZgLk22I7QjmoOlbvlOOHwr35e1e3v8FpEerq9jcY5FOqW8aTB6t2AJLPQiA7nBYjg7IjdNUf1cAcoO7MySVOi5HrMYTebLoqc+T21NCcFqO19xYzkX5Vmcv8d+ttLeKddQDhU61q7JAESNh+dT3/9lQ0XUynvL9pdl5XvVPMzIfivIdk73LYjJsfNAblxTggamqUFIimA4DyelmONRWkDcXLmg1Ax6hMUUQn9DWrU2Ig8f/Dmw3yl+VJIyB/Evr062uKslWp1AbeyA1WJsqnc5LGvL9pIf1qBhJ/R7/bkLxvc69ZdgQkowb5lSAj5rs1k3Xz/uWz03j9puCVR3ltH5LRUEaZTD5tx8K5afySgVT4cuTHDPK7hvjnxhVW8pMhHtE6RceoV7/kjCF15gpXa35mkJ8FkreA+AtD8h2QTNpSF+WsbbbslUn7G8rnymv7oL81iZuHpEBWInsTyaxEdlqJ7A0hdyWyOyuRfTTFyH5YY9X/PrLXTK0e2Rcjk+MngXhXy0X29VsGzzfob9dzYHuSH9clfNyg+G5u+I7y7DuYNP6rpWp2QP/h8Bqi2pb8ao3HV5Xr3ho1uy2e+I0yRb8Hkn63Z/jGCx8YuljtpxMLtwDK84Dym+Uh+SNDcs+8QMIi6oQeV6aJIwaBctYleWqxg2s9j7Z3KgGYPxcAkn7NrtspAgEe31dbr1Jb+QrOAZJ2zR4YdmATdiUWISDepUa9kN1UAkm1ZtejWn97ZBPV7kGApD8xkIbU7NmxDmuoNHSl6/FGF/27XBq6olK+7A/l9TdiYpy0IrtG8spx+Ue7rXJyU0OAGJKTSQJiTZE9WEVduR+A5GsgHtdrvBkppbYo2K1G7qpf+5Ia/reA/I3OzHj6AbExQFZnixdFSafawtblCIjhCi5pa7kebwxDxkQ4O3Iw7YAYOJKlGTsg7w53U9F+0JvTIO9PLyAmcb/zUt9AuyE+amV4/Mise3YZqLhnb3JAjDwXID+dtD+QPBNvq+xYR00vH5oREMtvlMP6JZvoeUnwcKeUyXFvVealHmLrWxR9TaR1BHjyqEF+ydYaxHvicYj3hZ7nnF2ZxbZZ30B7sBIBCEP8as2z1qRSdzIeoLe4agaMqHJHNbdyceRmzQ60We+EvDuyiRhEb3GVUy/VU+oGD2VkMCp1M9nCutlywzAwWXUSkCdqekCwrJQd61APpG/DAlC6re3bmAl1sdY7zWfY//X9F+720RUHFGQhAAAAAElFTkSuQmCC",
+      "type": "command"
+    }
+  }
+}

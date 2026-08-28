@@ -1,0 +1,25 @@
+@media (max-width: 640px) {
+  .searchBar {
+    flex-direction: column;
+  }
+}
+
+.searchBar {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  box-shadow: "[theme: cardShadow]";
+  background-color: #faf9f8;
+
+  .typeSelector {
+    flex: 2;
+  }
+
+  .searchBox {
+    flex: 6;
+  }
+
+  .searchButton {
+    flex: 1
+  }
+}

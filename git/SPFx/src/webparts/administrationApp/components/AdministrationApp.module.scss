@@ -1,0 +1,63 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+@media (max-width: 640px) {
+  .administrationApp {
+    .wpTitle{
+      flex-direction: column !important;
+      height: auto !important;
+      gap: 10px;
+      .newElementsButtons{
+        text-align: center !important;
+        margin-bottom: 10px;
+        button{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.administrationApp {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+  display: flex;
+  flex-direction: column;
+
+  .wpTitle {
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .errorLabel{
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .newElementsButtons{
+    text-align: right;
+   // margin-bottom: 10px;
+  }
+}
+.managementDialog {
+  //max-width: 75% !important;
+  max-width: 90%;
+  width: fit-content;
+  div[class*="DepartmentDetails_"]{
+    min-width:75vw;
+  }
+  div[class*="newUserForm_"]{
+    min-width:75vw;
+  }
+  div[class*="newUsersFromExcel"]{
+    min-width:75vw;
+  }
+}

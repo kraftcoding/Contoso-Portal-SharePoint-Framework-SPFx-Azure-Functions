@@ -1,0 +1,15 @@
+.confirmprocessDialog {
+  display: block;
+  .errorprocess{
+    color: #bc2f32 !important;
+    font-size: 12px;
+  }
+  .runningprocess{
+    color: #bc2f32 !important;
+    font-size: 12px;
+  }
+  .textprocessDialog{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

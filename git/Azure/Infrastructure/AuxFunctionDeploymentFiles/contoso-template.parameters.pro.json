@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "param_devopsAppObjectId": {
+            "value": "6b21f1d6-31bb-470f-bf05-5059206edefe"
+        },
+        "param_devopsClientId": {
+            "value": "58a8f98a-a429-4ed2-979b-fd0a211bf2e0"
+        },
+        "param_aadTenantId": {
+            "value": "abb2d05d-20f8-4a6d-a887-51b883731814"
+        },
+        "param_aadTenantOrganization": {
+            "value": "politicaterritorial.onmicrosoft.com"
+        },
+        "param_aadClientId": {
+            "value": "80c7bcdc-d6da-451d-98c8-7bb399735b18"
+        },
+        "param_approdotSiteUrl": {
+            "value": "/sites/Contoso"
+        },
+        "param_spHost": {
+            "value": "https://politicaterritorial.sharepoint.com"
+        },
+        "param_apptoken": {
+            "value": "Contoso"
+        },
+        "param_envtoken": {
+            "value": "prod"
+        },
+        "param_azcounter": {
+            "value": "001"
+        },
+        "param_downloadCertificates": {
+            "value": false
+        },
+        "param_mailboxUserId": {
+            "value": "66c24568-d700-49f0-ba73-cdc0cebbbdeb"
+        },
+        "param_portalSimUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_portalSimPassword": {
+            "value": "xxxx"
+        },
+        "param_portalSimService": {
+            "value": "1762"
+        },
+        "param_portalSimEnabled": {
+            "value": true
+        },
+        "param_taxonomyRootSiteId": {
+            "value": "politicaterritorial-admin.sharepoint.com"
+        },
+        "param_taxonomyAppTermGroup": {
+            "value": "102a5d61-9d78-42e8-ab11-681331d4d37f"
+        },
+        "param_isprodductionEnvironment": {
+            "value": true
+        },
+        "param_insideUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_insidePassword": {
+            "value": "xxxx"
+        },
+        "param_vnetAddressprefixPrivateEndpoint": {
+            "value": "10.117.32.128/28"
+        },
+        "param_vnetAddressprefixFunction": {
+            "value": "10.117.32.64/26"
+        },
+        "param_functionSubnetAddressprefix": {
+            "value": "10.117.32.64/26"
+        },
+        "param_privateEndpointSubnetAddressprefix": {
+            "value": "10.117.32.128/28"
+        }
+    }
+}

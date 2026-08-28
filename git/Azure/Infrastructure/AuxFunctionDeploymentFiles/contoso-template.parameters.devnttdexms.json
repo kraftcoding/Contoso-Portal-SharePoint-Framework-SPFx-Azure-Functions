@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "param_devopsAppObjectId": {
+            "value": "7c4ae63d-ddc4-4cbb-bc71-8ec7f337f021"
+        },
+        "param_devopsClientId": {
+            "value": "5f991e16-d0f1-456d-88f3-8a27336bd859"
+        },
+        "param_aadTenantId": {
+            "value": "3963ea86-5f68-44d4-bf00-010ae86e1f9b"
+        },
+        "param_aadTenantOrganization": {
+            "value": "contoso-test.onmicrosoft.com"
+        },
+        "param_aadClientId": {
+            "value": "5a523c15-8862-4b6d-9bb1-7d022b845471"
+        },
+        "param_approdotSiteUrl": {
+            "value": "/sites/Contoso"
+        },
+        "param_spHost": {
+            "value": "https://contoso-test.sharepoint.com"
+        },
+        "param_apptoken": {
+            "value": "Contoso"
+        },
+        "param_envtoken": {
+            "value": "devcontoso-test"
+        },
+        "param_azcounter": {
+            "value": "001"
+        },
+        "param_downloadCertificates": {
+            "value": true
+        },
+        "param_mailboxUserId": {
+            "value": "00000000-0000-0000-0003-000000000003"
+        },
+        "param_portalSimUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_portalSimPassword": {
+            "value": "xxxx"
+        },
+        "param_portalSimService": {
+            "value": "1762"
+        },
+        "param_portalSimEnabled": {
+            "value": true
+        },
+        "param_taxonomyRootSiteId": {
+            "value": "contoso-test-admin.sharepoint.com"
+        },
+        "param_taxonomyAppTermGroup": {
+            "value": "102a5d61-9d78-42e8-ab11-681331d4d37f"
+        },
+        "param_isprodductionEnvironment": {
+            "value": false
+        },
+        "param_insideUser": {
+            "value": "service-account@contoso.local"
+        },
+        "param_insidePassword": {
+            "value": "xxxx"
+        }
+    }
+}

@@ -1,0 +1,174 @@
+@media (max-width: 640px) {
+    .newUsersFromExcel {
+        .uploadFileZone{
+            min-width: auto !important;
+        }
+        .gridContainerSingle{
+            .propertyRow{
+                flex-direction: column;
+                .textArea{
+                    width: 100%;
+                }
+            }
+        }
+        .resultExcelZone{
+            overflow: scroll;
+            .dataGridContainer{
+                width: max-content;
+                max-height: none !important;
+                display: block !important;
+                .dataGridBody{
+                    //max-height: 300px !important;
+                    .tableCell{
+                        word-break: break-all;
+                    }
+                    .manageItem{
+                    flex:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.newUsersFromExcel {
+    .uploadFileZone{
+        box-shadow: "[theme: cardShadow]";
+        background-color: #faf9f8;
+        padding: 15px 10px;
+        .uploadRow{
+            display: flex;
+            gap: 10px;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+        //min-width: 600px;
+        .tooltipComment{
+            margin-top: 7px;
+            font-size: 11px;
+            font-style: italic;
+        }
+    }
+    .gridContainerSingle{
+        box-shadow: "[theme: cardShadow]";
+        background-color: #faf9f8;
+        display:grid;
+        //grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        padding: 15px 10px;
+        row-gap: 10px;
+        column-gap: 80;
+        .textArea{
+          textarea{
+            min-height: 120px;
+          }
+        }
+        .propertyRow{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+    
+            .labelproperty{
+                flex: 0 24%;
+            }
+            .textBoxValue{
+                flex: 0 60%;
+            }
+            .dropDownValue{
+                flex: 1;
+                //width: 50%;
+            }
+            .errorField{
+                border-color: #bc2f32 !important;
+            }
+            .errorMsgForm{
+                color: #bc2f32 !important;
+                font-size: 12px;
+                margin-top: -10px;
+                .errorIcon{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .tooltipComment{
+            font-size: 11px;
+            font-style: italic;
+        }
+    }
+    .resultExcelZone{
+        //padding: 10px;
+        padding: 0px 10px 10px 10px;
+        box-shadow: "[theme: cardShadow]";
+        background-color: #faf9f8;
+        max-height: 300px;
+        overflow-y:auto;
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 100px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--colorNeutralBackground3Hover);
+            border-radius: 100px;
+        }
+        .usersNotprocessed{
+            color: #bc2f32;
+            padding: 10px 5px;
+            font-weight: 500;
+        }
+        .usersNotprocessedButton{
+            color: #bc2f32;
+            margin-left: 20px;
+        }
+
+        .dataGridContainer{
+            table-layout: auto;
+            //width: max-content;
+            //max-height: 500px;
+            //overflow-y: auto;
+            //display: inline-block;
+            .userOrgansList{
+                padding: 5px 0;
+                .organListRole{
+                    font-weight: 500;
+                }
+            }
+            .dataGridBody{
+                //max-height: 600px;
+                overflow-y: auto;   
+                .dataItemTitle{
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                }
+                .manageItem{
+                    flex:none;
+                }
+            }
+            .dataGridHeadersContainer{
+                position: sticky;
+                top: 0;
+                z-index: 9;
+                background-color: #faf9f8;
+                .dataGridHeaders{
+                    font-weight: 600;
+                }
+            }
+            
+            .dataRowItems{
+                border-radius: 4px;
+                box-shadow: '[theme: cardShadow]';
+                background-color: var(--colorNeutralBackground1);
+                color: '[theme: primaryText]';
+                text-decoration: none;
+            }
+        }
+        .noItems{
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}

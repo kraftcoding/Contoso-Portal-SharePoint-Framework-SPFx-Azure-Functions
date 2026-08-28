@@ -1,0 +1,70 @@
+parameters:
+  working_directory: 'SPFx'
+  node_version: '18.x'
+  artifact_name: 'spfx-package'
+
+steps:
+  ##########################################
+  ## cache npm packages to improdve build time
+  ##########################################
+  - task: Cache@2
+    displayName: Cache npm
+    inputs:
+      key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)/${{ parameters.working_directory }}/package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: '$(Build.SourcesDirectory)/${{ parameters.working_directory }}/.npm'         
+  ##########################################
+  ## specify which node version to use
+  ##########################################
+  - task: NodeTool@0
+    displayName: 'Node version set ${{ parameters.node_version }}'
+    inputs:
+      versionSpec: ${{ parameters.node_version }}
+  ##########################################
+  ## run npm install in current project
+  ##########################################
+  - task: Npm@1
+    displayName: 'npm ci'
+    inputs:
+      command: custom
+      customCommand: ci --loglevel=error --cache ./.npm --no-audit
+      workingDir: ${{ parameters.working_directory }}
+      verbose: false
+  ##########################################
+  ## gulp bundle --ship
+  ##########################################
+  - task: gulp@1
+    displayName: 'gulp bundle --ship'
+    inputs:
+      gulpFile: ${{ parameters.working_directory }}/gulpfile.js
+      targets: bundle
+      arguments: '--ship --warnoff'
+      workingDirectory: ${{ parameters.working_directory }}        
+  ##########################################
+  ## gulp package-solution --ship
+  ##########################################
+  - task: gulp@1
+    displayName: 'gulp package-solution --ship'
+    inputs:
+      gulpFile: ${{ parameters.working_directory }}/gulpfile.js
+      targets: 'package-solution'
+      arguments: '--ship --warnoff'
+      workingDirectory: ${{ parameters.working_directory }} 
+  ##########################################
+  ## get name of generated *.sppkg
+  ##########################################
+  - bash: |
+      CMD_GET_SPPKG_NAME=$(find . -name '*.sppkg' -exec basename {} \;)
+      echo "##vso[task.setvariable variable=SpPkgFileName;isOutput=true]${CMD_GET_SPPKG_NAME}"
+    workingDirectory: ${{ parameters.working_directory }} 
+    name: get_sppkg_name
+    displayName: GetSharePointPackage
+  ##########################################
+  ## publish *.sppkg as build artifact
+  ##########################################
+  - task: PublishPipelineArtifact@1
+    displayName: 'Publish *.sppkg to artifacts location'
+    inputs:
+      targetPath: '$(Build.Repository.LocalPath)/${{ parameters.working_directory }}/sharepoint/solution/$(get_sppkg_name.SpPkgFileName)'
+      artifact: ${{ parameters.artifact_name }}

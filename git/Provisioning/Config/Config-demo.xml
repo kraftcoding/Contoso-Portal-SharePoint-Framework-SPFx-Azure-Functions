@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DEMO CONFIGURATION - All values are fictitious and for educational purposes only -->
+<configuration>
+    <tenant>contoso-dev</tenant>
+    <landingSite>ContosoPortal</landingSite>
+    <tenantId>00000000-0000-0000-0004-000000000004</tenantId>
+    <clientId>00000000-0000-0000-0005-000000000005</clientId>
+    <certificatePath>/Config/demo-cert.pfx</certificatePath>
+    <sites>
+        <site IsLanding="true" Title="ContosoPortal" Alias="ContosoPortal" Type="CommunicationSite" Lcid="1033" Owners="admin@contoso.onmicrosoft.com" Members="admin@contoso.onmicrosoft.com" />
+        <site Title="contoso-dept-main" Alias="contoso-dept-main" IsOrg="true" Type="CommunicationSite" Lcid="1033" Owners="admin@contoso.onmicrosoft.com" Members="admin@contoso.onmicrosoft.com" />
+    </sites>
+</configuration>

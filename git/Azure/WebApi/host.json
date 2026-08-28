@@ -1,0 +1,27 @@
+{
+    "version": "2.0",
+    "logging": {
+        "fileLoggingMode": "debugOnly",
+        "logLevel": {
+            "default": "Warning",
+            "Function": "Information",
+            "Host.Aggregator": "Information",
+            "Host.Results": "Information"
+        },
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": false,
+                "maxTelemetryItemsPerSecond": 20,
+                "excludedTypes": "Request;Exception"
+            },
+            "enableLiveMetricsFilters": true
+        }
+    },
+    "extensions": {
+        "durableTask": {
+            "storageprovider": {
+                "type": "AzureStorage"
+            }
+        }
+    }
+}

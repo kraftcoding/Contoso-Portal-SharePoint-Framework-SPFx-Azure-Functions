@@ -1,0 +1,62 @@
+declare interface IWelcomeMessageWebPartStrings {
+  HiMessage: string;
+  Warning: string;
+  WarningMessage: string;
+  Phone: string;
+  Email: string;
+  Job: string;
+  FirstNameTooltip: string;
+  LastNameTooltip: string;
+  PhoneTooltip: string;
+  PrincipalMailTooltip: string;
+  OtherMailTooltip: string;
+  JobTitleTooltip: string;
+  OfficeLocationTooltip: string;
+  Location: string;
+  Alerts: string;
+  ArchivedAlerts: string;
+  AlertPhrase1: string;
+  AlertPhrase2: string;
+  AlertPhrase3: string;
+  AlertPhrase4: string;
+  ArchiveReadAlerts: string;
+  ViewArchivedAlerts: string;
+  NoCurrentAlertsToShow: string;
+  NoArchivedAlertsToShow: string;
+  PersonalConfig: string;
+  Discard: string;
+  Save: string;
+  HideReaded: string;
+  AValidEmailIsRequired: string;
+  AValidPhoneNumberIsRequired: string;
+  Saving: string;
+  BackendErrorMessage: string;
+  BasicData: string;
+  NewTitle: string;
+  NewLocation: string;
+  NewLocationInformation: string;
+  NewMeetingType: string;
+  NewDescription: string;
+  NewStartDate: string;
+  NewEndDate: string;
+  NewOnlineTool: string;
+  NewOnlineToolUrl: string;
+  TheOrderOfTheDayHasBeenUpdated: string;
+  AddedAssistants: string;
+  RemovedAssistants: string;
+  MeetingPoints: string;
+  Documents: string;
+  Agreements: string;
+  Minutes: string;
+  TheMinutesHasBeenUpdated: string;
+  SeeMore: string;
+  SeeLess: string;
+  GoToTheMeeting: string;
+  LoadingArchivedAlerts: string;
+  GetNotificationsFromThisSite: string;
+}
+
+declare module 'WelcomeMessageWebPartStrings' {
+  const strings: IWelcomeMessageWebPartStrings;
+  export = strings;
+}

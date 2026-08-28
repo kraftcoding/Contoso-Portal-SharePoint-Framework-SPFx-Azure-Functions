@@ -1,0 +1,42 @@
+parameters:
+  environment: 'none'
+  scriptFilePath: 'none'
+
+steps:
+
+  - task: DownloadSecureFile@1
+    name: M365DevOpsAccessCertificate
+    displayName: 'Download access certificate for ${{ parameters.environment }}'
+    inputs:
+      secureFile: 'auth.vhorstyle.com.pfx'
+  
+  - task: PowerShell@2
+    displayName: 'Ensure variables and execute script'
+    env:
+      ALM_TENANT: $(tenant)
+      ALM_TENANTADMINURL: $(tenantAdminUrl)
+      ALM_CLIENTID: $(clientId)
+      ALM_CERTPASSWORD: $(certPassword)
+      ALM_SUBSCRIPTIONID: $(subscriptionId)
+      ALM_RESOURCEGROUP: $(resourceGroup)
+      ALM_AZFUNCNAME: $(azFuncName)
+      ALM_ENVIRONMENT: ${{ parameters.environment }}
+    inputs:
+      targetType: 'inline'
+      pwsh: true
+      workingDirectory: $(System.ArtifactsDirectory)
+      script: |
+        $scriptCwd = ([IO.Path]::Combine("$(Build.SourcesDirectory)",(Split-Path "${{ parameters.scriptFilePath }}" -Parent)));
+        $scriptFile = ([IO.Path]::Combine("$(Build.SourcesDirectory)","${{ parameters.scriptFilePath }}"));
+
+        write-host "Script working dir will be:" $scriptCwd
+        cd $scriptCwd
+
+        $certPath = '$(M365DevOpsAccessCertificate.secureFilePath)'
+        openssl pkcs12 -in '$(M365DevOpsAccessCertificate.secureFilePath)' -passin pass:($env:certPassword) -out cert.pem -nodes -legacy
+        cp '$(M365DevOpsAccessCertificate.secureFilePath)' './cert.pfx'
+
+        $env:ALM_CERTPATH = './cert.pfx'
+        $env:ALM_CERTPEMPATH = './cert.pem'
+
+        & ($scriptFile)

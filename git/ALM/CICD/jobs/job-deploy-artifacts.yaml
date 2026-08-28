@@ -1,0 +1,44 @@
+parameters:
+    environment: 'none'
+    pool:
+      vmImage: ubuntu-latest
+    depends_on: []
+  
+jobs:
+  
+- deployment: deploy_artifacts_on_${{ parameters.environment }}
+  displayName: Artifacts deploy on ${{ parameters.environment }}
+  dependsOn: ${{ parameters.depends_on }}
+  environment: 
+    name: ${{ parameters.environment }}
+  variables: 
+  - group: environment_variables_${{ parameters.environment }}
+  strategy:
+   runOnce:
+     deploy:
+        steps:
+        
+          - checkout: self
+
+          - task: DownloadBuildArtifacts@1
+            displayName: 'Download artifact WebApi'
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: 'webapi-package'
+              downloadPath: '$(Build.SourcesDirectory)/ALM/scripts/'
+              cleanDestinationFolder: false
+          
+          - task: DownloadBuildArtifacts@1
+            displayName: 'Download artifact SPFx'
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: 'spfx-package'
+              downloadPath: '$(Build.SourcesDirectory)/ALM/scripts/'
+              cleanDestinationFolder: false
+          
+          - template: ./../../steps/steps-deploy-scriptexec.yaml
+            parameters:
+              environment: ${{ parameters.environment }}
+              scriptFilePath: 'ALM/scripts/artifacts_deployment.ps1'

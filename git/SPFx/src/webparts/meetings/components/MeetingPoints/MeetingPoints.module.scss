@@ -1,0 +1,228 @@
+@import "../Meetings.module.scss";
+
+.meetingPoints {
+    @include column;
+    min-height: 0;
+    padding: 0px 3px 0px 0px;
+
+    .noElementsContainer {
+        justify-content: center;
+        margin: 0 auto;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+    .pointsList {
+        @include column;
+        overflow-y: auto;
+        height: 100%;
+        padding: 5px 3px 5px 5px;
+        gap: 7.5px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--colorNeutralBackground3Hover);
+            border-radius: 100px;
+        }
+    }
+
+    .itemRow {
+        @include row;
+        border-radius: 4px;
+        gap: 5px;
+    }
+
+    .bottomButtonRow {
+        justify-content: flex-end;
+        padding: 5px;
+    }
+
+    .itemColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topPaddingAdjust {
+        padding: 5px 0px;
+    }
+
+    .sidesPaddingAdjust {
+        padding: 0 5px 0 10px;
+
+    }
+
+    .orderCounter {
+        background-color: var(--colorBrandBackgroundInvertedtestssed);
+        color: var(--colorNeutralForeground1);
+        font-weight: bold;
+    }
+
+    .itemColumnGrow {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .columnBlueBackground {
+        background-color: var(--colorBrandBackground2);
+        border-radius: 4px;
+    }
+
+    .justifyEnd {
+        justify-content: flex-end;
+    }
+
+    .justifyCenter {
+        justify-content: center;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .desc {
+        -webkit-line-clamp: unset;
+        white-space: test-wrap;
+    }
+
+    .order {
+        background-color: var(--colorBrandBackgroundInvertedtestssed);
+        color: var(--colorNeutralForeground1);
+        font-weight: bold;
+    }
+
+    .autoWidth {
+        min-width: 0;
+    }
+
+    .inputDuration>input {
+        width: 50px;
+    }
+
+    .inputDesc {
+        height: 100px;
+    }
+
+    .pointHour {
+        display: flex;
+        column-gap: 5px;
+        row-gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .file {
+        --file-background-color-hover: transparent;
+        --file-type-icon-height: 25px;
+        --file-padding-inline-start: 12px;
+    }
+
+    .infoText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        :first-child {
+            flex-shrink: 0;
+        }
+    }
+
+    .borderBottom .borderLeft {
+        box-sizing: border-box;
+    }
+
+    .borderBottom {
+        border-bottom: dashed 1px #b4d6fa;
+    }
+
+    .borderLeft {
+        border-left: dashed 1px #b4d6fa;
+    }
+
+    .treeLines {
+        // height: calc(100% + 5px);
+        margin-top: -5px;
+        min-width: 30px;
+        max-width: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .linkAddSubPoint {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .borderAgendaItem {
+        border: 1px dashed #b4d6fa;
+        margin-right: 4px;
+        margin-top: 2.5px;
+       
+    }
+    .agendaItemViewHeader {
+        gap: 10px;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .agendaItemViewHeaderLeft {
+            flex: 1 1 auto;
+
+            .agendaItemViewHeaderLeftElements {
+                gap: 5px;
+                row-gap: 8px;
+                display: flex;
+
+                .agendaItemViewHeaderLeftElementsIndex {
+                    padding-right: 10px;
+                }
+
+                .agendaItemViewHeaderLeftElementsType {
+                    padding-right: 5px;
+                }
+
+                .agendaItemViewHeaderLeftElementsDuration {
+                    gap: 5px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+        }
+
+        .agendaItemViewHeaderRight {
+            height: 100%;
+            flex: 0 1 auto;
+            align-items: flex-start !important;
+
+            .agendaItemViewHeaderRightMainButtons {
+                min-width: 32px;
+            }
+
+            .agendaItemViewHeaderRightReorderButtons {
+                gap: 10px;
+                display: flex;
+                min-width: 153px;
+
+                .agendaItemViewHeaderRightReorderButtonsContainer {
+                    gap: 5px;
+                    display: flex;
+                }
+            }
+        }
+    }
+   
+}
